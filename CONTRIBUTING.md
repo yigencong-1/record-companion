@@ -7,6 +7,8 @@ Record Companion 是音乐唱片桌搭与唱片挂件项目，目前处于概念
 ## 先看这些内容
 
 - [项目简报](docs/project-brief.md)：已确认要求、技术范围与待定事项。
+- [功能规格评审稿](docs/function-spec.md)：首版功能、操作、待选项与验收计划；建议不等于已确认决定。
+- [目录职责](docs/repository-map.md)：设计、源码、试制和证据各自放在哪里。
 - [最新方案](docs/next-stage-plan.md)：声音、墨水屏、电源、网络和结构的配合。
 - [材料盘点](hardware/inventory.md)：参考规格不代表已有实物。
 - [决策记录](docs/decisions.md)和[验证记录](docs/verification.md)：区分已确认决定、建议和实际结果。
@@ -16,9 +18,9 @@ Record Companion 是音乐唱片桌搭与唱片挂件项目，目前处于概念
 
 1. 在 [原仓库](https://github.com/yigencong-1/record-companion) 点击 Fork，创建自己账号下的副本。
 2. 在自己的 Fork 中创建分支，例如 `design/speaker-layout`，围绕一个明确问题提交改动。
-3. 硬件、固件、网页和结构分别放入 `hardware/`、`firmware/`、后续网页目录和 `mechanical/`；讨论与证据放在 `docs/`。可先通过 Issue 讨论方案。
+3. 硬件、固件、网页和结构分别放入 `hardware/`、`firmware/`、`web/` 和 `mechanical/`；先阅读各目录README。功能与验收计划维护在 `docs/function-spec.md`，已执行证据维护在 `docs/verification.md`。可先通过 Issue 讨论方案。
 4. 发起 Pull Request，目标选择 `yigencong-1/record-companion` 的 `main`。
-5. 描述改动原因、影响范围和实际验证结果。原型图、软件模拟、编译通过和实物验证分别说明；未验证的项照实记录。
+5. 描述改动原因、对应功能编号、影响范围和实际验证结果。原型图、软件模拟、编译通过和实物验证分别说明；未验证的项照实记录，板版号、固件版本和测试编号按真实内容填写。
 6. 仓库所有者审阅后合并；需要调整时继续向自己的分支提交，PR 会随之更新。
 
 ```mermaid

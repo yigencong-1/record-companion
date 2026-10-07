@@ -4,9 +4,10 @@
 
 - 主工作目录：当前仓库根目录，以Git根目录和当前任务工作区为准。
 - 外部参考资料库由协作者在本机配置，按只读约定查阅。需要复用的代码、技能和资料复制到主工程，记录公开来源与版本。
-- 新主控先阅读 README.md、docs/project-brief.md、docs/decisions.md、docs/controller-prompt.md、docs/verification.md 和 references/index.md。
+- 新主控先阅读 README.md、docs/project-brief.md、docs/function-spec.md、docs/decisions.md、docs/controller-prompt.md、docs/verification.md 和 references/index.md。目录职责见docs/repository-map.md。
 - 用户当前明确指令与已确认决定优先。事实、建议和待定事项分别记录；易变状态结合当前证据核实。
 - 本文件维护稳定工作规则。产品设定、材料状态和历史决定分别维护在 docs/ 中，避免重复形成多个事实来源。
+- 简报维护高层要求与状态，docs/function-spec.md集中维护功能细节、操作草案、未定选择和验收计划；docs/decisions.md记录已确认决定，docs/verification.md记录实际证据。推荐规则未经审阅不能标为已确认。
 
 ## 主控职责与范围
 
