@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="850" viewBox="0 0 1200 850" role="img" aria-labelledby="compact-title compact-desc">
+  <title id="compact-title">音乐唱片桌搭的两档体量示意</title>
+  <desc id="compact-desc">所有尺寸视图按每毫米2.6像素示意15乘11乘5.5厘米和12乘9乘5厘米的外形。挂件平放在右侧凹座，大唱片位于左侧。两种尺寸都是候选，没有验证音腔和实际装配，也不代表能达到相同音质。音质优先，最终选择能达到试听目标的紧凑尺寸。</desc>
+  <defs>
+    <pattern id="speaker-mesh" width="10" height="10" patternUnits="userSpaceOnUse"><circle cx="5" cy="5" r="1.7" fill="#8e8170"/></pattern>
+    <marker id="dim-tip" markerWidth="7" markerHeight="7" refX="3.5" refY="3.5" orient="auto-start-reverse"><path d="M0 0L7 3.5L0 7" fill="#797267"/></marker>
+  </defs>
+  <style>
+    text {font-family: 'Microsoft YaHei', 'Noto Sans SC', sans-serif; fill: #312e29; font-size: 24px;}
+    .heading {font-size: 32px; font-weight: 500;}
+    .label {font-size: 23px;}
+    .note {font-size: 22px; fill: #665e54;}
+    .groove {fill: none; stroke: #444248; stroke-width: 2;}
+    .dimension {fill: none; stroke: #797267; stroke-width: 1.5; marker-start: url(#dim-tip); marker-end: url(#dim-tip);}
+    .leader {fill: none; stroke: #8c8376; stroke-width: 1.5;}
+  </style>
+  <rect width="1200" height="850" fill="#f8f6f1"/>
+  <text x="42" y="48" class="heading">先看体量，再由声音方案确定最终尺寸</text>
+  <text x="42" y="86" class="note">音质优先 · 表面凹座降低总高 · 图中尺寸均为候选目标</text>
+
+  <text x="90" y="142" class="heading">15厘米｜建议先验证</text>
+  <text x="685" y="142" class="heading">12厘米｜占地参照</text>
+  <text x="90" y="178" class="note">候选外形：15 × 11 × 5.5 cm</text>
+  <text x="685" y="178" class="note">候选外形：12 × 9 × 5 cm</text>
+
+  <g aria-label="15厘米款俯视">
+    <rect x="90" y="224" width="390" height="286" rx="23" fill="#e6ddcb" stroke="#c5b798" stroke-width="1.5"/>
+    <circle cx="211" cy="359" r="106" fill="#b9ac93"/>
+    <circle cx="211" cy="359" r="100" fill="#29272b"/>
+    <circle cx="211" cy="359" r="86" class="groove"/>
+    <circle cx="211" cy="359" r="73" class="groove"/>
+    <circle cx="211" cy="359" r="59" class="groove"/>
+    <circle cx="211" cy="359" r="32" fill="#bc887a"/>
+    <circle cx="211" cy="359" r="6" fill="#29272b"/>
+    <rect x="337" y="270" width="128" height="137" rx="15" fill="#c7b89e"/>
+    <circle cx="401" cy="337" r="58.5" fill="#29272b"/>
+    <circle cx="401" cy="337" r="49" class="groove"/>
+    <circle cx="401" cy="337" r="39" class="groove"/>
+    <circle cx="401" cy="337" r="22" fill="#bc887a"/>
+    <circle cx="401" cy="337" r="4" fill="#29272b"/>
+    <path d="M413 280Q422 257 442 261Q460 268 449 283" fill="none" stroke="#96836c" stroke-width="5"/>
+    <path d="M445 403H462" stroke="#e6ddcb" stroke-width="8"/>
+    <circle cx="416" cy="466" r="24" fill="#f0e8d9" stroke="#a99b84" stroke-width="2"/>
+    <path d="M416 447V455" stroke="#86745c" stroke-width="3"/>
+    <circle cx="355" cy="468" r="9" fill="#bc887a"/>
+    <path d="M90 208H480" class="dimension"/>
+    <text x="285" y="202" text-anchor="middle" class="label">15 cm</text>
+    <path d="M70 224V510" class="dimension"/>
+    <text x="42" y="370" text-anchor="middle" transform="rotate(-90 42 370)" class="label">11 cm</text>
+  </g>
+
+  <g aria-label="12厘米款俯视">
+    <rect x="685" y="250" width="312" height="234" rx="21" fill="#e6ddcb" stroke="#c5b798" stroke-width="1.5"/>
+    <circle cx="780" cy="367" r="90" fill="#b9ac93"/>
+    <circle cx="780" cy="367" r="84.5" fill="#29272b"/>
+    <circle cx="780" cy="367" r="72" class="groove"/>
+    <circle cx="780" cy="367" r="60" class="groove"/>
+    <circle cx="780" cy="367" r="48" class="groove"/>
+    <circle cx="780" cy="367" r="29" fill="#bc887a"/>
+    <circle cx="780" cy="367" r="6" fill="#29272b"/>
+    <rect x="874" y="284" width="120" height="136" rx="13" fill="#c7b89e"/>
+    <circle cx="934" cy="353" r="58.5" fill="#29272b"/>
+    <circle cx="934" cy="353" r="49" class="groove"/>
+    <circle cx="934" cy="353" r="39" class="groove"/>
+    <circle cx="934" cy="353" r="22" fill="#bc887a"/>
+    <circle cx="934" cy="353" r="4" fill="#29272b"/>
+    <path d="M945 294Q955 271 973 276Q990 282 978 297" fill="none" stroke="#96836c" stroke-width="5"/>
+    <circle cx="951" cy="451" r="20" fill="#f0e8d9" stroke="#a99b84" stroke-width="2"/>
+    <path d="M951 435V443" stroke="#86745c" stroke-width="3"/>
+    <circle cx="898" cy="452" r="8" fill="#bc887a"/>
+    <path d="M685 208H997" class="dimension"/>
+    <text x="841" y="202" text-anchor="middle" class="label">12 cm</text>
+    <path d="M664 250V484" class="dimension"/>
+    <text x="637" y="370" text-anchor="middle" transform="rotate(-90 637 370)" class="label">9 cm</text>
+  </g>
+
+  <text x="90" y="553" class="note">转盘、挂件和旋钮的外观占位</text>
+  <text x="685" y="553" class="note">只缩小装饰转盘，挂件保持相同大小</text>
+  <text x="90" y="593" class="label">前面与高度示意</text>
+  <text x="685" y="593" class="label">前面与高度示意</text>
+  <g aria-label="15厘米款正面">
+    <rect x="90" y="611" width="390" height="143" rx="17" fill="#b99770"/>
+    <rect x="110" y="637" width="350" height="91" rx="14" fill="#3c342d"/>
+    <rect x="114" y="641" width="342" height="83" rx="12" fill="url(#speaker-mesh)"/>
+    <rect x="111" y="744" width="348" height="5" rx="2.5" fill="#e5c58f"/>
+    <path d="M500 611V754" class="dimension"/>
+    <text x="514" y="688" class="label">5.5 cm</text>
+  </g>
+  <g aria-label="12厘米款正面">
+    <rect x="685" y="624" width="312" height="130" rx="17" fill="#b99770"/>
+    <rect x="705" y="648" width="272" height="82" rx="14" fill="#3c342d"/>
+    <rect x="709" y="652" width="264" height="74" rx="12" fill="url(#speaker-mesh)"/>
+    <rect x="706" y="744" width="270" height="5" rx="2.5" fill="#e5c58f"/>
+    <path d="M1017 624V754" class="dimension"/>
+    <text x="1031" y="695" class="label">5 cm</text>
+  </g>
+  <text x="42" y="800" class="note">俯视与正面按同一比例比较外形；网罩仅表示出声区域，内部扬声器、音腔与运动空间待验证。</text>
+  <text x="42" y="832" class="note">两档不代表同等音质。先确定声音方案，再选紧凑外形；配色、挂件尺寸和细节均为示意。</text>
+</svg>

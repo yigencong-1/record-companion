@@ -1,0 +1,21 @@
+# Dependencies, generated builds and caches
+node_modules/
+build/
+dist/
+.cache/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local runtime credentials/configuration
+.env
+.env.*
+!.env.example
+credentials/
+secrets/
+
+# Local logs and OS metadata
+*.log
+.DS_Store
+Thumbs.db
+

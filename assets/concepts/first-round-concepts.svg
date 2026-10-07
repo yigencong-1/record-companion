@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="record-gift-review" viewBox="0 0 1200 490" width="1200" height="490" role="img" aria-labelledby="review-title">
+<title id="review-title">两种唱片桌搭概念：低矮唱片机和竖立唱片灯座；仅为概念，尺寸待验证</title>
+<rect width="1200" height="490" fill="#f8f6f2"/>
+<style>
+  #record-gift-review .product-scene { width: 100%; max-width: 650px; margin: 0 auto; color-scheme: light dark; }
+  #record-gift-review .product-drawing { width: 100%; display: block; }
+  #record-gift-review .scene-a { --gift-top: #eee5d5; --gift-side: #d8cbb8; --gift-wood: #b58b62; --gift-label: #eaa49b; --gift-light: #f2c985; --gift-metal: #8c7964; }
+  #record-gift-review .scene-b { --gift-top: #454147; --gift-side: #302e34; --gift-wood: #302e34; --gift-label: #a9617d; --gift-light: #d28cb5; --gift-metal: #aaa4ad; }
+  #record-gift-review .ground-shadow { fill: light-dark(#1d171712, #00000028); }
+  #record-gift-review .body-top { fill: var(--gift-top); }
+  #record-gift-review .body-side { fill: var(--gift-side); }
+  #record-gift-review .wood-face { fill: var(--gift-wood); }
+  #record-gift-review .ambient-light { fill: var(--gift-light); opacity: .85; }
+  #record-gift-review .light-arc { fill: none; stroke: var(--gift-light); stroke-width: 10; opacity: .85; }
+  #record-gift-review .feet { fill: #504d47; }
+  #record-gift-review .platter { fill: #958879; }
+  #record-gift-review .vinyl { fill: #232326; }
+  #record-gift-review .grooves { fill: none; stroke: #454349; stroke-width: 2; }
+  #record-gift-review .record-label { fill: var(--gift-label); }
+  #record-gift-review .label-mark { fill: #eeeeee88; }
+  #record-gift-review .dock-back, #record-gift-review .dock-foot { fill: #c0ad93; }
+  #record-gift-review .clasp { fill: none; stroke: var(--gift-metal); stroke-width: 6; stroke-linecap: round; }
+  #record-gift-review .speaker-grille { stroke: #30241d; stroke-width: 2; opacity: .55; }
+  #record-gift-review .speaker-window { fill: #201f24; }
+  #record-gift-review .scene-b .speaker-grille { stroke: #ada6b0; opacity: .7; }
+  #record-gift-review .knob { fill: var(--gift-top); stroke: var(--gift-metal); stroke-width: 2; }
+  #record-gift-review .knob-mark { stroke: var(--gift-metal); stroke-width: 3; }
+  #record-gift-review .light-key { fill: var(--gift-label); }
+  #record-gift-review .upright-support, #record-gift-review .hub { fill: #55505a; }
+  #record-gift-review .clasp-tray { fill: #252329; }
+  #record-gift-review .main-disc { transition: transform .8s ease; }
+  #record-gift-review .ambient-light, #record-gift-review .light-arc { transition: opacity .25s; }
+  #record-gift-review [data-variant] { min-height: 430px; }
+  @media (max-width: 520px) { #record-gift-review [data-variant] { min-height: 310px; } }
+  @media (prefers-reduced-motion: reduce) { #record-gift-review .main-disc, #record-gift-review .ambient-light, #record-gift-review .light-arc { transition: none; } }
+
+#record-gift-review text {font-family: 'Microsoft YaHei', 'Noto Sans SC', sans-serif; fill: #393331;}</style>
+<text x="35" y="42" font-size="24">低矮唱片机 · 推荐</text>
+<text x="635" y="42" font-size="24">竖立唱片灯座</text>
+<g class="scene-a" transform="translate(0 50)">
+          <title id="gift-a-title">低矮本体，大唱片转动，小唱片挂件静置在右侧卡座</title>
+          <desc id="gift-a-desc">奶油色圆角本体、木色前面板、前置旋钮、底部暖色漫射光。静止卡座和电机分开。</desc>
+          <ellipse cx="298" cy="312" rx="232" ry="16" class="ground-shadow"/>
+          <rect x="68" y="153" width="452" height="148" rx="24" class="body-side"/>
+          <path d="M68 229H520V275Q520 301 495 301H93Q68 301 68 275Z" class="wood-face"/>
+          <rect x="68" y="143" width="452" height="102" rx="24" class="body-top"/>
+          <rect x="85" y="297" width="417" height="7" rx="3.5" class="ambient-light"/>
+          <rect x="101" y="302" width="32" height="10" rx="4" class="feet"/>
+          <rect x="453" y="302" width="32" height="10" rx="4" class="feet"/>
+          <ellipse cx="240" cy="191" rx="119" ry="54" class="platter"/>
+          <g transform="translate(240 188) scale(1 .45)">
+            <g class="main-disc disc-a">
+              <circle r="107" class="vinyl"/>
+              <g class="grooves"><circle r="95"/><circle r="84"/><circle r="73"/><circle r="61"/></g>
+              <circle r="38" class="record-label"/>
+              <path d="M-23 -24A33 33 0 0 1 31 12L22 8A25 25 0 0 0-17-17Z" class="label-mark"/>
+              <circle r="6" class="vinyl"/>
+            </g>
+          </g>
+          <path d="M371 226L390 193H487L502 226Z" class="dock-foot"/>
+          <rect x="408" y="162" width="78" height="56" rx="10" class="dock-back"/>
+          <g class="pendant-a">
+            <path d="M446 103Q446 67 468 67Q490 67 490 88Q490 105 470 105" class="clasp"/>
+            <circle cx="446" cy="147" r="48" class="vinyl"/>
+            <g class="grooves"><circle cx="446" cy="147" r="40"/><circle cx="446" cy="147" r="34"/></g>
+            <circle cx="446" cy="147" r="20" class="record-label"/>
+            <circle cx="446" cy="147" r="3" class="vinyl"/>
+          </g>
+          <g class="speaker-grille">
+            <path d="M122 258H270M122 267H270M122 276H270M122 285H270"/>
+            <path d="M125 255V288M138 255V288M151 255V288M164 255V288M177 255V288M190 255V288M203 255V288M216 255V288M229 255V288M242 255V288M255 255V288M268 255V288"/>
+          </g>
+          <circle cx="418" cy="269" r="21" class="knob"/>
+          <path d="M418 251V259" class="knob-mark"/>
+          <circle cx="475" cy="269" r="8" class="light-key"/>
+        </g>
+<g class="scene-b" transform="translate(600 50)">
+          <title id="gift-b-title">竖立唱片灯座，小唱片挂件装入中心转轴后直接转动</title>
+          <desc id="gift-b-desc">炭灰色底座、莓色光弧、竖立小唱片。挂扣先拆下放入底座收纳槽，必须先停止电机再取下唱片。</desc>
+          <ellipse cx="301" cy="320" rx="190" ry="15" class="ground-shadow"/>
+          <rect x="257" y="79" width="91" height="193" rx="38" class="upright-support"/>
+          <path d="M199 250V210A109 109 0 0 1 417 210V250" class="light-arc"/>
+          <g transform="translate(308 169)">
+            <g class="main-disc disc-b">
+              <circle r="105" class="vinyl"/>
+              <g class="grooves"><circle r="94"/><circle r="81"/><circle r="67"/><circle r="56"/></g>
+              <circle r="39" class="record-label"/>
+              <path d="M-21 -25A34 34 0 0 1 33 8L23 6A25 25 0 0 0-15-18Z" class="label-mark"/>
+              <circle r="10" class="hub"/>
+            </g>
+          </g>
+          <path d="M159 259L212 235H429L471 264V298Q471 315 453 315H177Q159 315 159 298Z" class="body-side"/>
+          <path d="M160 263L212 237H429L471 263Z" class="body-top"/>
+          <rect x="178" y="273" width="130" height="24" rx="8" class="speaker-window"/>
+          <g class="speaker-grille"><path d="M190 281H296M190 289H296"/></g>
+          <circle cx="362" cy="286" r="19" class="knob"/>
+          <path d="M362 270V277" class="knob-mark"/>
+          <circle cx="419" cy="286" r="8" class="light-key"/>
+          <path d="M473 173Q481 148 501 156Q519 165 505 185Q494 197 480 188" class="clasp loose-clasp"/>
+          <rect x="402" y="245" width="30" height="9" rx="4" class="clasp-tray"/>
+        </g>
+<text x="35" y="425" font-size="18">静止卡座识别挂件，大唱片独立转动</text>
+<text x="635" y="425" font-size="18">拆下挂扣后装轴，小唱片直接转动</text>
+<text x="35" y="455" font-size="16">本体约185 × 140 × 65 mm · 挂件约55 mm</text>
+<text x="635" y="455" font-size="16">本体约145 × 95 × 170 mm · 挂件约65 mm</text>
+<text x="35" y="482" font-size="14">概念示意，配色与尺寸未定；三类唱片共用结构，图案和音乐待提供。</text>
+</svg>

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="460" viewBox="0 0 960 460" role="img" aria-labelledby="insert-title insert-desc">
+  <title id="insert-title">水平唱片机与静止小唱片卡座的规划建议</title>
+  <desc id="insert-desc">本体大唱片负责转动，小唱片挂件静置在半露出的卡槽内，由标签识别选择歌单。短挂扣留在槽外，歌曲由本体存储卡播放。先验证音乐与识别，再验证电机噪声和供电。这是结构关系示意，不是制造图。</desc>
+  <defs>
+    <marker id="insert-arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0L6 3L0 6" fill="#556257"/></marker>
+  </defs>
+  <style>
+    text { font-family: 'Microsoft YaHei', 'Noto Sans SC', sans-serif; fill: #302e2b; font-size: 18px; }
+    .title { font-size: 24px; font-weight: 500; }
+    .small { font-size: 16px; fill: #57534e; }
+    .disc { fill: #272629; }
+    .groove { fill: none; stroke: #454248; stroke-width: 2; }
+    .guide { fill: none; stroke: #556257; stroke-width: 2; marker-end: url(#insert-arrow); }
+    .leader { fill: none; stroke: #8b857b; stroke-width: 1.5; }
+  </style>
+  <rect width="960" height="460" fill="#f8f6f1"/>
+  <text x="28" y="40" class="title">水平唱片机＋静止卡座 · 规划建议</text>
+  <text x="28" y="72" class="small">希望实现转动；先验证音乐与识别，再测电机噪声和供电。</text>
+  <g>
+    <rect x="60" y="214" width="350" height="107" rx="18" fill="#bd9970"/>
+    <rect x="60" y="190" width="350" height="91" rx="18" fill="#e8ddc8"/>
+    <ellipse cx="169" cy="231" rx="84" ry="35" fill="#9c907b"/>
+    <ellipse cx="169" cy="228" rx="77" ry="31" class="disc"/>
+    <ellipse cx="169" cy="228" rx="64" ry="25" class="groove"/>
+    <ellipse cx="169" cy="228" rx="52" ry="20" class="groove"/>
+    <ellipse cx="169" cy="228" rx="24" ry="10" fill="#bd8275"/>
+    <rect x="275" y="217" width="99" height="10" rx="5" fill="#48443e"/>
+    <circle cx="325" cy="215" r="43" class="disc"/>
+    <circle cx="325" cy="215" r="35" class="groove"/>
+    <circle cx="325" cy="215" r="27" class="groove"/>
+    <circle cx="325" cy="215" r="17" fill="#bd8275"/>
+    <circle cx="325" cy="215" r="3" fill="#272629"/>
+    <path d="M325 172Q325 150 345 151Q365 156 355 175" fill="none" stroke="#96836c" stroke-width="5"/>
+    <rect x="278" y="225" width="96" height="45" fill="#e8ddc8"/>
+    <path d="M360 162L381 148H446" class="leader"/>
+    <text x="318" y="134" class="small">挂扣留在槽外</text>
+    <path d="M316 225V309" stroke="#a49276" stroke-width="3" stroke-dasharray="5 5"/>
+    <rect x="328" y="233" width="8" height="64" rx="3" fill="#667f6d"/>
+    <text x="379" y="346" text-anchor="end">卡槽内标签靠近识别线圈</text>
+    <path d="M333 296V327" class="leader"/>
+    <circle cx="337" cy="300" r="12" fill="#e8ddc8"/>
+    <path d="M83 296H208M83 304H208" stroke="#6e543b" stroke-width="3"/>
+    <path d="M109 178Q161 151 212 178" class="guide"/>
+    <text x="70" y="135">大唱片负责转动</text>
+  </g>
+  <g>
+    <text x="520" y="138" class="title">本体如何播放</text>
+    <text x="520" y="181">识别小唱片的标签ID</text>
+    <path d="M719 192V208" class="guide"/>
+    <text x="520" y="238">找到本体中已保存的对应歌单</text>
+    <path d="M719 249V265" class="guide"/>
+    <text x="520" y="295">从存储卡读音乐，经扬声器播放</text>
+    <text x="520" y="340" class="small">唱片是内容入口，不需要机械读唱片。</text>
+  </g>
+  <text x="28" y="391">不插唱片也能播放；三类唱片的歌单可通过网页重新绑定。</text>
+  <text x="28" y="425" class="small">卡座可按实测改成表面放置；配色、尺寸、识别及转动机构尚未实物验证。</text>
+</svg>
