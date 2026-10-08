@@ -1,36 +1,42 @@
 # 参与设计
 
-Record Companion 是音乐唱片桌搭与唱片挂件项目，目前处于概念审阅、材料盘点和模块原型规划阶段。
+Record Companion 是公开的音乐唱片桌搭与唱片挂件项目。当前处于功能审阅、候选比较和模块原型规划阶段。
 
-仓库公开供所有人查看。参与者通过 Fork 和 Pull Request 提交建议、设计和代码，不授予原仓库写权限；`main` 由仓库所有者 `yigencong-1` 审阅并合并。
+## 从哪里开始
 
-## 先看这些内容
+先读 [项目计划](product/plan.md) 和 [对应功能专项](features/)；涉及范围或共享资源时查 [整机规划](product/README.md) 与 [接口约束](product/interfaces.md)。一个PR围绕一个明确的问题，说明对应的F编号或专项、改动原因、影响范围、来源和验证状态。复杂功能可独立规划，涉及共享接口或整机取舍时交回总规划联合审阅。
 
-- [项目简报](docs/project-brief.md)：已确认要求、技术范围与待定事项。
-- [功能规格评审稿](docs/function-spec.md)：首版功能、操作、待选项与验收计划；建议不等于已确认决定。
-- [目录职责](docs/repository-map.md)：设计、源码、试制和证据各自放在哪里。
-- [最新方案](docs/next-stage-plan.md)：声音、墨水屏、电源、网络和结构的配合。
-- [材料盘点](hardware/inventory.md)：参考规格不代表已有实物。
-- [决策记录](docs/decisions.md)和[验证记录](docs/verification.md)：区分已确认决定、建议和实际结果。
-- [项目工作约定](AGENTS.md)：改动范围、来源记录与验证方式。
+| 主题 | 入口 |
+|---|---|
+| 音频、存储、左右声道 | [features/audio](features/audio/README.md) |
+| 显示与本体操作 | [features/display](features/display/README.md) |
+| 唱片挂件与识别 | [features/records](features/records/README.md) |
+| 灯光与转动 | [features/lighting-motion](features/lighting-motion/README.md) |
+| 网络与网页 | [features/network](features/network/README.md) |
+| 电池与充电 | [features/power](features/power/README.md) |
+| 结构、音腔与材料 | [features/enclosure](features/enclosure/README.md) |
 
 ## 提交方式
 
-1. 在 [原仓库](https://github.com/yigencong-1/record-companion) 点击 Fork，创建自己账号下的副本。
-2. 在自己的 Fork 中创建分支，例如 `design/speaker-layout`，围绕一个明确问题提交改动。
-3. 硬件、固件、网页和结构分别放入 `hardware/`、`firmware/`、`web/` 和 `mechanical/`；先阅读各目录README。功能与验收计划维护在 `docs/function-spec.md`，已执行证据维护在 `docs/verification.md`。可先通过 Issue 讨论方案。
-4. 发起 Pull Request，目标选择 `yigencong-1/record-companion` 的 `main`。
-5. 描述改动原因、对应功能编号、影响范围和实际验证结果。原型图、软件模拟、编译通过和实物验证分别说明；未验证的项照实记录，板版号、固件版本和测试编号按真实内容填写。
-6. 仓库所有者审阅后合并；需要调整时继续向自己的分支提交，PR 会随之更新。
+1. 在 [原仓库](https://github.com/yigencong-1/record-companion) 点击 Fork。
+2. 在自己的 Fork 中创建分支，围绕一个功能或工程阶段提交改动。
+3. 源码、PCB、网页和结构文件放入对应工程目录；规划规则放入对应 `product/` 或 `features/` 入口。
+4. 发起 Pull Request，目标为 `yigencong-1/record-companion` 的 `main`。
+5. 描述已验证内容和未验证内容；区分概念图、模拟、编译、烧录、总线观测、实物运行和使用体验。
+6. 所有者审阅并合并；需要调整时继续向自己的分支提交。
 
-```mermaid
-flowchart LR
-    A["Fork 到自己的账号"] --> B["自己的分支提交设计或代码"]
-    B --> C["向原仓库 main 提交 PR"]
-    C --> D["所有者审阅，按意见修改"]
-    D --> E["所有者合并到 main"]
-```
+外部代码、设计、字体、图片和音频须记录来源、版本和许可。不要上传令牌、Wi-Fi密码、本机凭据或私人生日内容。
 
-外观、范围、预算与重要体验取舍先讨论落实，再实施依赖该决定的工作。复用外部代码、设计或素材时记录来源、版本及许可；公开仓库不改变这些材料的使用条件。
+## 哪些内容可以提交
 
-不上传令牌、Wi-Fi 密码和本机凭据。同学使用各自账号参与，无需共享所有者账号。
+| 内容 | 维护位置与提交规则 |
+|---|---|
+| 产品范围、总计划、共享接口、用户决定、整机验收 | `product/`；保持现有编号，更新原条目 |
+| 功能细节、器件候选、报价依据、试验方法 | 对应 `features/` 专项；建议、已确认与实测结果分开 |
+| 固件、电路、PCB、网页、结构及配套BOM | 对应工程目录；保留可编辑源文件和版本对应关系 |
+| 外部资料、图片、测试数据和运行证据 | `references/`、`assets/` 或对应工程；核对许可并脱敏 |
+| 实际库存、个人订单、私人音乐/图片、会话与迁移记录 | 本机忽略的 `local/` 或仓库外；不提交 |
+| 本机Agent规则与技能 | 根目录 `AGENTS.md`、`.agents/`；不提交 |
+| 真实凭据与非公开网络配置 | 仓库外受控配置或进程内；不写入普通文档和日志 |
+
+`.gitignore` 排除本机资料、缓存和运行配置，但不会移除已跟踪文件或旧提交。提交前检查 `git status --short`、`git diff --cached` 与 `git ls-files`；推送前检查将发布的提交及其作者信息。文件正文、图片、元数据和历史都应符合公开边界，不用 `git add -f` 绕过本机排除规则。
