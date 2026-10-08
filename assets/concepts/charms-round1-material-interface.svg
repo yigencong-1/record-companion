@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1740" viewBox="0 0 1800 1740">
+<title>Record Companion 挂件首轮概念</title>
+<desc>原创矢量概念稿；颜色、剖面和尺寸建议尚待审阅及制造验证。</desc>
+<rect x="0" y="0" width="1800" height="1740" rx="0" fill="#F3F1EB" stroke="none" stroke-width="2"/>
+<text x="60" y="79.56" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="46" font-weight="700" fill="#283739" text-anchor="start">材料、标签与卡座 · 联合接口概念</text>
+<text x="62" y="129.36" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="400" fill="#657574" text-anchor="start">建议直径45–55 mm，50 mm为等尺寸对照点；剖面层厚放大，未按比例，未选标签或卡座。</text>
+<rect x="60" y="166" width="550" height="555" rx="22" fill="#FFFFFF" stroke="#D1DAD5" stroke-width="2"/>
+<text x="87" y="225.54" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="39" font-weight="700" fill="#376B65" text-anchor="start">A</text>
+<text x="148" y="224.07999999999998" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#283739" text-anchor="start">PC夹心 · 推荐主线</text>
+<text x="87" y="271.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#657574" text-anchor="start">2.4–3.0 mm</text>
+<rect x="90" y="306" width="132" height="23" rx="3" fill="#DDDAB9" stroke="none" stroke-width="2"/>
+<text x="243" y="322.78" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#283739" text-anchor="start">可换透明PET膜</text>
+<rect x="90" y="347" width="132" height="23" rx="3" fill="#A7D3CE" stroke="none" stroke-width="2"/>
+<text x="243" y="363.78" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#283739" text-anchor="start">0.5 mm PC展示面</text>
+<rect x="90" y="388" width="132" height="23" rx="3" fill="#E3BE84" stroke="none" stroke-width="2"/>
+<text x="243" y="404.78" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#283739" text-anchor="start">0.13 mm胶合环</text>
+<rect x="90" y="429" width="132" height="23" rx="3" fill="#83B6AE" stroke="none" stroke-width="2"/>
+<rect x="125" y="433" width="64" height="15" rx="2" fill="#FFFFFF" stroke="none" stroke-width="2"/>
+<polyline points="132,444 174,444" fill="none" stroke="#7254A2" stroke-width="3" stroke-linejoin="round"/>
+<rect x="174" y="438" width="9" height="8" rx="1" fill="#7254A2" stroke="none" stroke-width="2"/>
+<text x="243" y="445.78" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#283739" text-anchor="start">1.0 mm PC让位框</text>
+<rect x="90" y="470" width="132" height="23" rx="3" fill="#E3BE84" stroke="none" stroke-width="2"/>
+<text x="243" y="486.78" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#283739" text-anchor="start">0.13 mm胶合环</text>
+<rect x="90" y="511" width="132" height="23" rx="3" fill="#A7D3CE" stroke="none" stroke-width="2"/>
+<text x="243" y="527.78" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#283739" text-anchor="start">0.5 mm PC背面</text>
+<rect x="90" y="552" width="132" height="23" rx="3" fill="#DDDAB9" stroke="none" stroke-width="2"/>
+<text x="243" y="568.78" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#283739" text-anchor="start">可换透明PET膜</text>
+<text x="88" y="649.78" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#657574" text-anchor="start">外围胶合；只压胶环，芯片不受压。</text>
+<text x="88" y="688.92" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#657574" text-anchor="start">挂孔穿过PC承力区，标签留在独立腔。</text>
+<rect x="625" y="166" width="550" height="555" rx="22" fill="#FFFFFF" stroke="#D1DAD5" stroke-width="2"/>
+<text x="652" y="225.54" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="39" font-weight="700" fill="#376B65" text-anchor="start">B</text>
+<text x="713" y="224.07999999999998" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#283739" text-anchor="start">PMMA面＋PC承力</text>
+<text x="652" y="271.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#657574" text-anchor="start">3.3–3.7 mm</text>
+<rect x="655" y="306" width="132" height="23" rx="3" fill="#DDDAB9" stroke="none" stroke-width="2"/>
+<text x="808" y="322.78" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#283739" text-anchor="start">可换透明PET膜</text>
+<rect x="655" y="347" width="132" height="23" rx="3" fill="#ACC7E0" stroke="none" stroke-width="2"/>
+<text x="808" y="363.78" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#283739" text-anchor="start">1.5 mm PMMA展示面</text>
+<rect x="655" y="388" width="132" height="23" rx="3" fill="#E3BE84" stroke="none" stroke-width="2"/>
+<text x="808" y="404.78" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#283739" text-anchor="start">0.13 mm胶合环</text>
+<rect x="655" y="429" width="132" height="23" rx="3" fill="#83B6AE" stroke="none" stroke-width="2"/>
+<rect x="690" y="433" width="64" height="15" rx="2" fill="#FFFFFF" stroke="none" stroke-width="2"/>
+<polyline points="697,444 739,444" fill="none" stroke="#7254A2" stroke-width="3" stroke-linejoin="round"/>
+<rect x="739" y="438" width="9" height="8" rx="1" fill="#7254A2" stroke="none" stroke-width="2"/>
+<text x="808" y="445.78" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#283739" text-anchor="start">1.0 mm PC让位框</text>
+<rect x="655" y="470" width="132" height="23" rx="3" fill="#E3BE84" stroke="none" stroke-width="2"/>
+<text x="808" y="486.78" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#283739" text-anchor="start">0.13 mm胶合环</text>
+<rect x="655" y="511" width="132" height="23" rx="3" fill="#A7D3CE" stroke="none" stroke-width="2"/>
+<text x="808" y="527.78" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#283739" text-anchor="start">0.5 mm PC背面</text>
+<text x="653" y="609.78" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#657574" text-anchor="start">PMMA退出挂孔区，PC承担挂带拉力。</text>
+<text x="653" y="649.78" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#657574" text-anchor="start">较薄PC背面朝读区；透明面先测开裂。</text>
+<text x="653" y="688.92" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#657574" text-anchor="start">胶合基厚约3.26 mm，覆膜另计。</text>
+<rect x="1190" y="166" width="550" height="555" rx="22" fill="#FFFFFF" stroke="#D1DAD5" stroke-width="2"/>
+<text x="1217" y="225.54" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="39" font-weight="700" fill="#376B65" text-anchor="start">C</text>
+<text x="1278" y="224.07999999999998" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#283739" text-anchor="start">PETG层压＋孔区补强</text>
+<text x="1217" y="271.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#657574" text-anchor="start">主体0.84–1.1 mm</text>
+<rect x="1220" y="306" width="132" height="23" rx="3" fill="#B7D0E0" stroke="none" stroke-width="2"/>
+<text x="1373" y="322.78" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#283739" text-anchor="start">透明PETG覆层</text>
+<rect x="1220" y="347" width="132" height="23" rx="3" fill="#9EC6D7" stroke="none" stroke-width="2"/>
+<rect x="1255" y="351" width="64" height="15" rx="2" fill="#FFFFFF" stroke="none" stroke-width="2"/>
+<polyline points="1262,362 1304,362" fill="none" stroke="#7254A2" stroke-width="3" stroke-linejoin="round"/>
+<rect x="1304" y="356" width="9" height="8" rx="1" fill="#7254A2" stroke="none" stroke-width="2"/>
+<text x="1373" y="363.78" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#283739" text-anchor="start">印刷芯层＋相容inlay</text>
+<rect x="1220" y="388" width="132" height="23" rx="3" fill="#B7D0E0" stroke="none" stroke-width="2"/>
+<text x="1373" y="404.78" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#283739" text-anchor="start">透明PETG覆层</text>
+<rect x="1219" y="452" width="138" height="32" rx="5" fill="#83B6AE" stroke="none" stroke-width="2"/>
+<text x="1373" y="469.92" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#283739" text-anchor="start">上缘两面0.5 mm PC补强</text>
+<text x="1218" y="527.64" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#283739" text-anchor="start">孔区最大厚度约2.1–2.4 mm。</text>
+<text x="1218" y="609.78" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#657574" text-anchor="start">厂家层压后定位冲切，不裁线圈。</text>
+<text x="1218" y="649.78" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#657574" text-anchor="start">准确牌号与热压条件待提供。</text>
+<text x="1218" y="688.92" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#8A5941" text-anchor="start">已查渠道MOQ 500张，小批条件待核。</text>
+<rect x="60" y="755" width="825" height="478" rx="22" fill="#FFFFFF" stroke="#D1DAD5" stroke-width="2"/>
+<text x="86" y="804.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="30" font-weight="700" fill="#283739" text-anchor="start">平面占位与承力 · 50 mm对照片</text>
+<circle cx="286" cy="1033" r="165" fill="#E6F0EC" stroke="#6B9D94" stroke-width="3"/>
+<circle cx="286" cy="1053" r="105" fill="none" stroke="#7254A2" stroke-width="3"/>
+<circle cx="286" cy="1053" r="92" fill="none" stroke="#A090B9" stroke-width="2"/>
+<circle cx="286" cy="1053" r="84" fill="none" stroke="#A090B9" stroke-width="2"/>
+<circle cx="286" cy="1053" r="76" fill="none" stroke="#A090B9" stroke-width="2"/>
+<rect x="259" y="907" width="54" height="21" rx="10" fill="#FFFFFF" stroke="#517E77" stroke-width="2"/>
+<rect x="350" y="1101" width="17" height="15" rx="2" fill="#7254A2" stroke="none" stroke-width="2"/>
+<polyline points="286,868 286,1198" fill="none" stroke="#B5C9C2" stroke-width="1" stroke-linejoin="round" stroke-dasharray="8 7"/>
+<polyline points="470,922 390,922 315,915" fill="none" stroke="#376B65" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="315,915 326.2436604277628,910.8071369942293 325.27355382254956,921.2011363357999" fill="#376B65" stroke="none" stroke-width="2"/>
+<text x="477" y="912.78" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="700" fill="#283739" text-anchor="start">内部8×3 mm挂带孔</text>
+<text x="477" y="949.34" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" fill="#657574" text-anchor="start">上桥名义约5.5 mm；仍需拉力验证</text>
+<polyline points="470,1032 420,1032 392,1053" fill="none" stroke="#7254A2" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="392,1053 397.51254033698484,1042.341111735593 403.77604402818656,1050.6924499905285" fill="#7254A2" stroke="none" stroke-width="2"/>
+<text x="477" y="1021.92" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="700" fill="#283739" text-anchor="start">标签完整外形≤约32 mm占位</text>
+<text x="477" y="1061.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#657574" text-anchor="start">中心下移约3 mm；不是选定标签</text>
+<polyline points="470,1136 424,1136 371,1108" fill="none" stroke="#7254A2" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="371,1108 382.9922110431631,1108.4322895976516 378.11585385144315,1117.6625371391215" fill="#7254A2" stroke="none" stroke-width="2"/>
+<text x="477" y="1134.92" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="700" fill="#283739" text-anchor="start">芯片另留高度，不被夹具压住</text>
+<text x="477" y="1173.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#657574" text-anchor="start">不开实体中心孔，不让金属覆盖线圈</text>
+<text x="87" y="1218.92" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#657574" text-anchor="start">更大标签或更小圆片到来时重新排布，不裁标签迁就概念图。</text>
+<rect x="913" y="755" width="832" height="478" rx="22" fill="#FFFFFF" stroke="#D1DAD5" stroke-width="2"/>
+<text x="941" y="804.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="30" font-weight="700" fill="#283739" text-anchor="start">连接与受力路径</text>
+<circle cx="1063" cy="1007" r="107" fill="#E6F0EC" stroke="#6B9D94" stroke-width="3"/>
+<rect x="1044" y="925" width="38" height="14" rx="6" fill="#FFFFFF" stroke="#517E77" stroke-width="2"/>
+<polyline points="1053,932 1053,889 1074,889 1074,853" fill="none" stroke="#475F59" stroke-width="10" stroke-linejoin="round"/>
+<rect x="1047" y="823" width="50" height="35" rx="12" fill="#F7F8F7" stroke="#727E79" stroke-width="4"/>
+<text x="1187" y="877.36" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="700" fill="#283739" text-anchor="start">可更换外侧金属扣</text>
+<text x="1187" y="914.92" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#657574" text-anchor="start">与读区的实际距离、收拢姿态须测试</text>
+<polyline points="1202,960 1135,960 1074,902" fill="none" stroke="#376B65" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="1074,902 1085.4272945786347,905.6629139510918 1078.2340611549046,913.2282111726013" fill="#376B65" stroke="none" stroke-width="2"/>
+<text x="1187" y="1012.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#283739" text-anchor="start">4–6 mm宽非金属软连接</text>
+<text x="1187" y="1052.78" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#657574" text-anchor="start">展开25–40 mm作为样片比较</text>
+<text x="943" y="1167.78" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#283739" text-anchor="start">织带拉力经壳体承力桥传递；标签、芯片、墨层不承担拉力。</text>
+<text x="943" y="1208.92" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#657574" text-anchor="start">扣具停放区由结构专项提供；软带不能落进转盘或插槽。</text>
+<rect x="60" y="1265" width="1685" height="355" rx="22" fill="#FFFFFF" stroke="#D1DAD5" stroke-width="2"/>
+<text x="87" y="1313.66" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="31" font-weight="700" fill="#283739" text-anchor="start">两类承接都保留 · 小挂件静止，大唱片始终平放</text>
+<rect x="105" y="1406" width="530" height="49" rx="6" fill="#CCD8D2" stroke="none" stroke-width="2"/>
+<rect x="167" y="1369" width="392" height="24" rx="3" fill="#9FC6BE" stroke="#507D73" stroke-width="2"/>
+<rect x="203" y="1385" width="305" height="4" rx="1" fill="#7254A2" stroke="none" stroke-width="2"/>
+<polyline points="134,1408 167,1408 167,1396 560,1396 560,1408 607,1408" fill="none" stroke="#507D73" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="261,1476 449,1476" fill="none" stroke="#376B65" stroke-width="7" stroke-linejoin="round"/>
+<text x="104" y="1518.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#283739" text-anchor="start">浅凹座：圆周支撑、抓取缺口与挂扣出口</text>
+<text x="105" y="1560.78" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#657574" text-anchor="start">总间距＝背面至标签＋空气隙＋座面至天线</text>
+<rect x="813" y="1361" width="27" height="150" rx="3" fill="#9FC6BE" stroke="#507D73" stroke-width="2"/>
+<polyline points="793,1419 793,1515 866,1515 866,1419" fill="none" stroke="#CCD8D2" stroke-width="16" stroke-linejoin="round"/>
+<polyline points="885,1427 885,1497" fill="none" stroke="#376B65" stroke-width="8" stroke-linejoin="round"/>
+<polyline points="957,1435 917,1435 866,1435" fill="none" stroke="#376B65" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="866,1435 876.8053652282322,1429.7804135906651 876.8053652282322,1440.2195864093349" fill="#376B65" stroke="none" stroke-width="2"/>
+<text x="959" y="1392.36" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="700" fill="#283739" text-anchor="start">自然落座插槽：不扣紧</text>
+<text x="959" y="1436.78" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#657574" text-anchor="start">槽宽取决于成品最大厚度、翘曲与公差</text>
+<text x="959" y="1481.78" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#657574" text-anchor="start">薄卡与厚卡混用要测导向；不靠强塞固定</text>
+<text x="959" y="1526.78" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#657574" text-anchor="start">读卡线圈方向须适配；图中深度未定</text>
+<text x="87" y="1597.92" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#657574" text-anchor="start">紫色表示标签占位，绿色表示壳体／读卡接口；位置关系仅用于联合评审。</text>
+<text x="62" y="1687.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#657574" text-anchor="start">原创概念图 / 非制造尺寸、CAD、射频匹配或实际验证 / 详见挂件专项页面</text>
+</svg>

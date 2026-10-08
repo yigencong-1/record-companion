@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1050" viewBox="0 0 1600 1050">
+<title>生日挂件蛋糕实体轮廓示意</title>
+<desc>生日挂件做成浅薄的蛋糕块：略外伸的顶层、接近圆形的主体和圆润底边。不是制造尺寸。</desc>
+<text x="55" y="85.72" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="46" font-weight="700" fill="#293A3A" text-anchor="start">生日挂件 · 蛋糕实体轮廓示意</text>
+<text x="58" y="132.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#657574" text-anchor="start">按草图理解：上层略外伸，主体接近圆形，侧壁短而圆润；仅用于确认形体，不是制造尺寸。</text>
+<rect x="50" y="165" width="960" height="675" rx="24" fill="#FFFFFF" stroke="#CCD8D2" stroke-width="2"/>
+<rect x="1090" y="165" width="460" height="675" rx="24" fill="#FFFFFF" stroke="#CCD8D2" stroke-width="2"/>
+<text x="90" y="224.24" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="32" font-weight="700" fill="#293A3A" text-anchor="start">侧面 / 剖面理解</text>
+<polygon points="210,430 805,430 816,470 816,710 805,765 768,805 700,825 315,825 250,808 210,770 194,712 194,470" fill="#E6A28F" stroke="#BC7667" stroke-width="4"/>
+<polyline points="218,470 218,700 230,752 270,790" fill="none" stroke="#D89582" stroke-width="3" stroke-linejoin="round"/>
+<polyline points="315,825 700,825 768,805" fill="none" stroke="#BC7667" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="155,338 164,290 205,248 270,220 710,220 775,243 823,283 842,333 838,390 810,423 748,447 265,447 205,429 164,397" fill="#F4C8B7" stroke="#D89582" stroke-width="4"/>
+<ellipse cx="497.5" cy="311.0" rx="282.5" ry="71.0" fill="#FFF7EA" stroke="#D89582" stroke-width="3"/>
+<ellipse cx="497.5" cy="309.0" rx="241.5" ry="41.0" fill="#F7D8C8" stroke="none" stroke-width="0"/>
+<polyline points="168,392 212,420 270,436 748,436 808,415 838,388" fill="none" stroke="#D89582" stroke-width="4" stroke-linejoin="round"/>
+<rect x="430" y="558" width="145" height="52" rx="8" fill="#E4DDF1" stroke="#8064B6" stroke-width="2"/>
+<text x="502" y="599.58" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" fill="#8064B6" text-anchor="middle">标签腔占位</text>
+<polyline points="900,270 850,270 774,286" fill="none" stroke="#D89582" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="774,286 785.0813480326751,277.4440824116448 787.5903568825012,289.36187444831813" fill="#D89582" stroke="none" stroke-width="2"/>
+<text x="915" y="261.32" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="700" fill="#293A3A" text-anchor="start">略外伸的蛋糕顶层</text>
+<text x="915" y="298.4" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#657574" text-anchor="start">上表面可以做奶油/蛋糕装饰</text>
+<polyline points="900,520 842,520 812,530" fill="none" stroke="#BC7667" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="812,530 822.0336732668711,520.2365272175482 825.885022282968,531.7905742658387" fill="#BC7667" stroke="none" stroke-width="2"/>
+<text x="915" y="508.32" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="700" fill="#293A3A" text-anchor="start">短圆柱主体</text>
+<text x="915" y="546.4" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#657574" text-anchor="start">侧壁基本竖直，底边圆润</text>
+<polyline points="902,700 842,700 804,744" fill="none" stroke="#BC7667" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="804,744 807.631014722878,730.4790631950947 816.8483885893335,738.4395224433971" fill="#BC7667" stroke="none" stroke-width="2"/>
+<text x="915" y="688.32" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="700" fill="#293A3A" text-anchor="start">底部圆角</text>
+<text x="915" y="726.4" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#657574" text-anchor="start">避免方形卡片的硬角</text>
+<polyline points="392,635 332,635 267,600" fill="none" stroke="#8064B6" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="267,600 280.9864862673013,600.6149812148291 275.21240795034424,611.3382695177493" fill="#8064B6" stroke="none" stroke-width="2"/>
+<text x="90" y="622.68" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="700" fill="#8064B6" text-anchor="start">NFC标签腔</text>
+<text x="90" y="655.58" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" fill="#657574" text-anchor="start">放在主体内部，位置待识别专项核对</text>
+<text x="90" y="917.22" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#657574" text-anchor="start">图中顶层、主体和腔体的厚度比例是示意；生日卡需同时给出最大宽高、最大厚度和局部外沿包络。</text>
+<text x="1130" y="224.24" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="32" font-weight="700" fill="#293A3A" text-anchor="start">俯视 / 外轮廓</text>
+<ellipse cx="1322.0" cy="492.0" rx="182.0" ry="182.0" fill="#E0E7E1" stroke="#AABDB5" stroke-width="3"/>
+<ellipse cx="1322.0" cy="487.5" rx="162.0" ry="162.5" fill="#E6A28F" stroke="#BC7667" stroke-width="3"/>
+<ellipse cx="1323.0" cy="457.0" rx="185.0" ry="165.0" fill="#F4C8B7" stroke="#D89582" stroke-width="4"/>
+<ellipse cx="1323.0" cy="444.5" rx="143.0" ry="119.5" fill="#FFF7EA" stroke="#D89582" stroke-width="2"/>
+<ellipse cx="1320.0" cy="445.5" rx="70.0" ry="42.5" fill="#F7D8C8" stroke="#D89582" stroke-width="2"/>
+<rect x="1308" y="360" width="24" height="65" rx="4" fill="#D99586" stroke="none" stroke-width="0"/>
+<polygon points="1320,345 1312,360 1320,374 1328,360" fill="#D8AA5B" stroke="none" stroke-width="2"/>
+<ellipse cx="1237.0" cy="389.0" rx="7.0" ry="7.0" fill="#D99586" stroke="none" stroke-width="2"/>
+<ellipse cx="1410.0" cy="400.0" rx="7.0" ry="7.0" fill="#D99586" stroke="none" stroke-width="2"/>
+<ellipse cx="1260.0" cy="515.0" rx="7.0" ry="7.0" fill="#D99586" stroke="none" stroke-width="2"/>
+<ellipse cx="1390.0" cy="515.0" rx="7.0" ry="7.0" fill="#D99586" stroke="none" stroke-width="2"/>
+<polyline points="1160,735 1210,690 1190,610" fill="none" stroke="#D89582" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="1190,610 1198.9651667212938,620.7529431161616 1187.1497673005815,623.7067929713396" fill="#D89582" stroke="none" stroke-width="2"/>
+<text x="1118" y="768.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#293A3A" text-anchor="start">接近圆形的平面轮廓</text>
+<text x="1118" y="806.4" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#657574" text-anchor="start">顶部可以有轻微奶油边变化</text>
+<polyline points="1465,480 1500,480 1500,420" fill="none" stroke="#BC7667" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="1500,420 1506.0895174775571,432.60625943293746 1493.9104825224429,432.60625943293746" fill="#BC7667" stroke="none" stroke-width="2"/>
+<text x="1360" y="724.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#293A3A" text-anchor="start">顶层比主体略宽</text>
+<text x="1360" y="762.4" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#657574" text-anchor="start">形成蛋糕分层的外沿</text>
+<text x="1120" y="903.04" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="700" fill="#293A3A" text-anchor="start">生日卡仍要与浅凹座/插槽共同核对：</text>
+<text x="1120" y="942.22" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#657574" text-anchor="start">外径、顶层最大宽度、主体厚度、挂孔与标签腔。</text>
+<rect x="50" y="960" width="1450" height="55" rx="14" fill="#E8EDE6" stroke="none" stroke-width="0"/>
+<text x="74" y="1006.86" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="700" fill="#293A3A" text-anchor="start">这张图表达的是“蛋糕形实体卡”，不再是圆卡上印一个小蛋糕。</text>
+</svg>
