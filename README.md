@@ -59,6 +59,6 @@ Record Companion 是一个可共同设计的音乐唱片桌搭：本体离线播
 
 ## 参与方式
 
-项目公开可读。同学通过 Fork 创建分支并提交 Pull Request，目标为 `main`；所有者审阅并合并，不能直接修改原仓库 `main`。开始前阅读本页、[整机规划](product/README.md) 与 [贡献说明](CONTRIBUTING.md)。
+项目公开可读。受邀协作者在原仓库创建工作分支，其他贡献者通过 Fork 创建分支；改动都通过 Pull Request 提交到 `main`，由所有者审阅并合并。`main` 通过规则集限制为仅所有者更新。开始前阅读本页、[整机规划](product/README.md) 与 [贡献说明](CONTRIBUTING.md)。
 
 实际库存、私人素材、本机设置和会话记录由协作者留在各自忽略的 `local/` 或仓库外。真实API Key、令牌、密码、Cookie和私钥只放在仓库外的受控配置或进程内，不写入普通文档、图片、日志或提交历史。公开示例使用占位符和仓库相对路径，提交前按[贡献说明](CONTRIBUTING.md)检查实际内容。

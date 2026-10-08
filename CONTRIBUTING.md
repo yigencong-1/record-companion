@@ -18,8 +18,10 @@ Record Companion 是公开的音乐唱片桌搭与唱片挂件项目。当前处
 
 ## 提交方式
 
-1. 在 [原仓库](https://github.com/yigencong-1/record-companion) 点击 Fork。
-2. 在自己的 Fork 中创建分支，围绕一个功能或工程阶段提交改动。
+受邀协作者拥有原仓库普通分支的写权限；`main` 由规则集限制为仅所有者更新，包括合并PR。其他贡献者仍可通过Fork参与。
+
+1. 受邀协作者接受GitHub邀请后克隆 [原仓库](https://github.com/yigencong-1/record-companion)；其他贡献者先点击Fork，再克隆自己的Fork。
+2. 从最新的 `main` 创建工作分支，围绕一个功能或工程阶段提交改动。
 3. 源码、PCB、网页和结构文件放入对应工程目录；规划规则放入对应 `product/` 或 `features/` 入口。
 4. 发起 Pull Request，目标为 `yigencong-1/record-companion` 的 `main`。
 5. 描述已验证内容和未验证内容；区分概念图、模拟、编译、烧录、总线观测、实物运行和使用体验。
