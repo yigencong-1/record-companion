@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800">
+<title>通用唱片 4：正反面概念</title>
+<desc>单张卡片外观概念图，非制造尺寸。图外文字为审阅标签。</desc>
+<rect width="1280" height="800" fill="#F6F3ED"/>
+<text x="64" y="77.06" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="38" font-weight="700" fill="#293A3A" text-anchor="start">通用唱片 4</text>
+<text x="65" y="124.01" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#6D7D77" text-anchor="start">正面以唱片纹理为主；编号缩小到背面边缘。</text>
+<ellipse cx="375" cy="410" rx="188" ry="188" fill="#DCE7E2" stroke="#A7BDB4" stroke-width="2"/>
+<ellipse cx="375" cy="410" rx="179" ry="179" fill="#252F30" stroke="none" stroke-width="2"/>
+<ellipse cx="375" cy="410" rx="78" ry="78" fill="none" stroke="#465254" stroke-width="1"/>
+<ellipse cx="375" cy="410" rx="94" ry="94" fill="none" stroke="#465254" stroke-width="1"/>
+<ellipse cx="375" cy="410" rx="111" ry="111" fill="none" stroke="#465254" stroke-width="1"/>
+<ellipse cx="375" cy="410" rx="127" ry="127" fill="none" stroke="#465254" stroke-width="1"/>
+<ellipse cx="375" cy="410" rx="143" ry="143" fill="none" stroke="#465254" stroke-width="1"/>
+<ellipse cx="375" cy="410" rx="160" ry="160" fill="none" stroke="#465254" stroke-width="1"/>
+<ellipse cx="375" cy="410" rx="168" ry="168" fill="none" stroke="#465254" stroke-width="1"/>
+<ellipse cx="375" cy="410" rx="64" ry="64" fill="#E2B896" stroke="none" stroke-width="2"/>
+<ellipse cx="375" cy="410" rx="22" ry="22" fill="none" stroke="#738578" stroke-width="1"/>
+<ellipse cx="375" cy="410" rx="11" ry="11" fill="#252F30" stroke="none" stroke-width="2"/>
+<rect x="346" y="265" width="58" height="19" rx="9" fill="#F6F3ED" stroke="#BDCCC4" stroke-width="1"/>
+<ellipse cx="905" cy="410" rx="188" ry="188" fill="#DCE7E2" stroke="#A7BDB4" stroke-width="2"/>
+<ellipse cx="905" cy="410" rx="179" ry="179" fill="#252F30" stroke="none" stroke-width="2"/>
+<ellipse cx="905" cy="410" rx="78" ry="78" fill="none" stroke="#465254" stroke-width="1"/>
+<ellipse cx="905" cy="410" rx="94" ry="94" fill="none" stroke="#465254" stroke-width="1"/>
+<ellipse cx="905" cy="410" rx="111" ry="111" fill="none" stroke="#465254" stroke-width="1"/>
+<ellipse cx="905" cy="410" rx="127" ry="127" fill="none" stroke="#465254" stroke-width="1"/>
+<ellipse cx="905" cy="410" rx="143" ry="143" fill="none" stroke="#465254" stroke-width="1"/>
+<ellipse cx="905" cy="410" rx="160" ry="160" fill="none" stroke="#465254" stroke-width="1"/>
+<ellipse cx="905" cy="410" rx="168" ry="168" fill="none" stroke="#465254" stroke-width="1"/>
+<ellipse cx="905" cy="410" rx="64" ry="64" fill="#E2B896" stroke="none" stroke-width="2"/>
+<ellipse cx="905" cy="410" rx="22" ry="22" fill="none" stroke="#738578" stroke-width="1"/>
+<ellipse cx="905" cy="410" rx="11" ry="11" fill="#252F30" stroke="none" stroke-width="2"/>
+<text x="905" y="563.92" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" fill="#ABB7B0" text-anchor="middle">4</text>
+<rect x="876" y="265" width="58" height="19" rx="9" fill="#F6F3ED" stroke="#BDCCC4" stroke-width="1"/>
+<text x="375" y="662.62" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="400" fill="#6D7D77" text-anchor="middle">正面</text>
+<text x="905" y="662.62" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="400" fill="#6D7D77" text-anchor="middle">背面</text>
+<polyline points="65,711 1215,711" fill="none" stroke="#DFE4DD" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="65" y="759.27" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#6D7D77" text-anchor="start">颜色为当前概念建议 · 中心孔仅作印刷图案，非实体穿孔</text>
+</svg>

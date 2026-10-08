@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800">
+<title>邓紫棋卡：正反面概念</title>
+<desc>单张卡片外观概念图，非制造尺寸。图外文字为审阅标签。</desc>
+<rect width="1280" height="800" fill="#F6F3ED"/>
+<text x="64" y="77.06" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="38" font-weight="700" fill="#293A3A" text-anchor="start">邓紫棋卡</text>
+<text x="65" y="124.01" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#6D7D77" text-anchor="start">正反面图案留给你后续设计；此图只保留圆形卡片占位。</text>
+<ellipse cx="375" cy="410" rx="188" ry="188" fill="#ECEFE8" stroke="#AFBFB5" stroke-width="2"/>
+<ellipse cx="375" cy="410" rx="169" ry="169" fill="none" stroke="#CED8CF" stroke-width="1"/>
+<text x="375" y="417.1" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="30" font-weight="400" fill="#6D7D77" text-anchor="middle">待你设计</text>
+<rect x="346" y="265" width="58" height="19" rx="9" fill="#F6F3ED" stroke="#BDCCC4" stroke-width="1"/>
+<ellipse cx="905" cy="410" rx="188" ry="188" fill="#ECEFE8" stroke="#AFBFB5" stroke-width="2"/>
+<ellipse cx="905" cy="410" rx="169" ry="169" fill="none" stroke="#CED8CF" stroke-width="1"/>
+<text x="905" y="417.1" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="30" font-weight="400" fill="#6D7D77" text-anchor="middle">待你设计</text>
+<rect x="876" y="265" width="58" height="19" rx="9" fill="#F6F3ED" stroke="#BDCCC4" stroke-width="1"/>
+<text x="375" y="662.62" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="400" fill="#6D7D77" text-anchor="middle">正面</text>
+<text x="905" y="662.62" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="400" fill="#6D7D77" text-anchor="middle">背面</text>
+<polyline points="65,711 1215,711" fill="none" stroke="#DFE4DD" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="65" y="759.27" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#6D7D77" text-anchor="start">外观占位 · 材料、标签腔、挂孔与厚度另行核对</text>
+</svg>

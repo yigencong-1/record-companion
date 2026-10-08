@@ -102,6 +102,14 @@ VC02处理预设本地语音指令，不等于通用AI问答。若采用ESP32-S3
 
 本轮未登录个人账号、领取优惠券、上传PCB文件或下单；没有据此确定主板尺寸、层数、材料与成品工艺。本机参考资料库没有新增访问或修改。
 
+## ESP32-S31官方候选资料：2026-10-08
+
+- [乐鑫ESP32-S31产品页](https://www.espressif.com/en/products/socs/esp32-s31)：已读取官方产品说明，双核32位RISC-V最高320 MHz、512 KB SRAM、芯片标称60 GPIO、双I2S及250 MHz 8位DDR PSRAM接口；NRV16/NRV32标示16/32 MB PSRAM，WROOM模组标示54 GPIO。这些不等于开发板实际可用引脚、并发结果或整机扩展余量。
+- 产品页列出[Function CoreBoard-1](https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32s31/esp32-s31-function-coreboard-1/user_guide.html)、[Korvo-1](https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32s31/esp32-s31-korvo-1/user_guide.html)及购买入口。后续主控专项已核对板型资料、原理图及资源草案，证据集中维护在[公开依据](../features/platform/README.md#本轮公开依据)；国内到手价、库存和本项目移植仍未验证。
+- [S31 Developer Platform](https://esp32-s31.espressif.com/en)和[ESP-IDF S31指南](https://docs.espressif.com/projects/esp-idf/en/latest/esp32s31/index.html)为官方入口。主控专项已核到[stable入门文档](https://docs.espressif.com/projects/esp-idf/en/stable/esp32s31/get-started/index.html)标示v6.1、I2S/SDMMC指南及音频组件自v2.5.0支持S31的声明；固定组件包、编译/移植、运行稳定性和并发仍需实现验证，不以文档支持当整机通过。
+
+以上为资料依据，未复制第三方工程。阶段方向已按D063确定为S3模块验证、S31成品主线，准确开发板/内存和成品芯片或模组仍未定稿。
+
 ## 后续采用记录
 
 每次真正采用组件、技能或素材时追加：
