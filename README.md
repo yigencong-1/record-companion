@@ -6,7 +6,7 @@ Record Companion 是一个可共同设计的音乐唱片桌搭：本体离线播
 
 ## 先看这里
 
-日常推进先读本页、[项目计划](product/plan.md)和当前功能专项；涉及整机范围、共享资源或验收时，再查相应产品文档。总规划负责协调七条专项，各专项可以并行调研和验证。
+日常推进先读本页、[项目计划](product/plan.md)和当前功能专项；涉及整机范围、共享资源或验收时，再查相应产品文档。总规划负责协调八条专项，各专项可以并行调研和验证。
 
 | 入口 | 内容 |
 |---|---|
@@ -15,7 +15,7 @@ Record Companion 是一个可共同设计的音乐唱片桌搭：本体离线播
 | [共享接口](product/interfaces.md) | 音频、屏幕、识别、网络、电源、空间和功耗约束 |
 | [决策记录](product/decisions.md) | 用户决定、编号与后续调整 |
 | [整机验收](product/validation.md) | T01–T12计划和V001–V012公开证据边界 |
-| [功能专项](features/) | 音频、显示、唱片、灯光运动、网络、电源、结构七条专项 |
+| [功能专项](features/) | 音频、显示、识别、挂件、灯光运动、网络、电源、结构八条专项 |
 | [参考来源](references/README.md) | 外部作品、器件、技能与许可记录 |
 
 ## 已确认的产品行为
@@ -34,7 +34,8 @@ Record Companion 是一个可共同设计的音乐唱片桌搭：本体离线播
 |---|---|
 | [audio](features/audio/README.md) | 本地文件、左右声道、存储、功放与试听 |
 | [display](features/display/README.md) | 墨水屏候选、时间/日期、播放器状态、事件和静态图片 |
-| [records](features/records/README.md) | 挂件、身份识别、在位/取走判断、绑定和播放触发 |
+| [records](features/records/README.md) | 标签兼容、身份识别、在位/取走判断、绑定和播放触发 |
+| [charms](features/charms/README.md) | 八张圆形挂件的外观、材质、封装、挂扣、耐用性和小批制造 |
 | [lighting-motion](features/lighting-motion/README.md) | 灯光、唱片转动、噪声、夜间模式 |
 | [network](features/network/README.md) | 本地网页、AP配网、上传、保存和断网边界 |
 | [power](features/power/README.md) | 电池、Type-C电源路径、充电、温升和续航 |
@@ -49,7 +50,7 @@ Record Companion 是一个可共同设计的音乐唱片桌搭：本体离线播
 | 位置 | 内容 | 提交上游 |
 |---|---|---|
 | `product/` | 范围、总计划、接口、决定、整机验收 | 是 |
-| `features/` | 七条专项的规则、候选、比较与试验方案 | 是 |
+| `features/` | 八条专项的规则、候选、比较与试验方案 | 是 |
 | `firmware/`、`hardware/`、`web/`、`mechanical/` | 源工程、模块原型、试验版与成品版 | 是 |
 | `references/`、`assets/` | 可公开来源、许可允许的素材、概念图和脱敏证据 | 核对来源、许可与信息后提交 |
 | `README.md`、`CONTRIBUTING.md`、`.gitignore` | 导航、协作与排除规则 | 是 |
