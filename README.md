@@ -15,7 +15,7 @@ Record Companion 是一个可共同设计的音乐唱片桌搭：本体离线播
 | [共享接口](product/interfaces.md) | 音频、屏幕、识别、网络、电源、空间和功耗约束 |
 | [主控资源分配稿](features/platform/resource-allocation.md) | S3参考台架与S31成品模组的资源、候选GPIO及改配条件 |
 | [决策记录](product/decisions.md) | 用户决定、编号与后续调整 |
-| [整机验收](product/validation.md) | T01–T12计划和V001–V015公开证据边界 |
+| [整机验收](product/validation.md) | T01–T12计划和V001–V017公开证据边界 |
 | [功能专项](features/) | 八条功能专项，以及主控与系统架构选型 |
 | [参考来源](references/README.md) | 外部作品、器件、技能与许可记录 |
 
@@ -26,7 +26,7 @@ Record Companion 是一个可共同设计的音乐唱片桌搭：本体离线播
 - 八张卡以圆形为基础，生日卡细化为近圆形蛋糕轮廓，对应可重设的内容绑定；生日仍只有一张卡和一个菜单入口。挂件采用无电池的NFC或类似电磁感应技术，具体器件待验证。
 - 音质与性价比两条声音路线都做完整模块测试，按约1米听距比较，具体器件与预算待审阅。
 - 大唱片确定平放；浅座与无需扣紧的插槽比较仅针对小挂件。
-- 唱片是并列播放入口：放片即播、取走暂停、换片播放新绑定内容；同一张持续在位不重复启动。
+- 唱片是与本体、网页并列的播放入口；取放与接管规则在[行为与内容规划分支](https://github.com/yigencong-1/record-companion/tree/plan/abc-interaction)继续细化。本分支尚未整合其结果，旧“取走暂停”和旋钮/两键概念不能作为新版实现规格。
 - 本体离线覆盖基本全部首版功能；手机网页用于控制、上传、绑定和AP配网，外部网络断开时本地功能继续。
 - 内置电池支持Type-C边充边用，续航目标为尽量长；容量、输入功率和时长尚待测量。
 
@@ -44,7 +44,7 @@ Record Companion 是一个可共同设计的音乐唱片桌搭：本体离线播
 | [power](features/power/README.md) | 电池、Type-C电源路径、充电、温升和续航 |
 | [enclosure](features/enclosure/README.md) | 音腔、尺寸、固定、维护和成品材料 |
 
-工程入口仍按实际交付划分为 [firmware](firmware/README.md)、[hardware](hardware/README.md)、[web](web/README.md) 和 [mechanical](mechanical/README.md)。本机音频基线已编译，尚未烧录和实物验证，因此暂不发布源码。CAD工具接入已通过独立测试零件验证，见[工具接入记录](references/project-setup.md)；尚无通过验证的播放器模块、网页、嘉立创原理图/PCB或可制造产品结构。
+工程入口仍按实际交付划分为 [firmware](firmware/README.md)、[hardware](hardware/README.md)、[web](web/README.md) 和 [mechanical](mechanical/README.md)。本机音频基线已编译，尚未烧录和实物验证，因此暂不发布源码。SolidWorks已有两类卡座布局粗模及占位几何检查，嘉立创官方CLI/API已查询连接通过，见[工具接入记录](references/project-setup.md)与[证据索引](product/validation.md)；这些不代表播放器功能、制造结构或原理图/PCB通过。
 
 ## 文件归属与公开范围
 
@@ -62,7 +62,7 @@ Record Companion 是一个可共同设计的音乐唱片桌搭：本体离线播
 
 每项事实有一个维护位置：范围在整机规划，流程在项目计划，功能细节在专项，源文件在工程目录。按真实交付需要增加文档，不为每轮对话新建一份总结。
 
-完整测试工程与在途实现先留本机；公开规划明确区分候选与已确认，工程按[模块发布条件](CONTRIBUTING.md#模块工程发布条件)整理可复现版本。编译通过不代表实物功能通过。本阶段收敛结果保存在 `codex/next-planning-convergence`，暂不更新 `main`。
+完整测试工程与在途实现先留本机；公开规划明确区分候选与已确认，工程按[模块发布条件](CONTRIBUTING.md#模块工程发布条件)整理可复现版本。编译通过不代表实物功能通过。本阶段收敛结果保存在 `codex/next-planning-convergence`，通过PR审阅，合并前不更新 `main`。
 
 ## 参与方式
 
