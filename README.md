@@ -2,7 +2,7 @@
 
 Record Companion 是一个可共同设计的音乐唱片桌搭：本体离线播放本地音乐，配合前置显示、灯光和可选的唱片转动；小唱片既是内容入口，也可以作为书包挂件。首批共八张以圆形为基础的卡：两张歌手卡、通用1–5和近圆形蛋糕生日0，基础功能不依赖互联网。
 
-当前阶段已完成ABC及内容行为的核心产品决定，正准备RC-08可运行模拟与模块原型选型。阶段主控已确定：先用ESP32-S3验证模块，成品以ESP32-S31为主线；准确开发板、内存配置、成品芯片或模组及外围尚未定稿，迁移到S31后重新验证接口、并发和整板供电。PCB、外壳和成品材料依原型证据收敛。AI问答留作后续扩展，不能成为首版联网或电源设计的前提。
+当前阶段已形成ABC与内容行为的核心规则，正准备RC-08软件模拟与模块原型验证；不同B/C之间的完整替换策略仍待确认。阶段主控已确定：先用ESP32-S3验证模块，成品以ESP32-S31为主线；候选资源稿已形成，实际测试板须按自身原理图重映射。成品模组、内存和外围尚未冻结，迁移到S31后重新验证接口、并发和整板供电。PCB、外壳和成品材料依原型证据收敛。AI问答留作后续扩展，不能成为首版联网或电源设计的前提。
 
 ## 先看这里
 
@@ -14,8 +14,9 @@ Record Companion 是一个可共同设计的音乐唱片桌搭：本体离线播
 | [项目计划](product/plan.md) | P0–P7阶段、当前进度、并行专项、候选比较和嘉立创试制流程 |
 | [整机规划](product/README.md) | 已确认产品、F01–F17功能范围与跨功能目标 |
 | [共享接口](product/interfaces.md) | 音频、屏幕、识别、网络、电源、空间和功耗约束 |
+| [主控资源分配稿](features/platform/resource-allocation.md) | S3参考台架与S31成品模组的资源、候选GPIO及改配条件 |
 | [决策记录](product/decisions.md) | 用户决定、编号与后续调整 |
-| [整机验收](product/validation.md) | T01–T12计划和V001–V012公开证据边界 |
+| [整机验收](product/validation.md) | T01–T12计划和V001–V017公开证据边界 |
 | [功能专项](features/) | 八条功能专项，以及主控与系统架构选型 |
 | [参考来源](references/README.md) | 外部作品、器件、技能与许可记录 |
 
@@ -48,7 +49,7 @@ Record Companion 是一个可共同设计的音乐唱片桌搭：本体离线播
 | [power](features/power/README.md) | 电池、Type-C电源路径、充电、温升和续航 |
 | [enclosure](features/enclosure/README.md) | 音腔、尺寸、固定、维护和成品材料 |
 
-工程入口仍按实际交付划分为 [firmware](firmware/README.md)、[hardware](hardware/README.md)、[web](web/README.md) 和 [mechanical](mechanical/README.md)。当前尚无可运行固件、网页、嘉立创原理图/PCB或可制造结构模型。
+工程入口仍按实际交付划分为 [firmware](firmware/README.md)、[hardware](hardware/README.md)、[web](web/README.md) 和 [mechanical](mechanical/README.md)。本机音频基线已编译，尚未烧录和实物验证，因此暂不发布源码。SolidWorks已有两类卡座布局粗模及占位几何检查，嘉立创官方CLI/API已查询连接通过，见[工具接入记录](references/project-setup.md)与[证据索引](product/validation.md)；这些不代表播放器功能、制造结构或原理图/PCB通过。
 
 ## 文件归属与公开范围
 
@@ -58,16 +59,18 @@ Record Companion 是一个可共同设计的音乐唱片桌搭：本体离线播
 |---|---|---|
 | `product/` | 范围、总计划、接口、决定、整机验收 | 是 |
 | `features/` | 功能专项与主控系统架构的规则、候选、比较与试验方案 | 是 |
-| `firmware/`、`hardware/`、`web/`、`mechanical/` | 源工程、模块原型、试验版与成品版 | 是 |
+| `firmware/`、`hardware/`、`web/`、`mechanical/` | 已实测模块的必要源工程、依赖、接线/装配说明与脱敏证据 | 按模块发布条件提交 |
 | `references/`、`assets/` | 可公开来源、许可允许的素材、概念图和脱敏证据 | 核对来源、许可与信息后提交 |
 | `README.md`、`CONTRIBUTING.md`、`TASKS.md`、`.gitignore` | 导航、协作、执行任务与排除规则 | 是 |
-| `AGENTS.md`、`.agents/`、`local/` | 本机Agent规则、技能、库存、私人材料、交接与归档 | 否 |
+| `AGENTS.md`、`.agents/`、`local/` | 本机Agent规则、技能、库存、私人材料、完整试验工程、交接与归档 | 否 |
 | 构建缓存、运行日志、个人配置 | 可重新生成或仅本机使用的文件 | 否 |
 
 每项事实有一个维护位置：范围在整机规划，流程在项目计划，功能细节在专项，源文件在工程目录。按真实交付需要增加文档，不为每轮对话新建一份总结。
 
+完整测试工程与在途实现先留本机；公开规划明确区分候选与已确认，工程按[模块发布条件](CONTRIBUTING.md#模块工程发布条件)整理可复现版本。编译通过不代表实物功能通过。`main`维护联合审阅后的共同基线，各专项通过工作分支与PR更新；[项目计划](product/plan.md)维护阶段和并行进度，[任务清单](TASKS.md)维护可执行待办与准入条件。
+
 ## 参与方式
 
-项目公开可读。受邀协作者在原仓库创建工作分支，其他贡献者通过 Fork 创建分支；改动都通过 Pull Request 提交到 `main`，由所有者审阅并合并。`main` 通过规则集限制为仅所有者更新。开始前阅读本页、[整机规划](product/README.md) 与 [贡献说明](CONTRIBUTING.md)。
+项目公开可读。受邀协作者在原仓库创建工作分支，其他贡献者通过 Fork 创建分支；需要合入 `main` 时通过 Pull Request 提交，由所有者审阅并合并。`main` 通过规则集限制为仅所有者更新。开始前阅读本页、[整机规划](product/README.md) 与 [贡献说明](CONTRIBUTING.md)。
 
 实际库存、私人素材、本机设置和会话记录由协作者留在各自忽略的 `local/` 或仓库外。真实API Key、令牌、密码、Cookie和私钥只放在仓库外的受控配置或进程内，不写入普通文档、图片、日志或提交历史。公开示例使用占位符和仓库相对路径，提交前按[贡献说明](CONTRIBUTING.md)检查实际内容。
