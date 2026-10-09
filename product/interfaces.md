@@ -192,6 +192,23 @@ flowchart LR
 
 **文件修复与删除是两条不同资源操作**：D076保护被引用曲目不可直接删除；D084需要允许把同一`track_id`的底层媒体修复后重新发布。建议采用版本化媒体引用，成功发布后供之后的打开操作使用，正在读取旧文件的解码器引用安全保留直至释放；这是实施方案建议，需按真实文件系统与IO时序试验，不假设在位写入替换天然安全。
 
+### RC-08 · 模拟器实现前的事件与输出契约（2026-10-09，规划）
+
+**适配器边界（建议，不是已开发代码）：** `NfcAdapter`只报告可靠的`CARD_INSERTED(uid,placement_id)`、`CARD_REMOVED(placement_id)`、`CARD_UNCERTAIN`与`READER_FAULT`；`ModeController`结合保存的绑定版本处理物理事件和用户明确控制命令；`AudioPlayer`回报带会话代次的开始/结束/IO错误；`CatalogStore`回报保存成功/失败与提交序列；`UiAdapter`（本体/AP网页）只向同一控制器发送命令并展示`DeviceState`。
+
+| 输入类别 | 示例事件/命令 | 预期输出（已确认产品事实或可测实现要求） |
+|---|---|---|
+| 卡片物理事件 | `CARD_INSERTED/REMOVED`、`READER_FAULT` | 触发资格只由可信物理放置创建；B离座退出，C离座续行；短故障≠取走、B超实测阈值保护退出后不自启 |
+| 模式音频控制 | `PAUSE_AUDIO`、`STOP_AUDIO`、`MODE_NEXT`、`MODE_PLAY`、`MODE_EXIT` | 独立模式和音频状态；STOP后NEXT只选曲且静音、显式PLAY从最新选曲0:00；MODE_EXIT清除该会话资源 |
+| 外部点歌 | `SELECT_TRACK(track_id)` | 先预检；有效请求退出B/C后点播，实际启动失败停且不回滚；迟到旧EOF不影响新播放 |
+| 内容保存 | `SAVE_PLAYLIST`、`SAVE_BINDING` | 成功保存不修改活动B/C会话结构快照；设备按真实成功提交顺序决定最新配置；同request_id重复消息不另建提交 |
+| 删除内容 | `DELETE_TRACK`、`DELETE_PLAYLIST` | 必须在提交时重验卡/歌单/生日入口/活动会话引用，有占用拒绝；删除Playlist本身不删歌曲文件 |
+| 媒体错误和修复 | `TRACK_READ_ERROR`、`MEDIA_PUBLISHED(track_id,media_version)` | 运行中坏曲跳过同会话暂时屏蔽；完整修复发布后自动解锁并在下次正常轮到时尝试；全不可播STOP_ERROR下不自动出声 |
+
+**状态输出建议**：每个回放步骤至少记录`event_seq`、`placement_id`、`session_id`、`mode_kind`、`audio_state`、`selected_track_id`、`playlist_snapshot_revision`、`media_revision`、`saved_binding_revision`、`successful_commit_seq`、`last_error`。事件编号、保存提交编号、播放会话编号不是同一个序列；不能为实现方便混用。AP/本体可以异步显示，但最后必须反映设备最新已成功保存状态。
+
+**可模拟和不能模拟的区别**：模式行为、错误状态、幂等提交次序可以用虚拟时钟/虚拟文件/假读卡器验证；真实NFC身份隔离与离座时延、音频欠载、SD掉电原子性、功耗、音质、触摸/旋钮手感和墨水屏刷新性能仍必须实测。不得根据模拟推断硬件已经符合指标。
+
 ## 下一轮共享输入表
 
 以下是各专项交回的设计输入，未知值标待核实；资料估算与实测分栏。总规划先汇总，再决定电源与集成方案，不由某个模块单方面锁定整机电压或尺寸。
