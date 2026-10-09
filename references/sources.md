@@ -110,6 +110,27 @@ VC02处理预设本地语音指令，不等于通用AI问答。若采用ESP32-S3
 
 以上为资料依据，未复制第三方工程。阶段方向已按D063确定为S3模块验证、S31成品主线，准确开发板/内存和成品芯片或模组仍未定稿。
 
+## 2026-10-09 · NFC唱片机与实体音乐播放器参考工程登记
+
+本轮是**开源工程取证与复用筛选**，不是采购、克隆、编译、烧录或实测。对嘉立创项目读取公开详情中的描述/附件列表，尚未取得或解压ZIP、7z，也未逐网检验在线EDA；对以下GitHub仓库已实际读取根目录、相关子目录和部分源码/配置，仍未构建。作者宣称实现与本项目已验证要严格区分。为避免“同名ABC”，以下出现的电路路线与Record Companion产品ABC行为没有关系。
+
+| 编号 | 工程 / 来源 | 已核实的资料层级 | 适合借鉴 / 风险及许可 |
+|---|---|---|---|
+| OSH-01 | [lueer：卡片音乐播放器-终极版](https://oshwhub.com/lueer/card-music-player-ultimate-editi)；更新2024-12-25 | 页面载ESP32-WROOM-32E、RC522、PCM5102A+PAM8403、SD、AP/STA网页、作者称Arduino程序和SD网页资源；附件字节/EDA/BOM尚未取得 | 嘉立创**主对照**：网页管理、NFC与音乐架构；项目使用标签写入信息，须改成本体UID→ABC映射；GPL-3.0与“未经作者授权禁止转载”并存，复用前核许可 |
+| OSH-02 | [yio-lab：NFC唱片机](https://oshwhub.com/yio-lab/record-player)；更新2025-12-12 | 页面有ESP32、RC522、SD、MAX98357与转盘实物描述、简易物料表；设计图预览未生成、BOM为空、可编译程序未确认 | 音频/NFC/运动空间参考；其“标签写关键词找歌”与本项目数字身份映射不同；GPL-3.0和转载限制 |
+| OSH-03 | [lo_startnet：Minecraft我的世界唱片机](https://oshwhub.com/lo_startnet/project_zqmulhqj)；更新2026-06-10 | STM32F103+RC522+SDIO+I2S HT513，页面有材料/结构与作者报告的FatFs、拨轮时序缺陷；固件`JukeBox.zip`和结构附件仅确认列表存在 | 取放、状态机、机械和真实缺陷参考，代码不可直接烧到S3；CERN-OHL-S-2.0、转载限制，ZIP未解压 |
+| OSH-04 | [yurix：北极熊NFC唱片机](https://oshwhub.com/yurix/project_nfhqsyjx)；更新2026-05-19 | STC15+RC522+DFPlayer Mini，页面含UID到歌曲文件夹流程；程序ZIP、结构ZIP、元器件清单DOCX仅确认存在 | UID查本机内容的行为与本项目吻合，但卡表写死于程序、不是在线可改映射；GPL-3.0及转载限制，非成品音频/供电基线 |
+| OSH-05 | [mengmeng666666：集成一体化NFC唱片机](https://oshwhub.com/mengmeng666666/integrated-all-in-one-nfc-record)；更新2026-01-07 | 页面描述单PCB集成、SD改音乐、电机转盘与音量，作者填报复刻成本￥60；当前未取到原理图/BOM/代码 | 集成布局备查，证据不足不列首要复刻；GPL-3.0，￥60不能当本项目BOM |
+| OSH-06 | [misteting：mc唱片机](https://oshwhub.com/misteting/mc-record-player)；更新2025-05-26 | 公开USB改歌/USB扬声器功能与`STM32_project.7z`、3D模型附件列表；尚未解压/验证 | 后续USB与小体量体验参考，当前优先级低；GPL-3.0/转载限制，作者续航/价格非本项目数据 |
+| GH-01 | [lucadentella/NFCMusicPlayer](https://github.com/lucadentella/NFCMusicPlayer)；读取提交`222db99589f277d404772c99f920af41ca0a4905` | **已实际确认**KiCad 8的`.kicad_sch`/`.kicad_pcb`、原理图PDF存在；Arduino源码`NFCMusicPlayer.ino`/`MappingsFile.ino`/`Webserver.ino`、`platformio.ini`、SD网页HTML/JS/CSS及映射文本；未编译 | **优先完整架构参考**：PN532→UID映射→SD MP3→MAX98357A、AP网页增删映射/上传；实际固件读卡间隔`NFC_READ_INTERVAL=2000ms`且单次读取超时1000ms、一次失败可能直接停歌，**不适合照搬B快速可靠离座**。上传处理直接在回调向SD写入，不能据此宣称D054并发不中断。README标CC-BY-NC-SA徽章、未见根目录独立LICENSE，复制前须审查适用条款 |
+| GH-02 | [DeltaBravoCharlie/NFCmusicplayer](https://github.com/DeltaBravoCharlie/NFCmusicplayer)；读取提交`07b76338b1ff3182cd94336f62209e143d36de81` | **已实际确认**MIT LICENSE、PlatformIO、`src/RFID_Manager.cpp`、`MappingStore.cpp`、`Audio_Manager.cpp`、`WebSetupServer.cpp`等；README注明仍为WIP，原理图/BOM待公布；未编译 | **优先软件模块参考**：UID→SD路径、临时文件再重命名与网页设置；RFID使用`PICC_IsNewCardPresent()`，必须核实持续在位重检与离座，不直接复用去抖阈值。原WROVER引脚、TLV320 DAC及浏览器配置不可直接套到S3 |
+| GH-03 | [mhier/LauraBox](https://github.com/mhier/LauraBox)；读取提交`d5a38651540be0f8bf845375e812ba1b64feade0` | **已实际确认**Arduino固件、KiCad原理图/PCB与Gerber、外壳文件、根目录GPL-3.0 LICENSE；未编译/制造 | **驻留型实物交互对照**：RC522、SD MP3、PCM5102+PAM8403立体声、电池与取走暂停再放恢复；**与我们B退出清空/下次从头不同**，不可照搬会话行为。Wi-Fi下载经验可参考，D054并发需另测 |
+| GH-04 | [Schop/esp32-rfid-jukebox](https://github.com/Schop/esp32-rfid-jukebox)；读取提交`4e314ae1b1764907f1f7b8d7845c2605bc25becd` | 已确认MIT LICENSE、PlatformIO、`src/main.cpp`和`data/index.html`存在，网页API/播放列表为README所述；未编译 | 低成本网页/播放器指令参考；音频实际为DFPlayer Mini串口、不是本项目I2S双声道，优先级低于GH-01/GH-02 |
+
+**优先级**：先审GH-01的完整工程结构与Web/文件操作，GH-02的身份映射/模块分层，OSH-01/OSH-02的本地相近实体形式；B可靠离座对照GH-03/OSH-03，注意绝不直接继承其取走规则。OSH-05/OSH-06与GH-04留备查，不再无目的扩大候选。现有PN7160 MINI与RC522皆非正式器件，须按板型、预算和B离座验证选；识别方案选择与软件参考源选择是两项不同决策。
+
+**发布与许可控制**：GPL/CERN硬件许可、项目所附的“禁止转载”、平台复刻与非商业说明，以及GH-01的许可徽章需要区分；即使是MIT来源也要保留原作者版权及许可声明。未经源文件许可与范围核查，不复制源代码、图片、EDA、第三方音频/模型到公开分支；先仅记录上述事实和链接。下一步在确切版本、授权范围与依赖确定后才选择“借鉴接口思想”或“引入可再发布源码”，均须在采用记录登记源提交及改动。
+
 ## 后续采用记录
 
 每次真正采用组件、技能或素材时追加：
