@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1110" width="1200" height="1110" role="img" aria-label="Record Companion 方案A L1 视觉居中优先，顶视、正视和右侧视三视图示意">
+  <defs>
+    <style>
+      .title{font:700 27px 'Noto Sans SC','Microsoft YaHei',sans-serif;fill:#1f3341}
+      .subtitle{font:15px 'Noto Sans SC','Microsoft YaHei',sans-serif;fill:#60727e}
+      .h{font:700 19px 'Noto Sans SC','Microsoft YaHei',sans-serif;fill:#213746}
+      .label{font:15px 'Noto Sans SC','Microsoft YaHei',sans-serif;fill:#244351}
+      .small{font:13px 'Noto Sans SC','Microsoft YaHei',sans-serif;fill:#546e7b}
+      .tiny{font:12px 'Noto Sans SC','Microsoft YaHei',sans-serif;fill:#607680}
+      .body{fill:#edf2f3;stroke:#627f8c;stroke-width:2.3}
+      .bay{fill:#dce8ed;stroke:#8ba0aa;stroke-width:1.8;stroke-dasharray:6 5}
+      .metal{fill:#526978;stroke:#2b4353;stroke-width:2}
+      .teal{fill:#e1f2ee;stroke:#318b7d;stroke-width:2}
+      .control{fill:#f4f6f8;stroke:#9aaab0;stroke-dasharray:5 4;stroke-width:1.5}
+      .yellow{fill:none;stroke:#c58e2a;stroke-width:4;stroke-dasharray:6 5}
+      .center{stroke:#8f9aa3;stroke-dasharray:8 7;stroke-width:1.6}
+      .dash{fill:none;stroke:#9d7f50;stroke-width:2;stroke-dasharray:6 5}
+    </style>
+  </defs>
+  <rect width="1200" height="1110" fill="#fff"/>
+  <text x="65" y="44" class="title">方案 A · L1 空间布局三视图</text>
+  <text x="66" y="70" class="subtitle">视觉居中优先 / 同一外壳轮廓的正交概念投影 / 全部尺寸与比例仅用于分区阅读，非机械图纸</text>
+  <text x="86" y="106" class="h">01 顶视 · 水平转盘居中，静止挂件座位于右后方（暂置）</text>
+  <rect x="85" y="125" width="1030" height="349" rx="17" class="body"/>
+  <rect x="104" y="143" width="247" height="312" rx="12" class="bay"/>
+  <rect x="849" y="143" width="247" height="312" rx="12" class="bay"/>
+  <line x1="600" y1="117" x2="600" y2="478" class="center"/>
+  <circle cx="600" cy="298" r="163" fill="#f7efdb" fill-opacity=".82"/>
+  <circle cx="600" cy="298" r="160" class="yellow"/>
+  <circle cx="600" cy="298" r="151" class="metal"/>
+  <circle cx="600" cy="298" r="139" fill="#3c5665" stroke="#263e4d" stroke-width="2"/>
+  <circle cx="600" cy="298" r="111" fill="none" stroke="#8698a3" stroke-width="1.7"/>
+  <circle cx="600" cy="298" r="94" fill="none" stroke="#718996" stroke-width="1.7"/>
+  <circle cx="600" cy="298" r="72" fill="none" stroke="#718996" stroke-width="1.7"/>
+  <circle cx="600" cy="298" r="25" fill="#d6dedb" stroke="#81969c" stroke-width="1.5"/>
+  <circle cx="600" cy="298" r="4" fill="#637b85"/>
+  <text x="600" y="344" fill="#f9fafb" font-family="'Noto Sans SC','Microsoft YaHei',sans-serif" font-size="17" text-anchor="middle">水平大唱片</text>
+  <text x="600" y="366" fill="#cbd9df" font-family="'Noto Sans SC','Microsoft YaHei',sans-serif" font-size="13" text-anchor="middle">轴心＝整机横向中轴</text>
+  <text x="147" y="424" class="label">左音腔投影</text>
+  <text x="890" y="424" class="label">右音腔投影</text>
+  <rect x="918" y="160" width="137" height="122" rx="11" class="teal"/>
+  <circle cx="984" cy="216" r="39" fill="#fff" stroke="#5fada2" stroke-width="2"/>
+  <circle cx="984" cy="216" r="16" fill="none" stroke="#63aa9f" stroke-width="1.5"/>
+  <circle cx="984" cy="216" r="4" fill="#63aa9f"/>
+  <path d="M1035 191q33 -13 37 13" fill="none" stroke="#318b7d" stroke-width="2.1" stroke-dasharray="5 4"/>
+  <text x="986" y="268" class="tiny" text-anchor="middle">静止挂件座</text>
+  <text x="1018" y="306" class="small" text-anchor="middle">取放／扣具</text>
+  <text x="1018" y="322" class="small" text-anchor="middle">包络待核</text>
+  <text x="123" y="166" class="small">封闭音腔</text>
+  <text x="858" y="166" class="small">封闭音腔</text>
+  <line x1="405" y1="454" x2="795" y2="454" stroke="#647985" stroke-width="5" stroke-linecap="round"/>
+  <text x="600" y="493" class="small" text-anchor="middle">前端中央为屏幕和可换控件区；顶视不表现具体按键数量</text>
+  <line x1="85" y1="512" x2="1115" y2="512" stroke="#dee5e9"/>
+  <text x="86" y="546" class="h">02 正视 · 双扬声器对称，墨水屏建议正中，可换控件区两侧留白</text>
+  <ellipse cx="600" cy="572" rx="158" ry="17" fill="#d8e2e4" stroke="#8ba1aa" stroke-width="1.5"/>
+  <rect x="85" y="581" width="1030" height="181" rx="15" class="body"/>
+  <line x1="600" y1="563" x2="600" y2="768" class="center"/>
+  <rect x="102" y="591" width="247" height="159" rx="9" fill="#e0e9ed" stroke="#c6d0d5"/>
+  <rect x="851" y="591" width="247" height="159" rx="9" fill="#e0e9ed" stroke="#c6d0d5"/>
+  <circle cx="227" cy="673" r="69" fill="#4c6270" stroke="#2b4453" stroke-width="2.8"/>
+  <circle cx="227" cy="673" r="55" fill="none" stroke="#8ca0a9" stroke-width="2"/>
+  <circle cx="227" cy="673" r="27" fill="#8296a2"/>
+  <circle cx="973" cy="673" r="69" fill="#4c6270" stroke="#2b4453" stroke-width="2.8"/>
+  <circle cx="973" cy="673" r="55" fill="none" stroke="#8ca0a9" stroke-width="2"/>
+  <circle cx="973" cy="673" r="27" fill="#8296a2"/>
+  <rect x="479" y="610" width="242" height="111" rx="6" fill="#f8f8ee" stroke="#718e9e" stroke-width="2.5"/>
+  <text x="600" y="654" text-anchor="middle" class="label">前置墨水屏</text>
+  <text x="600" y="677" text-anchor="middle" class="small">有效区、驱动与 FPC 待定</text>
+  <rect x="365" y="616" width="96" height="103" rx="7" class="control"/>
+  <rect x="739" y="616" width="96" height="103" rx="7" class="control"/>
+  <text x="413" y="654" class="small" text-anchor="middle">可换</text>
+  <text x="413" y="674" class="small" text-anchor="middle">控件区</text>
+  <text x="787" y="654" class="small" text-anchor="middle">可换</text>
+  <text x="787" y="674" class="small" text-anchor="middle">控件区</text>
+  <text x="227" y="751" text-anchor="middle" class="small">左声道</text>
+  <text x="973" y="751" text-anchor="middle" class="small">右声道</text>
+  <line x1="85" y1="787" x2="1115" y2="787" stroke="#dee5e9"/>
+  <text x="86" y="821" class="h">03 右侧视剖面关系 · 厚度和叠层只示意，实际不能据图认定装得下</text>
+  <rect x="85" y="896" width="1030" height="158" rx="13" class="body"/>
+  <line x1="85" y1="1056" x2="1115" y2="1056" stroke="#718996" stroke-width="2"/>
+  <rect x="130" y="919" width="205" height="108" rx="8" fill="#e8eff2" stroke="#a4b5bd" stroke-width="1.5"/>
+  <text x="232" y="976" text-anchor="middle" class="label">前部显示／控制</text>
+  <rect x="387" y="866" width="375" height="14" rx="7" class="metal"/>
+  <rect x="406" y="882" width="337" height="8" rx="4" fill="#f0ddad" stroke="#c69a51"/>
+  <text x="575" y="855" text-anchor="middle" class="small">平放转盘（宽度仅示意）</text>
+  <line x1="575" y1="891" x2="575" y2="944" stroke="#526b79" stroke-width="9"/>
+  <rect x="526" y="920" width="98" height="20" rx="5" fill="#c5d5dc" stroke="#537180"/>
+  <text x="575" y="956" text-anchor="middle" class="tiny">独立轴承座</text>
+  <rect x="526" y="970" width="98" height="50" rx="6" fill="#b3cbd2" stroke="#66818f"/>
+  <text x="575" y="996" text-anchor="middle" class="tiny">传动候选</text>
+  <rect x="354" y="952" width="139" height="68" rx="8" fill="#d8eaf2" stroke="#7d9eaf"/>
+  <text x="423" y="981" text-anchor="middle" class="small">PCB／存储</text>
+  <text x="423" y="1001" text-anchor="middle" class="tiny">独立固定</text>
+  <rect x="669" y="956" width="183" height="66" rx="8" fill="#f0e2d8" stroke="#b9977f"/>
+  <text x="760" y="984" text-anchor="middle" class="small">低位电池候选</text>
+  <text x="760" y="1004" text-anchor="middle" class="tiny">独立固定／隔热待核</text>
+  <rect x="949" y="892" width="108" height="30" rx="6" class="teal"/>
+  <text x="1003" y="912" text-anchor="middle" class="tiny">静止卡座</text>
+  <rect x="1065" y="938" width="26" height="76" rx="4" fill="#bed5d5" stroke="#55928c" stroke-width="1.6"/>
+  <text x="1006" y="1035" text-anchor="middle" class="small">后盖／Type-C</text>
+  <text x="89" y="880" class="small">前</text>
+  <text x="1090" y="880" class="small">后</text>
+  <text x="86" y="1085" class="subtitle">示意色：深灰＝运动件　浅蓝＝声学／电子分区　浅绿＝固定挂件座　浅金＝固定柔光圈　虚线＝未冻结或运行包络</text>
+</svg>
