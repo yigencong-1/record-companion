@@ -76,29 +76,29 @@
   <text x="973" y="751" text-anchor="middle" class="small">右声道</text>
   <line x1="85" y1="787" x2="1115" y2="787" stroke="#dee5e9"/>
   <text x="86" y="821" class="h">03 右侧视剖面关系 · 厚度和叠层只示意，实际不能据图认定装得下</text>
-  <rect x="85" y="896" width="1030" height="158" rx="13" class="body"/>
-  <line x1="85" y1="1056" x2="1115" y2="1056" stroke="#718996" stroke-width="2"/>
-  <rect x="130" y="919" width="205" height="108" rx="8" fill="#e8eff2" stroke="#a4b5bd" stroke-width="1.5"/>
-  <text x="232" y="976" text-anchor="middle" class="label">前部显示／控制</text>
-  <rect x="387" y="866" width="375" height="14" rx="7" class="metal"/>
-  <rect x="406" y="882" width="337" height="8" rx="4" fill="#f0ddad" stroke="#c69a51"/>
-  <text x="575" y="855" text-anchor="middle" class="small">平放转盘（宽度仅示意）</text>
-  <line x1="575" y1="891" x2="575" y2="944" stroke="#526b79" stroke-width="9"/>
-  <rect x="526" y="920" width="98" height="20" rx="5" fill="#c5d5dc" stroke="#537180"/>
-  <text x="575" y="956" text-anchor="middle" class="tiny">独立轴承座</text>
-  <rect x="526" y="970" width="98" height="50" rx="6" fill="#b3cbd2" stroke="#66818f"/>
-  <text x="575" y="996" text-anchor="middle" class="tiny">传动候选</text>
-  <rect x="354" y="952" width="139" height="68" rx="8" fill="#d8eaf2" stroke="#7d9eaf"/>
-  <text x="423" y="981" text-anchor="middle" class="small">PCB／存储</text>
-  <text x="423" y="1001" text-anchor="middle" class="tiny">独立固定</text>
-  <rect x="669" y="956" width="183" height="66" rx="8" fill="#f0e2d8" stroke="#b9977f"/>
-  <text x="760" y="984" text-anchor="middle" class="small">低位电池候选</text>
-  <text x="760" y="1004" text-anchor="middle" class="tiny">独立固定／隔热待核</text>
-  <rect x="949" y="892" width="108" height="30" rx="6" class="teal"/>
-  <text x="1003" y="912" text-anchor="middle" class="tiny">静止卡座</text>
-  <rect x="1065" y="938" width="26" height="76" rx="4" fill="#bed5d5" stroke="#55928c" stroke-width="1.6"/>
-  <text x="1006" y="1035" text-anchor="middle" class="small">后盖／Type-C</text>
-  <text x="89" y="880" class="small">前</text>
-  <text x="1090" y="880" class="small">后</text>
+  <rect x="85" y="873" width="349" height="181" rx="12" class="body"/>
+  <line x1="85" y1="1056" x2="434" y2="1056" stroke="#718996" stroke-width="2"/>
+  <rect x="107" y="851" width="304" height="12" rx="5" class="metal"/>
+  <rect x="118" y="864" width="283" height="8" rx="3" fill="#f0ddad" stroke="#c69a51"/>
+  <line x1="259" y1="874" x2="259" y2="952" stroke="#526b79" stroke-width="7"/>
+  <rect x="224" y="917" width="70" height="21" rx="4" fill="#c5d5dc" stroke="#537180"/>
+  <rect x="227" y="956" width="64" height="63" rx="6" fill="#b3cbd2" stroke="#66818f"/>
+  <rect x="108" y="955" width="93" height="64" rx="6" fill="#d8eaf2" stroke="#7d9eaf"/>
+  <rect x="314" y="957" width="92" height="62" rx="6" fill="#f0e2d8" stroke="#b9977f"/>
+  <rect x="388" y="835" width="35" height="29" rx="5" class="teal"/>
+  <rect x="425" y="923" width="8" height="98" rx="2" fill="#bed5d5" stroke="#55928c" stroke-width="1"/>
+  <text x="85" y="867" class="tiny">前</text>
+  <text x="420" y="867" class="tiny">后</text>
+  <text x="151" y="992" text-anchor="middle" class="tiny">PCB</text>
+  <text x="259" y="991" text-anchor="middle" class="tiny">驱动</text>
+  <text x="360" y="992" text-anchor="middle" class="tiny">电池</text>
+  <text x="483" y="862" class="label">侧视的外壳水平跨度＝顶视机身深度</text>
+  <text x="483" y="887" class="small">① 大唱片水平放置，盘下固定柔光圈（浅金）</text>
+  <text x="483" y="913" class="small">② 承盘轴承独立承担重量，电机只传递扭矩</text>
+  <text x="483" y="939" class="small">③ 电路、低位电池是独立维护单元，不借用音腔</text>
+  <text x="483" y="965" class="small">④ 静止挂件座位于后端固定区域（浅绿）</text>
+  <text x="483" y="991" class="small">⑤ 后盖、接口、排线和维修空间须用真实器件重建</text>
+  <rect x="480" y="1015" width="624" height="39" rx="7" fill="#f5f7f7" stroke="#dbe3e6"/>
+  <text x="491" y="1039" class="small">视图按同一示意长度尺度表达外壳外轮廓；内部块是功能占位，非组件机械尺寸。</text>
   <text x="86" y="1085" class="subtitle">示意色：深灰＝运动件　浅蓝＝声学／电子分区　浅绿＝固定挂件座　浅金＝固定柔光圈　虚线＝未冻结或运行包络</text>
 </svg>
