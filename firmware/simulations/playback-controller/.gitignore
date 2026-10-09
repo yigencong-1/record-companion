@@ -1,0 +1,17 @@
+# Reproducible runs go here; curated evidence files remain visible.
+/runs/
+/evidence/*
+!/evidence/summary.md
+!/evidence/results.json
+
+# Python caches and generated file/process fixtures.
+__pycache__/
+*.py[cod]
+*.jsonl
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+*.wav

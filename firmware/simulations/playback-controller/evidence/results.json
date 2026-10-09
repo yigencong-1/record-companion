@@ -1,0 +1,386 @@
+{
+  "evidence_form": "EXCERPT_OF_EXECUTED_RESULTS",
+  "implementation_version": "0.2.2-batch2",
+  "shared_baseline": "5262430cb385316403daadc68f4142c04d6f2259",
+  "runtime": "3.13.5",
+  "evidence_kind": "PC_CONTROLLER_AND_FILE_PROCESS_INTERRUPTION",
+  "fault_threshold_ms": 1000,
+  "counts": {
+    "PASS": 47,
+    "FAIL": 0,
+    "UNRESOLVED": 0,
+    "DEFERRED": 3
+  },
+  "batches": [
+    {
+      "batch": "1",
+      "executed_at_utc": "2026-10-09T20:39:48.515121+00:00",
+      "counts": {
+        "PASS": 26,
+        "FAIL": 0,
+        "UNRESOLVED": 0,
+        "DEFERRED": 0
+      },
+      "source_result": "run-20261010-batch1-confirmed/results.json",
+      "cases": [
+        {
+          "id": "X01",
+          "title": "A once, trusted removal and late raw UID",
+          "status": "PASS",
+          "coverage": "D066,D067,D069;L01,L02",
+          "assertions": 5
+        },
+        {
+          "id": "X02",
+          "title": "B pause/STOP/removal",
+          "status": "PASS",
+          "coverage": "D066,D075;L26,L29",
+          "assertions": 3
+        },
+        {
+          "id": "X03",
+          "title": "C loop/re-placement/STOP/NEXT/PLAY",
+          "status": "PASS",
+          "coverage": "D067,D071,D079,D082;L08,L09,E02",
+          "assertions": 8
+        },
+        {
+          "id": "X04",
+          "title": "boot-held and C reset",
+          "status": "PASS",
+          "coverage": "D052,D073;L19,L23",
+          "assertions": 9
+        },
+        {
+          "id": "X05",
+          "title": "precheck failure vs asynchronous start failure",
+          "status": "PASS",
+          "coverage": "D074;L13,L24",
+          "assertions": 7
+        },
+        {
+          "id": "X06",
+          "title": "short fault/recovery/timeout/trusted re-placement",
+          "status": "PASS",
+          "coverage": "D072;L18,L28",
+          "assertions": 12
+        },
+        {
+          "id": "L05",
+          "title": "B new placement restarts at zero",
+          "status": "PASS",
+          "coverage": "D066;L04,L05",
+          "assertions": 4
+        },
+        {
+          "id": "L06",
+          "title": "manual exit consumes placement",
+          "status": "PASS",
+          "coverage": "D067;L06",
+          "assertions": 4
+        },
+        {
+          "id": "L27",
+          "title": "C same card does not release STOP",
+          "status": "PASS",
+          "coverage": "D071,D075;E03,C24-partial",
+          "assertions": 2
+        },
+        {
+          "id": "L12",
+          "title": "pause freezes time and PLAY resumes",
+          "status": "PASS",
+          "coverage": "D068,D079;L12,L20-partial",
+          "assertions": 5
+        },
+        {
+          "id": "E01",
+          "title": "sixth song STOP/PLAY then seventh",
+          "status": "PASS",
+          "coverage": "D079;L22,E01",
+          "assertions": 10
+        },
+        {
+          "id": "E15",
+          "title": "two NEXTs after STOP plus delayed callback",
+          "status": "PASS",
+          "coverage": "D082;E15",
+          "assertions": 2
+        },
+        {
+          "id": "L15",
+          "title": "old B/audio callbacks cannot stop new track",
+          "status": "PASS",
+          "coverage": "D068;L15",
+          "assertions": 7
+        },
+        {
+          "id": "RACE01",
+          "title": "same session old EOF rejected by operation id",
+          "status": "PASS",
+          "coverage": "D068,D082",
+          "assertions": 4
+        },
+        {
+          "id": "RACE02",
+          "title": "STOP during async start",
+          "status": "PASS",
+          "coverage": "D075,D082",
+          "assertions": 1
+        },
+        {
+          "id": "L13",
+          "title": "missing/unbound new card preserves C",
+          "status": "PASS",
+          "coverage": "D074;L13",
+          "assertions": 3
+        },
+        {
+          "id": "L25",
+          "title": "independent removal cannot be rolled back",
+          "status": "PASS",
+          "coverage": "D066,D074;L14,L25",
+          "assertions": 2
+        },
+        {
+          "id": "L10",
+          "title": "valid A ends C before start",
+          "status": "PASS",
+          "coverage": "D068;L10",
+          "assertions": 4
+        },
+        {
+          "id": "D074-A",
+          "title": "failed A consumed, real re-place can retry",
+          "status": "PASS",
+          "coverage": "D074",
+          "assertions": 3
+        },
+        {
+          "id": "ADAPTER01",
+          "title": "raw UID/uncertain are not removal",
+          "status": "PASS",
+          "coverage": "D072;L07-domain-only,L16-suggestion",
+          "assertions": 3
+        },
+        {
+          "id": "RACE03",
+          "title": "stale B removal cannot exit new placement",
+          "status": "PASS",
+          "coverage": "D068",
+          "assertions": 3
+        },
+        {
+          "id": "LOOP01",
+          "title": "B single track EOF loop",
+          "status": "PASS",
+          "coverage": "D067",
+          "assertions": 3
+        },
+        {
+          "id": "IDENTITY01",
+          "title": "technology/UID length and separate identifiers",
+          "status": "PASS",
+          "coverage": "D069;RC-08A-02",
+          "assertions": 5
+        },
+        {
+          "id": "BOOT02",
+          "title": "boot-held eligibility survives reader recovery",
+          "status": "PASS",
+          "coverage": "D052,D073;L19",
+          "assertions": 4
+        },
+        {
+          "id": "ADAPTER02",
+          "title": "fault cannot be erased by queued placement/removal",
+          "status": "PASS",
+          "coverage": "D072;adapter boundary",
+          "assertions": 5
+        },
+        {
+          "id": "RC-08A-01",
+          "title": "C1->B2/C2 full takeover without old-mode restoration",
+          "status": "PASS",
+          "coverage": "User confirmed 2026-10-10;D074",
+          "assertions": 19
+        }
+      ]
+    },
+    {
+      "batch": "2",
+      "executed_at_utc": "2026-10-09T20:39:53.556868+00:00",
+      "counts": {
+        "PASS": 21,
+        "FAIL": 0,
+        "UNRESOLVED": 0,
+        "DEFERRED": 3
+      },
+      "source_result": "run-20261010-batch2-confirmed/results.json",
+      "cases": [
+        {
+          "id": "X07",
+          "title": "saved playlist/binding preserve B active snapshot",
+          "status": "PASS",
+          "coverage": "D077,D078;C06,C07,E13",
+          "assertions": 11
+        },
+        {
+          "id": "SNAP-C",
+          "title": "C re-placement retains old binding until explicit restart",
+          "status": "PASS",
+          "coverage": "D071,D077,D078",
+          "assertions": 5
+        },
+        {
+          "id": "SNAP-A",
+          "title": "A in-place rebind and explicit apply",
+          "status": "PASS",
+          "coverage": "D078;C02,C06",
+          "assertions": 6
+        },
+        {
+          "id": "X08",
+          "title": "reference protection with birthday and starting occupation",
+          "status": "PASS",
+          "coverage": "D076,D083;C08,C09,E06",
+          "assertions": 9
+        },
+        {
+          "id": "REF-ACTIVE",
+          "title": "saved removal cannot free active STOP snapshot",
+          "status": "PASS",
+          "coverage": "D076,D077,D083;C23,E05",
+          "assertions": 8
+        },
+        {
+          "id": "REF-AUDIO",
+          "title": "ordinary STARTING/PAUSE/STOP resource protection",
+          "status": "PASS",
+          "coverage": "D076;C09",
+          "assertions": 5
+        },
+        {
+          "id": "REF-RACE",
+          "title": "delete rechecks newly committed references",
+          "status": "PASS",
+          "coverage": "D076,D083,D085;E04,E21",
+          "assertions": 7
+        },
+        {
+          "id": "X09",
+          "title": "bad track repair validates/publishes and retries next normal turn",
+          "status": "PASS",
+          "coverage": "D080,D084;C21,E07,E16,E17",
+          "assertions": 22
+        },
+        {
+          "id": "MEDIA-OLD",
+          "title": "old active version failure cannot poison new version",
+          "status": "PASS",
+          "coverage": "D084;RC-08C-02",
+          "assertions": 7
+        },
+        {
+          "id": "MEDIA-FAIL",
+          "title": "no-space and failed publication keep old audio and marker",
+          "status": "PASS",
+          "coverage": "D084;C10,E12",
+          "assertions": 10
+        },
+        {
+          "id": "RUNTIME-OPEN",
+          "title": "later song open failure skips; initial failure does not",
+          "status": "PASS",
+          "coverage": "D074,D080",
+          "assertions": 8
+        },
+        {
+          "id": "X10",
+          "title": "all-bad STOP then repair current selection and explicit PLAY",
+          "status": "PASS",
+          "coverage": "D080,D084;C22,E08,E18",
+          "assertions": 11
+        },
+        {
+          "id": "X11",
+          "title": "last successful save and late notifications",
+          "status": "PASS",
+          "coverage": "D085;C05,E09,E19",
+          "assertions": 10
+        },
+        {
+          "id": "X12",
+          "title": "lost reply retry returns original receipt and latest config",
+          "status": "PASS",
+          "coverage": "D085;C19,E10,E20",
+          "assertions": 7
+        },
+        {
+          "id": "PROC-TXN",
+          "title": "kill process before/after config/receipt/commit then restart",
+          "status": "PASS",
+          "coverage": "D085;C20,RC-08C-01",
+          "assertions": 77
+        },
+        {
+          "id": "PROC-DUP",
+          "title": "in-flight duplicate processes serialize to one commit",
+          "status": "PASS",
+          "coverage": "D085;RC-08C-01",
+          "assertions": 11
+        },
+        {
+          "id": "PROC-MEDIA",
+          "title": "media pointer/receipt interruption and old live file handle",
+          "status": "PASS",
+          "coverage": "D084;C11,RC-08C-02",
+          "assertions": 38
+        },
+        {
+          "id": "PROC-BOOT",
+          "title": "live C process death retains config but no mode/audio",
+          "status": "PASS",
+          "coverage": "D052,D073",
+          "assertions": 8
+        },
+        {
+          "id": "PROC-PARTIAL",
+          "title": "real partial upload remains unpublished after restart",
+          "status": "PASS",
+          "coverage": "D084;C10,C11,E16",
+          "assertions": 5
+        },
+        {
+          "id": "RC-08B2-01",
+          "title": "PLAY searches frozen order after nonselected repair",
+          "status": "PASS",
+          "coverage": "User confirmed 2026-10-10;D080,D084",
+          "assertions": 13
+        },
+        {
+          "id": "RECOVERY-ORDER",
+          "title": "PLAY repair search keeps original active snapshot order",
+          "status": "PASS",
+          "coverage": "User confirmed 2026-10-10;D077",
+          "assertions": 8
+        },
+        {
+          "id": "SD-POWER",
+          "status": "DEFERRED",
+          "reason": "Physical SD/FAT power loss and ESP32 recovery require actual storage/electrical bench"
+        },
+        {
+          "id": "REAL-ADAPTERS",
+          "status": "DEFERRED",
+          "reason": "03/04 real audio/NFC callbacks, thresholds, UI/HTTP and concurrency timing"
+        },
+        {
+          "id": "CODEC-MP3",
+          "status": "DEFERRED",
+          "reason": "Real MP3 validation/decoding; PC publisher only validates synthetic PCM WAV"
+        }
+      ]
+    }
+  ]
+}
