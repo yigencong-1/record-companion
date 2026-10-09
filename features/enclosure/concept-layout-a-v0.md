@@ -1,5 +1,7 @@
 # RC-LAYOUT-A · 横向一体式桌搭方案 A：空间布局草案 v0.1
 
+> **后续进展（2026-10-10）：** 用户已选择视觉居中优先用于方案 A 的 L1 草图深化，详见 [L1 三视图与卡座对照](concept-layout-a-l1.md)。L0 此处保留当时的未决列表作为历史规划记录；这一偏好不冻结尺寸、组件或制造结构，也不新增正式 D 号决定。
+
 > 状态：**待审阅的产品／结构提案（2026-10-10）**，不是新增 D 号正式决定。仅用于 `plan/product-next-stage` 分支讨论；未形成准确尺寸、批准 BOM、制造文件或实物测试结论。
 >
 > 依据：[`product/decisions.md`](../../product/decisions.md) D018/D019/D056/D063/D064/D065/D070/D086；[`product/README.md`](../../product/README.md)；[结构专项](README.md)；[灯光与转动专项](../lighting-motion/README.md)；[显示交互专项](../display/README.md)。
