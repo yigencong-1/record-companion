@@ -1,0 +1,42 @@
+{
+  "type": "sampled CAD removal positions, not continuous swept-volume proof",
+  "moving": [
+    "09_motor_tray",
+    "10_motor_envelope",
+    "11_motor_output_shaft"
+  ],
+  "removed_before_check": [
+    "04_central_bottom_hatch",
+    "motor_tray_bolt_L",
+    "motor_tray_bolt_R"
+  ],
+  "samples": [
+    {
+      "downward_mm": 2,
+      "intersections": []
+    },
+    {
+      "downward_mm": 10,
+      "intersections": []
+    },
+    {
+      "downward_mm": 30,
+      "intersections": []
+    },
+    {
+      "downward_mm": 60,
+      "intersections": []
+    },
+    {
+      "downward_mm": 100,
+      "intersections": []
+    }
+  ],
+  "not_modelled": [
+    "wiring",
+    "actual motor screws",
+    "tools and fingers",
+    "coupling locking screws",
+    "hatch fastening"
+  ]
+}

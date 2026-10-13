@@ -23,6 +23,10 @@
 
 ## P1/P2 · 产品与其它首版流程
 
+- [x] **RC-L3-MODEL-01 整机研究模型归档**：用户于2026-10-14授权提交[研究模型v0.1](mechanical/studies/l3-v01/README.md)。仅完成CAD研究及几何检查，不是成品设计或加工放行。47个部件有效且各自连通，静态无正体积穿插，底部拆卸5个离散位置无碰撞。
+- [ ] **RC-L3-ELECTRONICS-01 补齐电子系统空间**：主控仅65×35 mm占位，功放、电源管理、NFC读卡板及线束尚未完整布局；补准确板型、固定、插接、热/射频与维护空间后，重新做整机装配检查。
+
+
 - [x] **RC-APPEARANCE-00 通用外观＋小批外包制造路线的文档准备**：已形成[视觉居中 L1](features/enclosure/concept-layout-a-l1.md)及[CMF/外壳分件/RFQ门槛](features/enclosure/appearance-cmf-theme-v0.md)；用户确认主要依靠小批量外包 3D 打印和加工。此勾选**仅代表文档已整理**，不是已锁定最终材料／尺寸、生成 CAD、询到价格或通过实物试样。
 - [x] **RC-APPEARANCE-00B L2A 外观审美选择归档**：用户选择温润奶油白＋胡桃木及右后**圆形展示台**，保持大盘视觉居中；已写入[新 L2A 空间／托台深化](features/enclosure/l2a-cream-walnut-circular-display-v0.md)。此项仅为偏好与规划归档，不代表冻结材质、尺寸、生肖、控件或正式新增 D 号，也非 CAD/实物通过。
 - [x] **RC-APPEARANCE-00C 齐平低环审美选择归档**：用户选定右后圆形展示台**齐平低环**（不是零台阶制造规格），已新增[独立低环装配／射频／音腔约束与小批试样规划](features/enclosure/l2a-flush-low-ring-v0.md)。只勾选审美决策/文档归档，**不代表已建 CAD、NFC/声学/机械验证通过或允许采购**。
