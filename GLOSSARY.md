@@ -29,9 +29,9 @@
 | T01–T12 | 整机验收计划，按功能对应 F 编号 | [product/validation.md](product/validation.md#整机验收计划) |
 | X01–X12 | 控制器纯软件模拟的验收场景；V018已覆盖确定序列，真实硬件另验 | [product/validation.md](product/validation.md) |
 | V001起 | 已产生的产物与证据记录，最新编号与验证范围以证据表为准 | [product/validation.md](product/validation.md) |
-| R0–R3 | 复用参考工程的门槛：来源与许可核验 → 最小链路 → NFC 检测比较 → ABC 整机联合 | [features/records/README.md](features/records/README.md) |
+| R0–R4 | 原型验证门槛：来源与许可 → 离线UID/单曲/I2S → ABC模拟 → NFC实体 → 上传及并发 | [product/validation.md](product/validation.md) |
 
-注意：`features/platform/resource-allocation.md` 中的 `[R1]`、`[R2]` 等是该文件的参考资料编号，与上表的 R0–R3 门槛无关。
+注意：`features/platform/resource-allocation.md` 中的 `[R1]`、`[R2]` 等是该文件的参考资料编号，与上表的 R0–R4 门槛无关。
 
 ## 硬件与平台
 

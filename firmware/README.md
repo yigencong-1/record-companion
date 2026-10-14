@@ -4,6 +4,8 @@
 
 RC-08已交付[播放与内容PC仿真](simulations/playback-controller/README.md)，版本`0.2.2-batch2`两批共47 PASS、0 FAIL、0 UNRESOLVED、3 DEFERRED。该目录是可独立运行的Python标准库验证工具，提供公开接口契约和结果摘录，不是ESP32固件。完整历史工程及原始证据留本机，公开范围遵循[模块发布条件](../CONTRIBUTING.md#模块工程发布条件)。
 
+[轻量ABC交叉回归](simulator/README.md)提供另一套简化JSON后端控制器和43项unittest，已对齐D089/D090，并覆盖文件写入失败回滚与连续故障计时。主交接与文件/进程恢复仍以上述47项工程为入口；两套结果各自报告，硬件覆盖不相加。GitHub Actions对两套软件运行测试，不能替代实物验收。
+
 阶段平台按D063先S3、成品以S31为主。[候选资源分配](../features/platform/resource-allocation.md)已完成，测试板的实际配置和固定依赖在实现对话中核对；主控选型对话不承担测试。原型实现明确板级引脚和外设配置，参考GPIO表不能直接套到兼容板；迁移重核编译目标、解码组件、GPIO/I2S/SD、DMA/缓存、USB恢复及并发，不沿用S3二进制。详细基线和重验清单见[主控专项](../features/platform/README.md#s3验证到s31成品主线)。
 
 建议先建立音频板SD读歌、解码出声、音量/按键及RTC基线，再加入网页上传并发；通用S3板外接墨水屏、识别和其他模块可并行验证。板载单声道播放不计为左右声道或两条声音路线通过，板载充电能力不计为整机边充边用通过。
