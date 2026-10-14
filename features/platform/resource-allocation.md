@@ -2,7 +2,7 @@
 
 日期：2026-10-10。输入为总规划已确认的首版功能，以及音频、显示、识别、网络、灯光运动和电源专项的当前接口需求。按D063先用S3验证模块，成品以S31为主线。本页给出**推荐的资源安排和候选GPIO编号**，不是批准采购、实物接线或通过测试的记录。
 
-S3编号只对应官方N8R8 PCB v1.1参考条件。兼容板或音频板按自己的原理图与板载占用重映射；例如板载RGB使用GPIO48时，本表GPIO48电源保持分配不可直接采用。测试使用的板型、实际内存与接线在对应原型工程记录。
+S3编号只对应官方N8R8 PCB v1.1参考条件。现有双Type-C HXB和S3音频板均按自己的原理图与板载占用重映射；HXB的RGB占GPIO48，音频板固定使用GPIO8、10–16、38、40–42，均不能直接套用本表同号候选。板卡映射是资料输入，不是实物测试结论。
 
 ## 本轮推荐
 
@@ -24,6 +24,15 @@ S3编号只对应官方N8R8 PCB v1.1参考条件。兼容板或音频板按自�
 | 转盘侧脉冲 | 只有选择实际失转检测时再加1路输入；不与电机编码器或FAULT等同，传感器与计数资源未定 |
 | 暖白灯PWM | L2替代路线需LEDC PWM资源；若替代现有1路灯光数据，则GPIO数量不增加但外设/电平重核；若与L1并存才另加1输出，并存方案未确定 |
 | microSD CD | 可选卡检测未分配，不占用已给扩展器INT的GPIO9；按实际板型及输入需求核对 |
+
+### 现有S3台架与官方参考池的关系
+
+| 台架 | 已核对的资料映射 | 资源账本口径 |
+|---|---|---|
+| 双Type-C HXB | WROOM-1-N8；CH343P串口桥 + 原生USB；板载RGB=GPIO48 | GPIO48从HXB电源保持候选中移除；实物Flash/PSRAM、后缀、PCB版号和USB供电/数据关系仍待补 |
+| S3音频板 | I2C=`10/11`；I2S=`13/14/16`，MCLK/DIN=`12/15`；1位SDMMC=`40/42/41`；RGB=`38`；电池ADC=`8`；TCA9555三键经P09/P10/P11 | 不能使用官方S3音频候选编号；板载音频为单声道；示例16 MB Flash/Octal PSRAM配置不证明实板内存；SD CD未引出时不分配 |
+
+因此官方DevKit的24路池、HXB和音频板的固定GPIO集合必须分开记录；在补齐两板模组丝印/读回内存、PCB版号、USB桥占用、外接电平和连接器后，才可形成台架接线稿。
 
 ## 平台资源对比
 
@@ -49,7 +58,7 @@ S31手册的简介与外设正文对PCNT/PWM总数量存在表述差异，本轮
 
 | 扣除步骤 | S3官方N8R8 v1.1 | S31 WROOM-3成品模组 |
 |---|---|---|
-| 模组GPIO集合 | `0–21、35–48`，36路 | `0–25、33–40、42–61`，54路；没有GPIO26–32或41 |
+| 模组GPIO集合 | `0–21、35–48`，36路 | `0–25、33–40、42–61`，54路；没有GPIO26–32或41；模块物理Pin40/41为USB_DP/DM，不等于GPIO40/41 |
 | 内存占用 | N8R8的GPIO35–37，扣3 | 模组Flash引脚没有列入54路，不能重复扣除；PSRAM按模组变体核对 |
 | 原生USB维护 | GPIO19/20，扣2 | Serial/JTAG GPIO33/34，扣2；专用高速USB数据对另保留 |
 | UART恢复 | GPIO43/44，扣2 | GPIO58/59，扣2 |
@@ -62,6 +71,8 @@ S31手册的简介与外设正文对PCNT/PWM总数量存在表述差异，本轮
 S31启动配置资料冲突仍未解决：芯片手册第36页、模组第18页列36/37/60/61；IDF GPIO页另列38/39/40。本表保守避开两者并集。[R2][R3][R5]
 
 GPIO数不含电源、地、芯片专用EN复位线或专用高速USB数据对；外设VEN/EN由普通GPIO控制时仍须计数。外部JTAG如需要：S3另保留39–42，S31另保留54–57；本稿以USB Serial/JTAG调试为起点。S3改用v1.0或兼容板时需重新核对LED、USB和板载占用。
+
+S31的WROOM-3/3U资料把“GPIO名”和模组物理Pin号分开；3U还有ANT2物理脚，外置天线连接器、RF净空和认证不能从54路GPIO余额推导。当前`N16R16V`只是16 MB Flash +16 MB PSRAM容量候选；WROOM-3资料还列N16R8V、N8R16V、N32R16V、N16R32V，WROOM-3U当前表只列N16R16V。后缀、天线、量产版本和载板引出未冻结前，不把这些变体混成同一可用资源池。
 
 ## 按功能分配
 
@@ -153,6 +164,10 @@ S31的LP/RTC GPIO范围为0–7；候选三键在此范围，但当前NFC IRQ13�
 
 所有变化累计计算并删除被替代信号，不把同一组余额多次承诺。原S3 GPIO14/15 UART扩展与GPIO10额外片选/中断只是旧余额用途示例，须先扣VEN及已选新增输入；这与4位SD扩展互斥。S31 GPIO47–57是候选扩展池：可评估额外串口、I2C、SPI或音频，但专用功能/ADC/JTAG和电源预算仍逐项核对。
 
+### 正常有线更新与应用失效恢复
+
+两类维护路径都要保留同一个可达的数据入口：正常情况下由外部Type-C提供电脑可用的USB数据和供电条件；应用失效时仍能通过ROM下载/串口下载或等效启动模式、BOOT/复位控制进入恢复，不依赖应用先启动网络或网页。更新分区、配置/绑定和microSD歌曲的保留/清除范围分开记录；应用更新成功不等于全擦除，恢复入口也不能被自动关机策略、电池低电或仅USB输入阻断。S3 HXB的CH343P与原生USB需分别核对，S31成品则需保留UART/启动脚与可达的USB数据对；具体Type-C共口、电源切换、反灌和连接器可达性由电源/结构专项给出，当前不增加新GPIO。
+
 ## 内存、DMA和并发
 
 | 资源 | 起步规划 | 核实条件 |
@@ -188,7 +203,7 @@ I2S先预约一个TX方向的DMA资源；屏幕SPI按所用驱动核对TX/RX DMA
 |---|---|
 | R1 | [S3芯片数据手册v2.2](https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)，第3–5、25、57/58页；[WROOM-1/1U v1.8](https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf)，第3、11/12页；[官方DevKitC-1 v1.1指南](https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32s3/esp32-s3-devkitc-1/user_guide_v1.1.html)，内存、排针、USB及RGB |
 | R2 | [S31芯片数据手册预发布v0.5](https://documentation.espressif.com/esp32-s31_datasheet_en.pdf)，第5/6、30/36、48、66–70、74–76、79/80页，含CPU/内存、外设、固定SD IO与启动/ADC/唤醒范围 |
-| R3 | [S31 WROOM-3/3U预发布v0.7](https://documentation.espressif.com/esp32-s31-wroom-3_datasheet_en.pdf)，第3、14/15、18页，模组内存变体、54路GPIO及启动条件 |
+| R3 | [S31 WROOM-3/3U预发布v0.7](https://documentation.espressif.com/esp32-s31-wroom-3_datasheet_en.pdf)，第3–4、14–18、44–48、64–68页，模组内存变体、54路GPIO、物理引脚/ANT2、启动条件、尺寸、天线和供电；预发布参数不等于量产或整机数据 |
 | R4 | [S3 SDMMC驱动](https://docs.espressif.com/projects/esp-idf/en/stable/esp32s3/api-reference/peripherals/sdmmc_host.html)，GPIO矩阵；[S31 SDMMC驱动](https://docs.espressif.com/projects/esp-idf/en/stable/esp32s31/api-reference/peripherals/sdmmc_host.html)，API公共文字含其他芯片描述，S31位宽/IO以R2为准 |
 | R5 | [S31 GPIO驱动页v6.1](https://docs.espressif.com/projects/esp-idf/en/stable/esp32s31/api-reference/peripherals/gpio.html)，启动脚集合与R2/R3冲突，暂避开并集 |
 | R6 | [音频专项的接口与条件GPIO草案](../audio/README.md#给主控专项的计算内存与接口输入)，三线I2S、1位SDMMC和缓存预算；另核对[显示](../display/README.md)、[识别](../records/README.md)、[网络](../network/README.md)、[电源](../power/README.md)、[灯光运动](../lighting-motion/README.md)的当前需求 |

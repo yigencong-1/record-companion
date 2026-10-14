@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" width="1200" height="680" role="img" aria-label="Record Companion 方案A L1 可更换静止挂件座：平放浅座与自然落座浅槽对照">
+  <defs>
+    <style>
+      .title{font:700 25px 'Noto Sans SC','Microsoft YaHei',sans-serif;fill:#203440}
+      .h{font:700 20px 'Noto Sans SC','Microsoft YaHei',sans-serif;fill:#203440}
+      .lab{font:15px 'Noto Sans SC','Microsoft YaHei',sans-serif;fill:#355563}
+      .small{font:13px 'Noto Sans SC','Microsoft YaHei',sans-serif;fill:#61727c}
+      .body{fill:#f1f5f5;stroke:#8ea5b0;stroke-width:2}
+      .tag{fill:#fff;stroke:#4b988c;stroke-width:3}
+      .coil{fill:none;stroke:#25917d;stroke-width:2.5;stroke-dasharray:6 5}
+      .block{fill:#d9eae6;stroke:#579589;stroke-width:2}
+      .danger{fill:#f8eee0;stroke:#c89c5f;stroke-width:2;stroke-dasharray:7 5}
+    </style>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0 0 L7 3 L0 6Z" fill="#647d87"/></marker>
+  </defs>
+  <rect width="1200" height="680" fill="#ffffff"/>
+  <text x="52" y="45" class="title">方案 A · L1 挂件座可换接口对照</text>
+  <text x="52" y="71" class="small">共用同一个右后固定安装区域；挂件、天线、指尖、软带均是待确认包络，A/B 只是卡座机械候选，并非 ABC 音乐模式</text>
+  <rect x="52" y="98" width="525" height="477" rx="16" fill="#fcfdfd" stroke="#bfd0d6" stroke-width="1.8"/>
+  <rect x="623" y="98" width="525" height="477" rx="16" fill="#fcfdfd" stroke="#bfd0d6" stroke-width="1.8"/>
+  <text x="78" y="137" class="h">S1 · 平放浅座（首个几何比较）</text>
+  <text x="649" y="137" class="h">S2 · 自然落座浅槽（同步保留）</text>
+  <rect x="90" y="161" width="444" height="239" rx="16" class="body"/>
+  <path d="M117 178 Q259 280 117 383" class="danger"/>
+  <text x="137" y="188" class="small">盘扫掠禁入侧</text>
+  <rect x="250" y="189" width="233" height="187" rx="13" class="block"/>
+  <circle cx="362" cy="269" r="69" class="tag"/>
+  <circle cx="362" cy="269" r="47" fill="none" stroke="#c2d6d5" stroke-width="2"/>
+  <circle cx="362" cy="269" r="13" fill="#dceae9" stroke="#69a59a"/>
+  <path d="M424 323 q44 4 48 -14" fill="none" stroke="#fff" stroke-width="16"/>
+  <path d="M422 322 q50 8 53 -18" fill="none" stroke="#579589" stroke-width="1.8" stroke-dasharray="5 5"/>
+  <path d="M431 221 q33 -14 58 -4" fill="none" stroke="#318b7d" stroke-width="2"/>
+  <text x="395" y="356" class="small">手指缺口（形状未定）</text>
+  <text x="269" y="202" class="small">非金属固定座</text>
+  <rect x="90" y="441" width="444" height="69" rx="9" class="body"/>
+  <rect x="268" y="445" width="179" height="10" rx="3" fill="#f7f7ef" stroke="#4b988c" stroke-width="2"/>
+  <path d="M273 461 H440 V469 H273 Z" class="coil"/>
+  <text x="108" y="463" class="small">剖面意向</text>
+  <text x="108" y="484" class="small">水平卡片</text>
+  <text x="309" y="490" class="small">线圈在卡片下方</text>
+  <text x="108" y="543" class="lab">优势：低外露高度、图案完整可见</text>
+  <text x="108" y="563" class="small">主要核查：平面占用、扣具和指尖取放净空</text>
+  <rect x="661" y="161" width="444" height="239" rx="16" class="body"/>
+  <path d="M686 178 Q827 280 686 383" class="danger"/>
+  <text x="710" y="188" class="small">盘扫掠禁入侧</text>
+  <rect x="875" y="318" width="159" height="28" rx="6" class="block"/>
+  <path d="M920 320 L914 211 Q914 190 937 185 L976 178 Q998 177 1003 201 L1015 317Z" class="tag"/>
+  <path d="M933 196 Q985 208 996 251 Q993 291 947 315" fill="none" stroke="#c2d6d5" stroke-width="2"/>
+  <path d="M888 320 l0 -13 h139 v13" fill="none" stroke="#297f73" stroke-width="3"/>
+  <path d="M1027 198 Q1084 180 1062 267" fill="none" stroke="#318b7d" stroke-width="2" stroke-dasharray="5 4"/>
+  <text x="1045" y="295" text-anchor="middle" class="small">挂扣</text>
+  <text x="1045" y="312" text-anchor="middle" class="small">外露区</text>
+  <text x="885" y="362" class="small">自然落入止挡</text>
+  <rect x="661" y="441" width="444" height="69" rx="9" class="body"/>
+  <path d="M855 493 V460 Q855 450 865 450 H1001 Q1011 450 1011 460 V493" class="block"/>
+  <path d="M907 454 L900 420 L981 412 L988 448" fill="#fff" stroke="#4b988c" stroke-width="2.2"/>
+  <path d="M895 460 L886 426" class="coil"/>
+  <path d="M888 440 Q884 449 879 454" fill="none" stroke="#647d87" stroke-width="1.7" marker-end="url(#arrow)"/>
+  <text x="674" y="463" class="small">剖面意向</text>
+  <text x="674" y="485" class="small">露出上缘</text>
+  <text x="935" y="490" text-anchor="middle" class="small">天线姿态需变更</text>
+  <text x="676" y="543" class="lab">优势：可减少顶部平面投影（待核）</text>
+  <text x="676" y="563" class="small">主要核查：倾角、拔出轨迹、异形卡、天线朝向</text>
+  <rect x="52" y="601" width="1096" height="55" rx="9" fill="#f5f7f8" stroke="#dbe3e6"/>
+  <text x="70" y="624" class="lab">共同边界：卡座不随大盘转动；不可刺穿密闭音腔；读卡线圈、金属挂扣、邻片、取放手部与盘边动态包络须分别验证</text>
+  <text x="70" y="645" class="small">图中弧线与卡片比例都是示意；读区性能、物理离座速度和结构公差未实测，不可据此选定 S1 或 S2。</text>
+</svg>

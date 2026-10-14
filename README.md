@@ -1,8 +1,20 @@
 # Record Companion · 唱片桌搭
 
+**一句话：** 一台离线的桌面音乐播放器，把带 NFC 的小唱片挂件放上去就能播放绑定的歌曲。
+
+![概念效果图：前置墨水屏、左右扬声器、大唱片平放、右侧小唱片挂件卡座](assets/concepts/epaper-player-3d.png)
+
+*概念效果图，仅用于外观审阅；旋钮、尺寸和布局均未冻结。*
+
+**当前进度（2026-10-14）：** 材料准备与模块验证阶段。D089–D091已记录行为补充与自制读卡器路线，公开播放PC仿真已有47项通过；硬件模块的完整功能仍待实测，采购、到货和验证状态分别维护。
+
+**第一次阅读：** 文档中的 A/B/C 模式和 D、F、T、X、RC 等编号见 [术语与编号速查](GLOSSARY.md)。
+
+---
+
 Record Companion 是一个可共同设计的音乐唱片桌搭：本体离线播放本地音乐，配合前置显示、灯光和可选的唱片转动；小唱片既是内容入口，也可以作为书包挂件。首批共八张以圆形为基础的卡：两张歌手卡、通用1–5和近圆形蛋糕生日0，基础功能不依赖互联网。
 
-当前阶段已形成ABC与内容行为的核心规则，正准备RC-08软件模拟与模块原型验证；不同B/C之间的完整替换策略仍待确认。阶段主控已确定：先用ESP32-S3验证模块，成品以ESP32-S31为主线；候选资源稿已形成，实际测试板须按自身原理图重映射。成品模组、内存和外围尚未冻结，迁移到S31后重新验证接口、并发和整板供电。PCB、外壳和成品材料依原型证据收敛。AI问答留作后续扩展，不能成为首版联网或电源设计的前提。
+ABC与内容管理的PC逻辑仿真已完成：版本`0.2.2-batch2`两批合计47 PASS、0 FAIL、0 UNRESOLVED，真实SD掉电、硬件适配器和MP3解码3项另待实测。跨B/C完整替换及全坏停止后的显式PLAY恢复已确认，见D089–D090。[公开仿真工程](firmware/simulations/playback-controller/README.md)提供源码、复跑入口和结果摘录。阶段主控已确定：先用ESP32-S3验证模块，成品以ESP32-S31为主线；候选资源稿已形成，实际测试板须按自身原理图重映射。成品模组、内存和外围尚未冻结，迁移到S31后重新验证接口、并发和整板供电。PCB、外壳和成品材料依原型证据收敛。AI问答留作后续扩展，不能成为首版联网或电源设计的前提。
 
 ## 先看这里
 
@@ -10,13 +22,17 @@ Record Companion 是一个可共同设计的音乐唱片桌搭：本体离线播
 
 | 入口 | 内容 |
 |---|---|
+| [术语与编号速查](GLOSSARY.md) | A/B/C模式、D/F/P/T/X/RC等编号与平台术语的解释 |
 | [当前任务清单](TASKS.md) | RC-08可实施待办、准入门槛、阶段验证和仓库缺失文件检查 |
+| [播放与内容PC仿真](firmware/simulations/playback-controller/README.md) | 已运行的控制器、内容与PC文件恢复测试，复跑命令及实际结果 |
+| [轻量控制器交叉回归](firmware/simulator/README.md) | 43项unittest；与主仿真分别报告，已对齐D089/D090 |
+| [L3空间研究](mechanical/studies/l3-v01/README.md) | 可编辑研究模型、STEP与离线查看器；尚未制造，尺寸未冻结 |
 | [项目计划](product/plan.md) | P0–P7阶段、当前进度、并行专项、候选比较和嘉立创试制流程 |
 | [整机规划](product/README.md) | 已确认产品、F01–F17功能范围与跨功能目标 |
 | [共享接口](product/interfaces.md) | 音频、屏幕、识别、网络、电源、空间和功耗约束 |
 | [主控资源分配稿](features/platform/resource-allocation.md) | S3参考台架与S31成品模组的资源、候选GPIO及改配条件 |
 | [决策记录](product/decisions.md) | 用户决定、编号与后续调整 |
-| [整机验收](product/validation.md) | T01–T12计划和V001–V017公开证据边界 |
+| [整机验收](product/validation.md) | T01–T12计划和V001–V022证据范围，包含软件回归、候选几何与读卡器EDA检查 |
 | [功能专项](features/) | 八条功能专项，以及主控与系统架构选型 |
 | [参考来源](references/README.md) | 外部作品、器件、技能与许可记录 |
 
@@ -49,7 +65,7 @@ Record Companion 是一个可共同设计的音乐唱片桌搭：本体离线播
 | [power](features/power/README.md) | 电池、Type-C电源路径、充电、温升和续航 |
 | [enclosure](features/enclosure/README.md) | 音腔、尺寸、固定、维护和成品材料 |
 
-工程入口仍按实际交付划分为 [firmware](firmware/README.md)、[hardware](hardware/README.md)、[web](web/README.md) 和 [mechanical](mechanical/README.md)。本机音频基线已编译，尚未烧录和实物验证，因此暂不发布源码。SolidWorks已有两类卡座布局粗模及占位几何检查，嘉立创官方CLI/API已查询连接通过，见[工具接入记录](references/project-setup.md)与[证据索引](product/validation.md)；这些不代表播放器功能、制造结构或原理图/PCB通过。
+工程入口仍按实际交付划分为 [firmware](firmware/README.md)、[hardware](hardware/README.md)、[web](web/README.md) 和 [mechanical](mechanical/README.md)。音频板已构建、烧录并响应命令，SD读取与播放待测；SW的V3候选几何见[V019](product/validation.md#v0192026-10-10-v3候选结构几何检查)。读卡器B版已完成原生EDA、两板零错误DRC及12项PC诊断测试，ERC保留1项供应商属性警告，见[V020](product/validation.md#v0202026-10-14-读卡器b版eda与pc诊断证据收敛)。当前处于材料准备与到货前阶段；音频板、读卡器及SW完整工程继续留本机，限定公开的L3空间研究另见上方入口。焊接、主机HAL、RF和可靠取放尚未通过实测。
 
 ## 文件归属与公开范围
 
