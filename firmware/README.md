@@ -2,9 +2,9 @@
 
 本机S3音频板基线已固定ESP-IDF v5.5.2和组件依赖，构建、烧录和运行命令通过；SD读取、WAV/MP3发声及完整播放器实测仍待材料。完整板级工程暂留本机，不作为已通过播放验证的模块发布。成品SDK及集成固件未定。固件应负责本地播放、内容保存、唱片状态、屏幕、灯光/运动控制、本体菜单和网络配合；管理网页源码归 [web](../web/README.md)。
 
-RC-08已交付[播放与内容PC仿真](simulations/playback-controller/README.md)，版本`0.2.2-batch2`两批共47 PASS、0 FAIL、0 UNRESOLVED、3 DEFERRED。该目录是可独立运行的Python标准库验证工具，提供公开接口契约和结果摘录，不是ESP32固件。完整历史工程及原始证据留本机，公开范围遵循[模块发布条件](../CONTRIBUTING.md#模块工程发布条件)。
+后续软件统一从[ABC控制器整合版](simulator/README.md)开发和调用。本轮在协作者代码上落实普通选曲开机静音恢复、绑定捕获、暂停切歌，以及首次失败/读卡故障保护；同时迁入异步音频token、媒体版本隔离和JSON进程恢复验收。实际结果及命令见[V023](../product/validation.md#v0232026-10-14-软件主版本实质整合)与主目录README。
 
-[轻量ABC交叉回归](simulator/README.md)提供另一套简化JSON后端控制器和43项unittest，已对齐D089/D090，并覆盖文件写入失败回滚与连续故障计时。主交接与文件/进程恢复仍以上述47项工程为入口；两套结果各自报告，硬件覆盖不相加。GitHub Actions对两套软件运行测试，不能替代实物验收。
+[0.2.2-batch2](simulations/playback-controller/README.md)保留补充实验：SQLite事务/多写者、合成WAV校验与发布、旧文件句柄和进程恢复。本轮47项复跑通过，真实SD、适配器与MP3仍为3项DEFERRED。主版本以JSON为当前实现，不因补充证据而冻结ESP32存储格式；GitHub Actions分别验证两套声明范围，不替代实物验收。
 
 阶段平台按D063先S3、成品以S31为主。[候选资源分配](../features/platform/resource-allocation.md)已完成，测试板的实际配置和固定依赖在实现对话中核对；主控选型对话不承担测试。原型实现明确板级引脚和外设配置，参考GPIO表不能直接套到兼容板；迁移重核编译目标、解码组件、GPIO/I2S/SD、DMA/缓存、USB恢复及并发，不沿用S3二进制。详细基线和重验清单见[主控专项](../features/platform/README.md#s3验证到s31成品主线)。
 

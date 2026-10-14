@@ -196,7 +196,7 @@ class TestABCRules(SimTestCase):
         self.assertGreater(self.session["session_id"], sid)
         self.assertEqual(self.session["origin_uid"], "uidB2")
         self.assertEqual(self.audio["state"], STOP_ERROR)
-        self.assertEqual(self.ctl.last_error, "ALL_TRACKS_UNPLAYABLE")
+        self.assertEqual(self.ctl.last_error, "START_FAILED")
         self.remove()
         self.assertIsNone(self.session)
 

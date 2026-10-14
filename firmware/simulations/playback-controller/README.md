@@ -2,6 +2,8 @@
 
 版本 `0.2.2-batch2`。这是可独立复跑的控制、内容保存与 PC 文件恢复参考实现：两批已执行结果为 **47 PASS、0 FAIL、0 UNRESOLVED、3 DEFERRED**，见 [结果摘录](evidence/summary.md) 和 [机器可读结果](evidence/results.json)。
 
+按[D092](../../../product/decisions.md)，后续软件以[协作者ABC控制器仿真](../../simulator/README.md)为主，本目录保留本项目最后一版仿真作为补充场景与证据来源，重点是异步音频、媒体文件、事务及进程恢复。异步代次、媒体版本及进程中断的部分验收思想已迁入主版本并独立回归；本目录保留SQLite/WAV/旧句柄实验。既有47项不覆盖D093–D095，当前整合与接入边界见[共享接口](../../../product/interfaces.md#software-integration)。旧版只用于追溯。
+
 需要 **Python 3.10 及以上**，原结果实际使用 **Python 3.13.5**。全部依赖都是 Python 标准库，无需安装额外包。六个源码来自本项目已执行的仿真版本，保持原源码内容；测试用 PCM WAV 由代码合成，无需提供音乐文件或硬件。
 
 ## 运行

@@ -84,7 +84,7 @@ add('rear_bridge_lower_crossmember',box(142,14,12,0,87,3),'frame',frame)
 for i,x in enumerate([49,79]):add(f'rear_bridge_post_{i}',box(12,14,103,x,87,15),'frame',frame)
 beam_end=sx-(ri-3)+3
 bridge=box(beam_end-43,18,6,(43+beam_end)/2,88,118).fuse(ring(ro-4,ri-3,6,sx,sy,118))
-bridge=bridge.cut(cyl(ri-3,12,sx,sy,116)).cut(box(52,42,3,sx,sy,121))
+bridge=bridge.cut(cyl(ri-3,12,sx,sy,116)).cut(box(46.6,46.6,5,sx,sy,120))
 add('16_rear_seat_bridge',bridge,'frame',frame,(0,0,30),'cantilever deflection and fastening unresolved')
 carrier=ring(ro-2,ri-3,2,sx,sy,124).fuse(ring(ro-2,ri+.2,4,sx,sy,126))
 add('17_ring_carrier',carrier,'seat',frame,(0,0,45),'resting contact only; fastening unresolved')
@@ -92,11 +92,23 @@ add('18_flush_low_ring',ring(ro,ri,4,sx,sy,130),'seat',cream,(0,0,60))
 seat=cyl(ri-.5,3,sx,sy,126).fuse(ring(ri-.5,ri-3,4,sx,sy,129))
 add('19_shallow_seat_S1_study',seat,'seat',cream,(0,0,70),'S1 shown as study only; S2 not rejected; finger recess omitted')
 add('20_tag_dummy',cyl(p['tag_dummy_diameter']/2,3,sx,sy,129),'seat',orange,(0,0,80),'not birthday geometry; no keyring, hand or RF validation')
-add('21_nfc_antenna_envelope',box(50,40,1,sx,sy,122),'electronics',orange,(0,0,20),'envelope only, connector and real antenna shape missing')
+antenna_tray=box(46,46,3,sx,sy,120).cut(box(44.6,44.6,3,sx,sy,121))
+add('25_nfc_antenna_removable_tray',antenna_tray,'seat',frame,(0,0,26),'nonmetal tray study; board-edge keepout, retention and material unverified')
+add('21_nfc_antenna_envelope',box(p['nfc_antenna_width'],p['nfc_antenna_depth'],p['nfc_pcb_thickness'],sx,sy,121),'electronics',orange,(0,0,30),'B fabrication outline and 1.6 mm stack; copper, soldered wires and RF keepouts omitted')
 # Small electronics placeholders, placed away from motor vertical corridor.
 add('22_display_envelope',box(86,12,42,0,-114,43),'electronics',dark,(0,-35,0),'display and FPC unknown; no mount')
-add('23_battery_envelope',box(65,42,18,0,62,18),'electronics',orange,(0,30,-10),'not selected pack; no restraint or thermal assessment')
+add('23_battery_envelope',box(65,42,18,0,p['battery_center_y'],18),'electronics',orange,(0,0,-65),'unchanged unselected pack envelope; moved 7 mm forward for bottom service; no thermal approval')
 add('24_control_board_envelope',box(65,35,2,0,62,42),'electronics',frame,(0,30,10),'not S31 board outline; connectors and mounting missing')
+battery_tray=box(71,48,5,0,p['battery_center_y'],16).cut(box(67,44,5,0,p['battery_center_y'],18))
+for x,y in itertools.product([-31,31],[p['battery_center_y']-20,p['battery_center_y']+20]):
+    battery_tray=battery_tray.fuse(box(6,6,13,x,y,3))
+add('26_battery_bottom_service_tray',battery_tray,'frame',frame,(0,0,-65),'V3 bottom-service concept adapted to L3; restraint, swelling and fasteners unresolved')
+core_y=p['nfc_core_center_y']
+reader_tray=box(53,40,6,0,core_y,40).cut(box(49,36,6,0,core_y,42))
+add('27_reader_rear_service_tray',reader_tray,'frame',frame,(0,55,0),'separate rear-removable tray; no drilled PCB holes assumed; retention and solder-wire exit unresolved')
+add('28_pn7160_core_board',box(p['nfc_core_width'],p['nfc_core_depth'],p['nfc_pcb_thickness'],0,core_y,42),'electronics',frame,(0,55,0),'B fabrication outline and 1.6 mm stack; component heights unknown, 6 mm upper reserve is only a study check')
+for sign,label in [(-1,'L'),(1,'R')]:
+    add('29_reader_support_'+label,box(5,37,25,sign*24.5,102.5,15),'frame',frame,note='resting support on rear crossmember; retention and insulation unverified')
 # Export actual CAD geometry.
 for old in (P/'parts').glob('*.step'):
     if old.stem not in {a['name'] for a in parts}: old.unlink()
@@ -117,6 +129,11 @@ for a,b in itertools.combinations(parts,2):
     if v>1e-3:collisions.append({'a':a['name'],'b':b['name'],'overlap_mm3':round(v,4)})
 report={'status':'RESEARCH ONLY, not a physical validation','part_count':len(parts),'all_shapes_valid':all(a['shape'].isValid() for a in parts),'invalid':[a['name'] for a in parts if not a['shape'].isValid()], 'disconnected_parts':[{'name':a['name'],'solids':len(a['shape'].Solids())} for a in parts if len(a['shape'].Solids())!=1], 'positive_volume_intersections':collisions,'speaker_air':speaker_air,'nominal_disc_to_ring_gap_mm':math.hypot(sx,sy-dy)-p['disc_diameter']/2-ro,'disc_to_fixed_light_axial_gap_mm':144-137,'tests_not_run':['strength','vibration','acoustics','NFC','thermal','fastener design','manufacturing','physical assembly','complete removal swept-volume']}
 (P/'geometry_report.json').write_text(json.dumps(report,indent=2),encoding='utf-8')
+manifest=[]
+for a in parts:
+    b=a['shape'].BoundingBox()
+    manifest.append({'name':a['name'],'group':a['group'],'color':a['color'],'note':a['note'],'volume_mm3':a['shape'].Volume(),'bounds_mm':[b.xmin,b.ymin,b.zmin,b.xmax,b.ymax,b.zmax]})
+(P/'part_manifest.json').write_text(json.dumps(manifest,indent=2),encoding='utf-8')
 meshes=[]
 for a in parts:
     vs,fs=a['shape'].tessellate(.7,.2)

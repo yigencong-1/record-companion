@@ -4,11 +4,12 @@ from PIL import Image,ImageDraw,ImageFont
 from matplotlib import font_manager
 P=Path(__file__).resolve().parent
 meshes=json.loads((P/'meshes.json').read_text(encoding='utf-8'))
-eye=np.array([550.,-760.,580.]);target=np.array([0.,0.,75.]);f=eye-target;f/=np.linalg.norm(f);r=np.cross([0.,0.,1.],f);r/=np.linalg.norm(r);u=np.cross(f,r);rot=np.array([r,u,f])
-for mode in ['internal','assembled','exploded']:
+for mode in ['internal','assembled','exploded','service']:
+ eye=np.array([550.,760. if mode=='service' else -760.,580.]);target=np.array([0.,0.,75.]);f=eye-target;f/=np.linalg.norm(f);r=np.cross([0.,0.,1.],f);r/=np.linalg.norm(r);u=np.cross(f,r);rot=np.array([r,u,f])
  items=[]
  for m in meshes:
   if mode=='internal' and m['group'] in ['shell','disc','lighting','cover']:continue
+  if mode=='service' and m['name'] not in ['frame_rear','16_rear_seat_bridge','21_nfc_antenna_envelope','23_battery_envelope','25_nfc_antenna_removable_tray','26_battery_bottom_service_tray','27_reader_rear_service_tray','28_pn7160_core_board','29_reader_support_L','29_reader_support_R','rear_bridge_lower_crossmember','rear_bridge_post_0','rear_bridge_post_1']:continue
   off=np.array(m['explode'] if mode=='exploded' else [0,0,0]);v=(np.array(m['vertices'])+off)@rot.T;items.append((m,v))
  allv=np.concatenate([v for m,v in items]);lo=allv.min(0);hi=allv.max(0);W,H=1500,1060;sc=min(1360/(hi[0]-lo[0]),860/(hi[1]-lo[1]));cen=(lo+hi)/2
  rgb=np.empty((H,W,3),np.uint8);rgb[:]=[244,240,232];depth=np.full((H,W),-np.inf)
@@ -23,5 +24,5 @@ for mode in ['internal','assembled','exploded']:
    n=np.cross(v[face[1]]-v[face[0]],v[face[2]]-v[face[0]]);n/=max(np.linalg.norm(n),1e-9);shade=.48+.52*abs(np.dot(n,[-.35,.45,.82]));color=np.clip(np.array(m['color'])*shade*255,0,255).astype(np.uint8)
    sub[mask]=zz[mask];rgb[ymin:ymax+1,xmin:xmax+1][mask]=color
  image=Image.fromarray(rgb);d=ImageDraw.Draw(image);font=ImageFont.truetype(font_manager.findfont('DejaVu Sans'),28);small=ImageFont.truetype(font_manager.findfont('DejaVu Sans'),18)
- labels={'internal':'INTERNAL ASSEMBLY / TOP AND PLATTER REMOVED','assembled':'RECORD COMPANION / ASSEMBLY STUDY','exploded':'EXPLODED GEOMETRY / NOT AN ASSEMBLY SEQUENCE'}
+ labels={'internal':'INTERNAL ASSEMBLY / TOP AND PLATTER REMOVED','assembled':'RECORD COMPANION / ASSEMBLY STUDY','exploded':'EXPLODED GEOMETRY / NOT AN ASSEMBLY SEQUENCE','service':'L3 INTEGRATION / REAR READER, ANTENNA AND BOTTOM SERVICE'}
  d.text((45,30),labels[mode],font=font,fill='#283c40');d.text((45,72),'Actual CAD geometry | Research only | Dimensions and hardware not approved',font=small,fill='#526365');image.save(P/(mode+'.png'));print(mode)

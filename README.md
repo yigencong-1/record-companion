@@ -6,7 +6,7 @@
 
 *概念效果图，仅用于外观审阅；旋钮、尺寸和布局均未冻结。*
 
-**当前进度（2026-10-14）：** 材料准备与模块验证阶段。D089–D091已记录行为补充与自制读卡器路线，公开播放PC仿真已有47项通过；硬件模块的完整功能仍待实测，采购、到货和验证状态分别维护。
+**当前进度（2026-10-14）：** 各分支成果已进入统一基线，本轮继续完成软件主版本与L3/SolidWorks研究工程的实质整合。软件入口、研究模型和证据索引见下表；硬件仍在材料准备与模块验证阶段。
 
 **第一次阅读：** 文档中的 A/B/C 模式和 D、F、T、X、RC 等编号见 [术语与编号速查](GLOSSARY.md)。
 
@@ -14,7 +14,7 @@
 
 Record Companion 是一个可共同设计的音乐唱片桌搭：本体离线播放本地音乐，配合前置显示、灯光和可选的唱片转动；小唱片既是内容入口，也可以作为书包挂件。首批共八张以圆形为基础的卡：两张歌手卡、通用1–5和近圆形蛋糕生日0，基础功能不依赖互联网。
 
-ABC与内容管理的PC逻辑仿真已完成：版本`0.2.2-batch2`两批合计47 PASS、0 FAIL、0 UNRESOLVED，真实SD掉电、硬件适配器和MP3解码3项另待实测。跨B/C完整替换及全坏停止后的显式PLAY恢复已确认，见D089–D090。[公开仿真工程](firmware/simulations/playback-controller/README.md)提供源码、复跑入口和结果摘录。阶段主控已确定：先用ESP32-S3验证模块，成品以ESP32-S31为主线；候选资源稿已形成，实际测试板须按自身原理图重映射。成品模组、内存和外围尚未冻结，迁移到S31后重新验证接口、并发和整板供电。PCB、外壳和成品材料依原型证据收敛。AI问答留作后续扩展，不能成为首版联网或电源设计的前提。
+后续软件以[ABC控制器整合版](firmware/simulator/README.md)为主，普通选曲开机静音恢复、绑定页放片不播放、暂停NEXT仍暂停已实现并通过PC回归；首次失败、故障保护及补充工程的异步/恢复场景也已融入，见[V023](product/validation.md#v0232026-10-14-软件主版本实质整合)。建模以plan分支最新[L3空间研究](mechanical/studies/l3-v01/README.md)继续，更新真实读卡板外形及维护研究；SW原生装配在本机保存，公开可编辑研究源、STEP及脱敏证据。主控仍先ESP32-S3模块验证、成品ESP32-S31；准确成品模组、外围、外壳尺寸和材料依实物证据收敛，AI留后续。
 
 ## 先看这里
 
@@ -24,15 +24,15 @@ ABC与内容管理的PC逻辑仿真已完成：版本`0.2.2-batch2`两批合计4
 |---|---|
 | [术语与编号速查](GLOSSARY.md) | A/B/C模式、D/F/P/T/X/RC等编号与平台术语的解释 |
 | [当前任务清单](TASKS.md) | RC-08可实施待办、准入门槛、阶段验证和仓库缺失文件检查 |
-| [播放与内容PC仿真](firmware/simulations/playback-controller/README.md) | 已运行的控制器、内容与PC文件恢复测试，复跑命令及实际结果 |
-| [轻量控制器交叉回归](firmware/simulator/README.md) | 43项unittest；与主仿真分别报告，已对齐D089/D090 |
-| [L3空间研究](mechanical/studies/l3-v01/README.md) | 可编辑研究模型、STEP与离线查看器；尚未制造，尺寸未冻结 |
+| [播放与内容PC仿真](firmware/simulations/playback-controller/README.md) | 补充验证归档：SQLite、合成WAV发布、旧句柄及进程恢复；不作为第二主控制器 |
+| [ABC控制器仿真](firmware/simulator/README.md) | 软件唯一开发入口，已融入D093–D095、故障/迟到回调和JSON恢复；实际回归见V023 |
+| [L3空间研究](mechanical/studies/l3-v01/README.md) | plan分支时间最新的建模主线（D092）；可编辑模型、STEP与离线查看器，尺寸未冻结 |
 | [项目计划](product/plan.md) | P0–P7阶段、当前进度、并行专项、候选比较和嘉立创试制流程 |
 | [整机规划](product/README.md) | 已确认产品、F01–F17功能范围与跨功能目标 |
 | [共享接口](product/interfaces.md) | 音频、屏幕、识别、网络、电源、空间和功耗约束 |
 | [主控资源分配稿](features/platform/resource-allocation.md) | S3参考台架与S31成品模组的资源、候选GPIO及改配条件 |
 | [决策记录](product/decisions.md) | 用户决定、编号与后续调整 |
-| [整机验收](product/validation.md) | T01–T12计划和V001–V022证据范围，包含软件回归、候选几何与读卡器EDA检查 |
+| [整机验收](product/validation.md) | T01–T12计划和V001起的实际证据，包含软件整合、CAD研究与读卡器EDA检查 |
 | [功能专项](features/) | 八条功能专项，以及主控与系统架构选型 |
 | [参考来源](references/README.md) | 外部作品、器件、技能与许可记录 |
 

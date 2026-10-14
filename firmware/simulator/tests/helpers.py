@@ -27,7 +27,7 @@ BINDINGS = {
 
 class SimTestCase(unittest.TestCase):
     def setUp(self):
-        self._tmp = tempfile.TemporaryDirectory()
+        self._tmp = tempfile.TemporaryDirectory(dir=os.environ.get("RC_SIM_TEST_TMP"))
         self.path = os.path.join(self._tmp.name, "store.json")
         store = Store.load(self.path)
         store.seed(tracks=TRACKS, playlists=PLAYLISTS, bindings=BINDINGS,

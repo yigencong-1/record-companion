@@ -38,5 +38,121 @@
     "tools and fingers",
     "coupling locking screws",
     "hatch fastening"
-  ]
+  ],
+  "additional_service_routes": [
+    {
+      "route": "reader_rear",
+      "moving": [
+        "27_reader_rear_service_tray",
+        "28_pn7160_core_board"
+      ],
+      "removed_before_check": [
+        "05_rear_service_cover"
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "samples": [
+        {
+          "offset_mm": 2,
+          "intersections": []
+        },
+        {
+          "offset_mm": 10,
+          "intersections": []
+        },
+        {
+          "offset_mm": 30,
+          "intersections": []
+        },
+        {
+          "offset_mm": 60,
+          "intersections": []
+        },
+        {
+          "offset_mm": 100,
+          "intersections": []
+        }
+      ]
+    },
+    {
+      "route": "battery_bottom",
+      "moving": [
+        "23_battery_envelope",
+        "26_battery_bottom_service_tray",
+        "04_central_bottom_hatch"
+      ],
+      "removed_before_check": [],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "samples": [
+        {
+          "offset_mm": 2,
+          "intersections": []
+        },
+        {
+          "offset_mm": 10,
+          "intersections": []
+        },
+        {
+          "offset_mm": 30,
+          "intersections": []
+        },
+        {
+          "offset_mm": 60,
+          "intersections": []
+        },
+        {
+          "offset_mm": 100,
+          "intersections": []
+        }
+      ]
+    },
+    {
+      "route": "antenna_top",
+      "moving": [
+        "21_nfc_antenna_envelope",
+        "25_nfc_antenna_removable_tray"
+      ],
+      "removed_before_check": [
+        "17_ring_carrier",
+        "18_flush_low_ring",
+        "19_shallow_seat_S1_study",
+        "20_tag_dummy"
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "samples": [
+        {
+          "offset_mm": 2,
+          "intersections": []
+        },
+        {
+          "offset_mm": 10,
+          "intersections": []
+        },
+        {
+          "offset_mm": 30,
+          "intersections": []
+        },
+        {
+          "offset_mm": 60,
+          "intersections": []
+        },
+        {
+          "offset_mm": 100,
+          "intersections": []
+        }
+      ]
+    }
+  ],
+  "limits": "Discrete positions only. Unselected battery, PCB component heights, wire bends, RF clearances and fasteners are not validated."
 }

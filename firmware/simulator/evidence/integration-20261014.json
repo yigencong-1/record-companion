@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-14",
+  "scope": "firmware/simulator integrated PC controller",
+  "python": "3.10.19",
+  "platform": "Windows",
+  "command_from_repository_root": "python -B -m unittest discover -s firmware/simulator/tests",
+  "result": {
+    "tests": 70,
+    "passed": 70,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "exit_code": 0
+  },
+  "prior_tests": 43,
+  "added_tests": 27,
+  "updated_expectation": "D074 initial start failure reports START_FAILED rather than ALL_TRACKS_UNPLAYABLE",
+  "implemented_rules": ["D093", "D094", "D095", "D074 initial failure", "D072 trusted recovery"],
+  "adapted_into_primary": [
+    "RACE01/RACE02/RACE03 asynchronous start, operation/session/boot callback isolation",
+    "RUNTIME-OPEN initial failure versus later open failure",
+    "MEDIA-OLD version-specific failure and paused media ownership",
+    "PROC-TXN actual child-process exit before and after JSON replacement",
+    "PARTIAL uncommitted temporary JSON ignored on startup"
+  ],
+  "supplementary_only": [
+    "SQLite multiple-writer serialization",
+    "WAV file validation and immutable media publication",
+    "old operating-system file handles across media replacement"
+  ],
+  "unverified": [
+    "real NFC identity and trusted physical removal",
+    "real audio, MP3, underruns and hardware callback timing",
+    "SD/FAT physical power loss and embedded flash lifetime",
+    "HTTP, display pages and controls",
+    "ordinary playlist end policy and other unconfirmed controls"
+  ]
+}

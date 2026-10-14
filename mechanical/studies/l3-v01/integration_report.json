@@ -1,0 +1,56 @@
+{
+  "status": "pass",
+  "revision": "L3 v0.2 integration research",
+  "scope": "computed B-rep geometry, STEP roundtrip and discrete service positions only",
+  "step_roundtrip_solid_count": 53,
+  "all_step_solids_valid": true,
+  "nominal_B_board_dimensions_mm": {
+    "21_nfc_antenna_envelope": [
+      44.0,
+      44.0,
+      1.5999999999999943
+    ],
+    "28_pn7160_core_board": [
+      45.0,
+      32.0,
+      1.6000000000000014
+    ]
+  },
+  "board_source": "project PN7160 B fabrication specification: 45x32 mm 4-layer core; 44x44 mm 2-layer antenna; both nominal 1.6 mm",
+  "service_routes_sample_counts": {
+    "motor_bottom": 5,
+    "reader_rear": 5,
+    "battery_bottom": 5,
+    "antenna_top": 5
+  },
+  "positive_volume_intersections": 0,
+  "core_upper_component_reserve": {
+    "height_mm": 6,
+    "intersections": [],
+    "basis": "study clearance only; actual component and solder heights pending"
+  },
+  "antenna_board_top_to_card_bottom_mm": 6.400000000000006,
+  "L3_inputs_retained": {
+    "case_mm": [
+      400,
+      260,
+      134
+    ],
+    "model_top_mm": 152,
+    "disc_diameter_mm": 220,
+    "shaft_diameter_mm": 8
+  },
+  "changes": [
+    "44x44x1.6 mm antenna plus removable nonmetal study tray and bridge pocket",
+    "45x32x1.6 mm core plus rear-service tray and supports",
+    "V3 bottom-service concept adapted with independent battery tray; same unselected pack moved 7 mm forward"
+  ],
+  "unverified": [
+    "PCB copper/components/solder-wire geometry and RF clearances",
+    "real battery and swelling/thermal requirements",
+    "fastening and insulation",
+    "birthday profile/keyring/finger motion",
+    "continuous service swept volumes",
+    "acoustics/RF/strength/vibration/thermal/physical assembly"
+  ]
+}
