@@ -1,0 +1,296 @@
+{
+  "status": "pass",
+  "scope": "SOLIDWORKS 2026 native persistence of imported research solids; no physical validation",
+  "source_revision": "L3 v0.2 integration",
+  "part_count": 53,
+  "all_parts_single_solid": true,
+  "all_parts_saved_reopened": true,
+  "max_part_bbox_difference_mm": 2.842170943040401e-14,
+  "assemblies": [
+    {
+      "variant": "complete",
+      "component_count": 53,
+      "saved_transform_identity": true,
+      "all_fixed": true,
+      "save_reopen": true,
+      "interference_count": 0,
+      "previews_not_blank": true,
+      "feature_errors_absent": true
+    },
+    {
+      "variant": "internal",
+      "component_count": 46,
+      "saved_transform_identity": true,
+      "all_fixed": true,
+      "save_reopen": true,
+      "interference_count": 0,
+      "previews_not_blank": true,
+      "feature_errors_absent": true
+    }
+  ],
+  "exports": {
+    "step": {
+      "name": "record_companion_l3_sw_export.step",
+      "bytes": 1375144,
+      "roundtrip": {
+        "status": "pass",
+        "solidworks_STEP_roundtrip_solids": 53,
+        "all_valid": true,
+        "extent_mm": [
+          400.0,
+          260.0,
+          152.0
+        ]
+      }
+    },
+    "stl": {
+      "layout": "one STL per component",
+      "file_count": 53,
+      "files": [
+        {
+          "name": "record_companion_l3_sw_export - 01_decorative_shell-1.STL",
+          "bytes": 18884
+        },
+        {
+          "name": "record_companion_l3_sw_export - 02_walnut_visual_top-1.STL",
+          "bytes": 15884
+        },
+        {
+          "name": "record_companion_l3_sw_export - 03_base_perimeter-1.STL",
+          "bytes": 1684
+        },
+        {
+          "name": "record_companion_l3_sw_export - 04_central_bottom_hatch-1.STL",
+          "bytes": 684
+        },
+        {
+          "name": "record_companion_l3_sw_export - 05_rear_service_cover-1.STL",
+          "bytes": 684
+        },
+        {
+          "name": "record_companion_l3_sw_export - 06_bearing_support_plate-1.STL",
+          "bytes": 78084
+        },
+        {
+          "name": "record_companion_l3_sw_export - 07_bearing_placeholder-1.STL",
+          "bytes": 39684
+        },
+        {
+          "name": "record_companion_l3_sw_export - 08_main_shaft-1.STL",
+          "bytes": 7484
+        },
+        {
+          "name": "record_companion_l3_sw_export - 09_motor_tray-1.STL",
+          "bytes": 51484
+        },
+        {
+          "name": "record_companion_l3_sw_export - 10_motor_envelope-1.STL",
+          "bytes": 684
+        },
+        {
+          "name": "record_companion_l3_sw_export - 11_motor_output_shaft-1.STL",
+          "bytes": 11484
+        },
+        {
+          "name": "record_companion_l3_sw_export - 12_coupling_placeholder-1.STL",
+          "bytes": 26084
+        },
+        {
+          "name": "record_companion_l3_sw_export - 13_platter-1.STL",
+          "bytes": 12284
+        },
+        {
+          "name": "record_companion_l3_sw_export - 14_decorative_disc-1.STL",
+          "bytes": 12284
+        },
+        {
+          "name": "record_companion_l3_sw_export - 15_fixed_light_diffuser-1.STL",
+          "bytes": 24284
+        },
+        {
+          "name": "record_companion_l3_sw_export - 16_rear_seat_bridge-1.STL",
+          "bytes": 21684
+        },
+        {
+          "name": "record_companion_l3_sw_export - 17_ring_carrier-1.STL",
+          "bytes": 39784
+        },
+        {
+          "name": "record_companion_l3_sw_export - 18_flush_low_ring-1.STL",
+          "bytes": 22884
+        },
+        {
+          "name": "record_companion_l3_sw_export - 19_shallow_seat_S1_study-1.STL",
+          "bytes": 29984
+        },
+        {
+          "name": "record_companion_l3_sw_export - 20_tag_dummy-1.STL",
+          "bytes": 12284
+        },
+        {
+          "name": "record_companion_l3_sw_export - 21_nfc_antenna_envelope-1.STL",
+          "bytes": 684
+        },
+        {
+          "name": "record_companion_l3_sw_export - 22_display_envelope-1.STL",
+          "bytes": 684
+        },
+        {
+          "name": "record_companion_l3_sw_export - 23_battery_envelope-1.STL",
+          "bytes": 684
+        },
+        {
+          "name": "record_companion_l3_sw_export - 24_control_board_envelope-1.STL",
+          "bytes": 684
+        },
+        {
+          "name": "record_companion_l3_sw_export - 25_nfc_antenna_removable_tray-1.STL",
+          "bytes": 1484
+        },
+        {
+          "name": "record_companion_l3_sw_export - 26_battery_bottom_service_tray-1.STL",
+          "bytes": 4684
+        },
+        {
+          "name": "record_companion_l3_sw_export - 27_reader_rear_service_tray-1.STL",
+          "bytes": 1484
+        },
+        {
+          "name": "record_companion_l3_sw_export - 28_pn7160_core_board-1.STL",
+          "bytes": 684
+        },
+        {
+          "name": "record_companion_l3_sw_export - 29_reader_support_L-1.STL",
+          "bytes": 684
+        },
+        {
+          "name": "record_companion_l3_sw_export - 29_reader_support_R-1.STL",
+          "bytes": 684
+        },
+        {
+          "name": "record_companion_l3_sw_export - frame_front-1.STL",
+          "bytes": 684
+        },
+        {
+          "name": "record_companion_l3_sw_export - frame_rear-1.STL",
+          "bytes": 684
+        },
+        {
+          "name": "record_companion_l3_sw_export - motor_hanger_L-1.STL",
+          "bytes": 8884
+        },
+        {
+          "name": "record_companion_l3_sw_export - motor_hanger_R-1.STL",
+          "bytes": 8884
+        },
+        {
+          "name": "record_companion_l3_sw_export - motor_tray_bolt_L-1.STL",
+          "bytes": 17084
+        },
+        {
+          "name": "record_companion_l3_sw_export - motor_tray_bolt_R-1.STL",
+          "bytes": 17084
+        },
+        {
+          "name": "record_companion_l3_sw_export - plate_fastener_1-1.STL",
+          "bytes": 15284
+        },
+        {
+          "name": "record_companion_l3_sw_export - plate_fastener_2-1.STL",
+          "bytes": 15284
+        },
+        {
+          "name": "record_companion_l3_sw_export - plate_fastener_3-1.STL",
+          "bytes": 15284
+        },
+        {
+          "name": "record_companion_l3_sw_export - plate_fastener_4-1.STL",
+          "bytes": 15284
+        },
+        {
+          "name": "record_companion_l3_sw_export - post_1-1.STL",
+          "bytes": 8284
+        },
+        {
+          "name": "record_companion_l3_sw_export - post_2-1.STL",
+          "bytes": 8284
+        },
+        {
+          "name": "record_companion_l3_sw_export - post_3-1.STL",
+          "bytes": 8284
+        },
+        {
+          "name": "record_companion_l3_sw_export - post_4-1.STL",
+          "bytes": 8284
+        },
+        {
+          "name": "record_companion_l3_sw_export - rail_left-1.STL",
+          "bytes": 684
+        },
+        {
+          "name": "record_companion_l3_sw_export - rail_right-1.STL",
+          "bytes": 684
+        },
+        {
+          "name": "record_companion_l3_sw_export - rear_bridge_lower_crossmember-1.STL",
+          "bytes": 684
+        },
+        {
+          "name": "record_companion_l3_sw_export - rear_bridge_post_0-1.STL",
+          "bytes": 684
+        },
+        {
+          "name": "record_companion_l3_sw_export - rear_bridge_post_1-1.STL",
+          "bytes": 684
+        },
+        {
+          "name": "record_companion_l3_sw_export - speaker_box_L-1.STL",
+          "bytes": 9684
+        },
+        {
+          "name": "record_companion_l3_sw_export - speaker_box_R-1.STL",
+          "bytes": 9684
+        },
+        {
+          "name": "record_companion_l3_sw_export - speaker_driver_L-1.STL",
+          "bytes": 22884
+        },
+        {
+          "name": "record_companion_l3_sw_export - speaker_driver_R-1.STL",
+          "bytes": 22884
+        }
+      ],
+      "all_53_binary_files_readable": true,
+      "total_triangle_count": 13048,
+      "aggregate_bounds_as_stored": [
+        [
+          1.9999891519546509,
+          1.3000071048736572,
+          0.0
+        ],
+        [
+          402.0,
+          261.29998779296875,
+          152.0
+        ]
+      ],
+      "note": "Unitless binary files; aggregate numeric extent checked against 400x260x152 mm. SW applies a common export translation; coordinates are not the source model origin."
+    }
+  },
+  "owned_documents_saved_closed": true,
+  "quit_owned_instance": true,
+  "limitations": [
+    "fixed research assembly, no kinematic mates",
+    "STEP-imported solids, not editable SW sketches",
+    "unselected placeholders remain",
+    "no physical RF/acoustic/thermal/strength validation"
+  ],
+  "dependencies": {
+    "count": 53,
+    "all_exist": true,
+    "all_within_delivery": true
+  },
+  "display": "Z-up display saved on both assemblies; standard SW orthographic previews use native SW axes.",
+  "python_version": "3.13.5",
+  "application_process_absent_after_exit": true
+}

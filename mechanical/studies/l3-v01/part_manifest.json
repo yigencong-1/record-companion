@@ -1,0 +1,1009 @@
+[
+  {
+    "name": "01_decorative_shell",
+    "group": "shell",
+    "color": [
+      0.87,
+      0.83,
+      0.73
+    ],
+    "note": "front apertures only; grille / gasket / acoustics unresolved",
+    "volume_mm3": 455167.9133547009,
+    "bounds_mm": [
+      -200.0,
+      -130.0,
+      3.0,
+      200.0,
+      130.0,
+      134.0
+    ]
+  },
+  {
+    "name": "02_walnut_visual_top",
+    "group": "shell",
+    "color": [
+      0.37,
+      0.22,
+      0.13
+    ],
+    "note": "wood appearance only, material not selected",
+    "volume_mm3": 378045.81604931626,
+    "bounds_mm": [
+      -197.0,
+      -127.0,
+      130.0,
+      197.0,
+      127.0,
+      134.0
+    ]
+  },
+  {
+    "name": "03_base_perimeter",
+    "group": "frame",
+    "color": [
+      0.87,
+      0.83,
+      0.73
+    ],
+    "note": "study_geometry",
+    "volume_mm3": 220428.0,
+    "bounds_mm": [
+      -197.0,
+      -127.0,
+      0.0,
+      197.0,
+      127.0,
+      3.0
+    ]
+  },
+  {
+    "name": "04_central_bottom_hatch",
+    "group": "cover",
+    "color": [
+      0.87,
+      0.83,
+      0.73
+    ],
+    "note": "retention and screw lands not designed",
+    "volume_mm3": 78813.0,
+    "bounds_mm": [
+      -69.5,
+      -94.5,
+      0.0,
+      69.5,
+      94.5,
+      3.0
+    ]
+  },
+  {
+    "name": "05_rear_service_cover",
+    "group": "cover",
+    "color": [
+      0.87,
+      0.83,
+      0.73
+    ],
+    "note": "retention not designed",
+    "volume_mm3": 27126.0,
+    "bounds_mm": [
+      -68.5,
+      127.0,
+      14.0,
+      68.5,
+      130.0,
+      80.0
+    ]
+  },
+  {
+    "name": "rail_left",
+    "group": "frame",
+    "color": [
+      0.18,
+      0.48,
+      0.53
+    ],
+    "note": "study_geometry",
+    "volume_mm3": 42240.0,
+    "bounds_mm": [
+      -87.0,
+      -110.0,
+      3.0,
+      -71.0,
+      110.0,
+      15.0
+    ]
+  },
+  {
+    "name": "rail_right",
+    "group": "frame",
+    "color": [
+      0.18,
+      0.48,
+      0.53
+    ],
+    "note": "study_geometry",
+    "volume_mm3": 42240.0,
+    "bounds_mm": [
+      71.0,
+      -110.0,
+      3.0,
+      87.0,
+      110.0,
+      15.0
+    ]
+  },
+  {
+    "name": "frame_front",
+    "group": "frame",
+    "color": [
+      0.18,
+      0.48,
+      0.53
+    ],
+    "note": "study_geometry",
+    "volume_mm3": 27264.0,
+    "bounds_mm": [
+      -71.0,
+      -110.0,
+      3.0,
+      71.0,
+      -94.0,
+      15.0
+    ]
+  },
+  {
+    "name": "frame_rear",
+    "group": "frame",
+    "color": [
+      0.18,
+      0.48,
+      0.53
+    ],
+    "note": "study_geometry",
+    "volume_mm3": 27264.0,
+    "bounds_mm": [
+      -71.0,
+      94.0,
+      3.0,
+      71.0,
+      110.0,
+      15.0
+    ]
+  },
+  {
+    "name": "post_1",
+    "group": "frame",
+    "color": [
+      0.18,
+      0.48,
+      0.53
+    ],
+    "note": "study_geometry",
+    "volume_mm3": 18519.05979233441,
+    "bounds_mm": [
+      -87.0,
+      -56.0,
+      15.0,
+      -71.0,
+      -40.0,
+      90.0
+    ]
+  },
+  {
+    "name": "post_2",
+    "group": "frame",
+    "color": [
+      0.18,
+      0.48,
+      0.53
+    ],
+    "note": "study_geometry",
+    "volume_mm3": 18519.05979233441,
+    "bounds_mm": [
+      -87.0,
+      10.0,
+      15.0,
+      -71.0,
+      26.0,
+      90.0
+    ]
+  },
+  {
+    "name": "post_3",
+    "group": "frame",
+    "color": [
+      0.18,
+      0.48,
+      0.53
+    ],
+    "note": "study_geometry",
+    "volume_mm3": 18519.05979233441,
+    "bounds_mm": [
+      71.0,
+      -56.0,
+      15.0,
+      87.0,
+      -40.0,
+      90.0
+    ]
+  },
+  {
+    "name": "post_4",
+    "group": "frame",
+    "color": [
+      0.18,
+      0.48,
+      0.53
+    ],
+    "note": "study_geometry",
+    "volume_mm3": 18519.05979233441,
+    "bounds_mm": [
+      71.0,
+      10.0,
+      15.0,
+      87.0,
+      26.0,
+      90.0
+    ]
+  },
+  {
+    "name": "06_bearing_support_plate",
+    "group": "frame",
+    "color": [
+      0.18,
+      0.48,
+      0.53
+    ],
+    "note": "study_geometry",
+    "volume_mm3": 133874.15233855823,
+    "bounds_mm": [
+      -90.0,
+      -62.0,
+      90.0,
+      90.0,
+      32.0,
+      98.0
+    ]
+  },
+  {
+    "name": "plate_fastener_1",
+    "group": "fastener",
+    "color": [
+      0.65,
+      0.69,
+      0.72
+    ],
+    "note": "smooth screw envelope, threads / inserts omitted",
+    "volume_mm3": 197.92033717615695,
+    "bounds_mm": [
+      -82.0,
+      -51.0,
+      82.0,
+      -76.0,
+      -45.0,
+      101.0
+    ]
+  },
+  {
+    "name": "plate_fastener_2",
+    "group": "fastener",
+    "color": [
+      0.65,
+      0.69,
+      0.72
+    ],
+    "note": "smooth screw envelope, threads / inserts omitted",
+    "volume_mm3": 197.92033717615695,
+    "bounds_mm": [
+      -82.0,
+      15.0,
+      82.0,
+      -76.0,
+      21.0,
+      101.0
+    ]
+  },
+  {
+    "name": "plate_fastener_3",
+    "group": "fastener",
+    "color": [
+      0.65,
+      0.69,
+      0.72
+    ],
+    "note": "smooth screw envelope, threads / inserts omitted",
+    "volume_mm3": 197.92033717615695,
+    "bounds_mm": [
+      76.0,
+      -51.0,
+      82.0,
+      82.0,
+      -45.0,
+      101.0
+    ]
+  },
+  {
+    "name": "plate_fastener_4",
+    "group": "fastener",
+    "color": [
+      0.65,
+      0.69,
+      0.72
+    ],
+    "note": "smooth screw envelope, threads / inserts omitted",
+    "volume_mm3": 197.92033717615695,
+    "bounds_mm": [
+      76.0,
+      15.0,
+      82.0,
+      82.0,
+      21.0,
+      101.0
+    ]
+  },
+  {
+    "name": "07_bearing_placeholder",
+    "group": "drive",
+    "color": [
+      0.65,
+      0.69,
+      0.72
+    ],
+    "note": "invented housing; no selected bearing; thrust retention unresolved",
+    "volume_mm3": 24085.309890303568,
+    "bounds_mm": [
+      -18.0,
+      -33.0,
+      98.0,
+      18.0,
+      3.0,
+      118.0
+    ]
+  },
+  {
+    "name": "08_main_shaft",
+    "group": "drive",
+    "color": [
+      0.65,
+      0.69,
+      0.72
+    ],
+    "note": "axial retention not designed",
+    "volume_mm3": 4021.238596594934,
+    "bounds_mm": [
+      -4.0,
+      -19.0,
+      64.0,
+      4.0,
+      -11.0,
+      144.0
+    ]
+  },
+  {
+    "name": "motor_hanger_L",
+    "group": "frame",
+    "color": [
+      0.18,
+      0.48,
+      0.53
+    ],
+    "note": "upper hanger permits downward tray removal; rail fasteners unresolved",
+    "volume_mm3": 4523.683188924501,
+    "bounds_mm": [
+      -87.0,
+      -25.0,
+      15.0,
+      -50.0,
+      -5.0,
+      24.0
+    ]
+  },
+  {
+    "name": "motor_tray_bolt_L",
+    "group": "fastener",
+    "color": [
+      0.65,
+      0.69,
+      0.72
+    ],
+    "note": "smooth bolt envelope; threads omitted",
+    "volume_mm3": 141.37166941154067,
+    "bounds_mm": [
+      -57.0,
+      -18.0,
+      13.0,
+      -51.0,
+      -12.0,
+      24.0
+    ]
+  },
+  {
+    "name": "motor_hanger_R",
+    "group": "frame",
+    "color": [
+      0.18,
+      0.48,
+      0.53
+    ],
+    "note": "upper hanger permits downward tray removal; rail fasteners unresolved",
+    "volume_mm3": 4523.683188924501,
+    "bounds_mm": [
+      50.0,
+      -25.0,
+      15.0,
+      87.0,
+      -5.0,
+      24.0
+    ]
+  },
+  {
+    "name": "motor_tray_bolt_R",
+    "group": "fastener",
+    "color": [
+      0.65,
+      0.69,
+      0.72
+    ],
+    "note": "smooth bolt envelope; threads omitted",
+    "volume_mm3": 141.37166941154067,
+    "bounds_mm": [
+      51.0,
+      -18.0,
+      13.0,
+      57.0,
+      -12.0,
+      24.0
+    ]
+  },
+  {
+    "name": "09_motor_tray",
+    "group": "drive",
+    "color": [
+      0.18,
+      0.48,
+      0.53
+    ],
+    "note": "suspended from upper brackets; remove two underside bolts; motor attachment and rail fastening unresolved",
+    "volume_mm3": 34062.30444801924,
+    "bounds_mm": [
+      -58.0,
+      -52.0,
+      16.0,
+      58.0,
+      22.0,
+      20.0
+    ]
+  },
+  {
+    "name": "10_motor_envelope",
+    "group": "drive",
+    "color": [
+      0.13,
+      0.15,
+      0.18
+    ],
+    "note": "unselected motor envelope; motor screws omitted",
+    "volume_mm3": 70560.0,
+    "bounds_mm": [
+      -21.0,
+      -36.0,
+      20.0,
+      21.0,
+      6.0,
+      60.0
+    ]
+  },
+  {
+    "name": "11_motor_output_shaft",
+    "group": "drive",
+    "color": [
+      0.65,
+      0.69,
+      0.72
+    ],
+    "note": "study_geometry",
+    "volume_mm3": 78.53981633974482,
+    "bounds_mm": [
+      -2.5,
+      -17.5,
+      60.0,
+      2.5,
+      -12.5,
+      64.0
+    ]
+  },
+  {
+    "name": "12_coupling_placeholder",
+    "group": "drive",
+    "color": [
+      0.91,
+      0.48,
+      0.19
+    ],
+    "note": "clamping screws and torsion not validated",
+    "volume_mm3": 3513.934214893256,
+    "bounds_mm": [
+      -9.0,
+      -24.0,
+      60.0,
+      9.0,
+      -6.0,
+      77.0
+    ]
+  },
+  {
+    "name": "13_platter",
+    "group": "disc",
+    "color": [
+      0.65,
+      0.69,
+      0.72
+    ],
+    "note": "shaft attaches at underside face; hub and retainer required",
+    "volume_mm3": 228079.62665061897,
+    "bounds_mm": [
+      -110.0,
+      -125.0,
+      144.0,
+      110.0,
+      95.0,
+      150.0
+    ]
+  },
+  {
+    "name": "14_decorative_disc",
+    "group": "disc",
+    "color": [
+      0.13,
+      0.15,
+      0.18
+    ],
+    "note": "no physical audio groove, decorative only",
+    "volume_mm3": 76026.542216873,
+    "bounds_mm": [
+      -110.0,
+      -125.0,
+      150.0,
+      110.0,
+      95.0,
+      152.0
+    ]
+  },
+  {
+    "name": "15_fixed_light_diffuser",
+    "group": "lighting",
+    "color": [
+      0.87,
+      0.83,
+      0.73
+    ],
+    "note": "fixed to top; LED channel and wiring omitted",
+    "volume_mm3": 7992.211710732445,
+    "bounds_mm": [
+      -108.0,
+      -123.0,
+      134.0,
+      108.0,
+      93.0,
+      137.0
+    ]
+  },
+  {
+    "name": "speaker_box_L",
+    "group": "acoustic",
+    "color": [
+      0.87,
+      0.83,
+      0.73
+    ],
+    "note": "study closed chamber with driver cutout; no removable seam designed",
+    "volume_mm3": 195853.69983530752,
+    "bounds_mm": [
+      -193.0,
+      -112.0,
+      12.0,
+      -93.0,
+      18.0,
+      112.0
+    ]
+  },
+  {
+    "name": "speaker_driver_L",
+    "group": "acoustic",
+    "color": [
+      0.13,
+      0.15,
+      0.18
+    ],
+    "note": "simplified sealed envelope, not manufacturer CAD",
+    "volume_mm3": 87515.34655105087,
+    "bounds_mm": [
+      -177.0,
+      -115.0,
+      32.0,
+      -109.0,
+      -83.0,
+      100.0
+    ]
+  },
+  {
+    "name": "speaker_box_R",
+    "group": "acoustic",
+    "color": [
+      0.87,
+      0.83,
+      0.73
+    ],
+    "note": "study closed chamber with driver cutout; no removable seam designed",
+    "volume_mm3": 195853.69983530752,
+    "bounds_mm": [
+      93.0,
+      -112.0,
+      12.0,
+      193.0,
+      18.0,
+      112.0
+    ]
+  },
+  {
+    "name": "speaker_driver_R",
+    "group": "acoustic",
+    "color": [
+      0.13,
+      0.15,
+      0.18
+    ],
+    "note": "simplified sealed envelope, not manufacturer CAD",
+    "volume_mm3": 87515.34655105087,
+    "bounds_mm": [
+      109.0,
+      -115.0,
+      32.0,
+      177.0,
+      -83.0,
+      100.0
+    ]
+  },
+  {
+    "name": "rear_bridge_lower_crossmember",
+    "group": "frame",
+    "color": [
+      0.18,
+      0.48,
+      0.53
+    ],
+    "note": "study_geometry",
+    "volume_mm3": 23856.0,
+    "bounds_mm": [
+      -71.0,
+      80.0,
+      3.0,
+      71.0,
+      94.0,
+      15.0
+    ]
+  },
+  {
+    "name": "rear_bridge_post_0",
+    "group": "frame",
+    "color": [
+      0.18,
+      0.48,
+      0.53
+    ],
+    "note": "study_geometry",
+    "volume_mm3": 17304.0,
+    "bounds_mm": [
+      43.0,
+      80.0,
+      15.0,
+      55.0,
+      94.0,
+      118.0
+    ]
+  },
+  {
+    "name": "rear_bridge_post_1",
+    "group": "frame",
+    "color": [
+      0.18,
+      0.48,
+      0.53
+    ],
+    "note": "study_geometry",
+    "volume_mm3": 17304.0,
+    "bounds_mm": [
+      73.0,
+      80.0,
+      15.0,
+      85.0,
+      94.0,
+      118.0
+    ]
+  },
+  {
+    "name": "16_rear_seat_bridge",
+    "group": "frame",
+    "color": [
+      0.18,
+      0.48,
+      0.53
+    ],
+    "note": "cantilever deflection and fastening unresolved",
+    "volume_mm3": 15382.442884425325,
+    "bounds_mm": [
+      43.0,
+      50.0,
+      118.0,
+      177.0,
+      118.0,
+      124.0
+    ]
+  },
+  {
+    "name": "17_ring_carrier",
+    "group": "seat",
+    "color": [
+      0.18,
+      0.48,
+      0.53
+    ],
+    "note": "resting contact only; fastening unresolved",
+    "volume_mm3": 9467.000966033627,
+    "bounds_mm": [
+      107.0,
+      48.0,
+      124.0,
+      179.0,
+      120.0,
+      130.0
+    ]
+  },
+  {
+    "name": "18_flush_low_ring",
+    "group": "seat",
+    "color": [
+      0.87,
+      0.83,
+      0.73
+    ],
+    "note": "study_geometry",
+    "volume_mm3": 7577.521480458583,
+    "bounds_mm": [
+      105.0,
+      46.0,
+      130.0,
+      181.0,
+      122.0,
+      134.0
+    ]
+  },
+  {
+    "name": "19_shallow_seat_S1_study",
+    "group": "seat",
+    "color": [
+      0.87,
+      0.83,
+      0.73
+    ],
+    "note": "S1 shown as study only; S2 not rejected; finger recess omitted",
+    "volume_mm3": 9367.443894841368,
+    "bounds_mm": [
+      114.5,
+      55.5,
+      126.0,
+      171.5,
+      112.5,
+      133.0
+    ]
+  },
+  {
+    "name": "20_tag_dummy",
+    "group": "seat",
+    "color": [
+      0.91,
+      0.48,
+      0.19
+    ],
+    "note": "not birthday geometry; no keyring, hand or RF validation",
+    "volume_mm3": 5890.486225480862,
+    "bounds_mm": [
+      118.0,
+      59.0,
+      129.0,
+      168.0,
+      109.0,
+      132.0
+    ]
+  },
+  {
+    "name": "25_nfc_antenna_removable_tray",
+    "group": "seat",
+    "color": [
+      0.18,
+      0.48,
+      0.53
+    ],
+    "note": "nonmetal tray study; board-edge keepout, retention and material unverified",
+    "volume_mm3": 2369.6799999999994,
+    "bounds_mm": [
+      120.0,
+      61.0,
+      120.0,
+      166.0,
+      107.0,
+      123.0
+    ]
+  },
+  {
+    "name": "21_nfc_antenna_envelope",
+    "group": "electronics",
+    "color": [
+      0.91,
+      0.48,
+      0.19
+    ],
+    "note": "B fabrication outline and 1.6 mm stack; copper, soldered wires and RF keepouts omitted",
+    "volume_mm3": 3097.5999999999885,
+    "bounds_mm": [
+      121.0,
+      62.0,
+      121.0,
+      165.0,
+      106.0,
+      122.6
+    ]
+  },
+  {
+    "name": "22_display_envelope",
+    "group": "electronics",
+    "color": [
+      0.13,
+      0.15,
+      0.18
+    ],
+    "note": "display and FPC unknown; no mount",
+    "volume_mm3": 43344.0,
+    "bounds_mm": [
+      -43.0,
+      -120.0,
+      43.0,
+      43.0,
+      -108.0,
+      85.0
+    ]
+  },
+  {
+    "name": "23_battery_envelope",
+    "group": "electronics",
+    "color": [
+      0.91,
+      0.48,
+      0.19
+    ],
+    "note": "unchanged unselected pack envelope; moved 7 mm forward for bottom service; no thermal approval",
+    "volume_mm3": 49140.0,
+    "bounds_mm": [
+      -32.5,
+      34.0,
+      18.0,
+      32.5,
+      76.0,
+      36.0
+    ]
+  },
+  {
+    "name": "24_control_board_envelope",
+    "group": "electronics",
+    "color": [
+      0.18,
+      0.48,
+      0.53
+    ],
+    "note": "not S31 board outline; connectors and mounting missing",
+    "volume_mm3": 4550.0,
+    "bounds_mm": [
+      -32.5,
+      44.5,
+      42.0,
+      32.5,
+      79.5,
+      44.0
+    ]
+  },
+  {
+    "name": "26_battery_bottom_service_tray",
+    "group": "frame",
+    "color": [
+      0.18,
+      0.48,
+      0.53
+    ],
+    "note": "V3 bottom-service concept adapted to L3; restraint, swelling and fasteners unresolved",
+    "volume_mm3": 10068.0,
+    "bounds_mm": [
+      -35.5,
+      31.0,
+      3.0,
+      35.5,
+      79.0,
+      21.0
+    ]
+  },
+  {
+    "name": "27_reader_rear_service_tray",
+    "group": "frame",
+    "color": [
+      0.18,
+      0.48,
+      0.53
+    ],
+    "note": "separate rear-removable tray; no drilled PCB holes assumed; retention and solder-wire exit unresolved",
+    "volume_mm3": 5664.0,
+    "bounds_mm": [
+      -26.5,
+      83.0,
+      40.0,
+      26.5,
+      123.0,
+      46.0
+    ]
+  },
+  {
+    "name": "28_pn7160_core_board",
+    "group": "electronics",
+    "color": [
+      0.18,
+      0.48,
+      0.53
+    ],
+    "note": "B fabrication outline and 1.6 mm stack; component heights unknown, 6 mm upper reserve is only a study check",
+    "volume_mm3": 2304.000000000002,
+    "bounds_mm": [
+      -22.5,
+      87.0,
+      42.0,
+      22.5,
+      119.0,
+      43.6
+    ]
+  },
+  {
+    "name": "29_reader_support_L",
+    "group": "frame",
+    "color": [
+      0.18,
+      0.48,
+      0.53
+    ],
+    "note": "resting support on rear crossmember; retention and insulation unverified",
+    "volume_mm3": 4625.0,
+    "bounds_mm": [
+      -27.0,
+      84.0,
+      15.0,
+      -22.0,
+      121.0,
+      40.0
+    ]
+  },
+  {
+    "name": "29_reader_support_R",
+    "group": "frame",
+    "color": [
+      0.18,
+      0.48,
+      0.53
+    ],
+    "note": "resting support on rear crossmember; retention and insulation unverified",
+    "volume_mm3": 4625.0,
+    "bounds_mm": [
+      22.0,
+      84.0,
+      15.0,
+      27.0,
+      121.0,
+      40.0
+    ]
+  }
+]

@@ -35,9 +35,11 @@ class Store:
     playlists: dict = field(default_factory=dict)     # playlist_id -> {"revision": int, "tracks": [track_id]}
     bindings: dict = field(default_factory=dict)      # uid -> {"kind": "A"|"B"|"C", "target": {...}, "revision": int}
     birthday: dict | None = None                      # {"track": id} 或 {"playlist": id}
+    ordinary_selection: dict | None = None            # D093: 仅记目标/选曲，不保存播放状态或位置
     commit_seq: int = 0
     receipts: dict = field(default_factory=dict)      # request_id -> Receipt 字典
     fail_next_write: bool = False                     # 故障注入
+    flush_hook: object = field(default=None, repr=False)  # PC进程终止注入点，不持久保存
 
     # ---------- 持久化 ----------
     @classmethod
@@ -50,6 +52,7 @@ class Store:
             s.playlists = data["playlists"]
             s.bindings = data["bindings"]
             s.birthday = data["birthday"]
+            s.ordinary_selection = data.get("ordinary_selection")
             s.commit_seq = data["commit_seq"]
             s.receipts = data["receipts"]
         return s
@@ -60,6 +63,7 @@ class Store:
             "playlists": self.playlists,
             "bindings": self.bindings,
             "birthday": self.birthday,
+            "ordinary_selection": self.ordinary_selection,
             "commit_seq": self.commit_seq,
             "receipts": self.receipts,
         }
@@ -71,7 +75,13 @@ class Store:
         tmp = self.path + ".tmp"
         with open(tmp, "w", encoding="utf-8") as f:
             json.dump(self._snapshot(), f, ensure_ascii=False, sort_keys=True)
+            f.flush()
+            os.fsync(f.fileno())
+        if self.flush_hook:
+            self.flush_hook("before_replace")
         os.replace(tmp, self.path)
+        if self.flush_hook:
+            self.flush_hook("after_replace")
 
     # ---------- 事务式提交 ----------
     def commit(self, request_id: str, payload_key: str, mutate) -> dict:
@@ -109,6 +119,7 @@ class Store:
             self.playlists = backup["playlists"]
             self.bindings = backup["bindings"]
             self.birthday = backup["birthday"]
+            self.ordinary_selection = backup["ordinary_selection"]
             self.commit_seq = backup["commit_seq"]
             self.receipts = backup["receipts"]
             return {"request_id": request_id, "ok": False, "commit_seq": None,
