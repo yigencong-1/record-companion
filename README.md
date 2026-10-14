@@ -17,7 +17,7 @@ ABC与内容管理的PC逻辑仿真已完成：版本`0.2.2-batch2`两批合计4
 | [共享接口](product/interfaces.md) | 音频、屏幕、识别、网络、电源、空间和功耗约束 |
 | [主控资源分配稿](features/platform/resource-allocation.md) | S3参考台架与S31成品模组的资源、候选GPIO及改配条件 |
 | [决策记录](product/decisions.md) | 用户决定、编号与后续调整 |
-| [整机验收](product/validation.md) | T01–T12计划和V001–V017公开证据边界 |
+| [整机验收](product/validation.md) | T01–T12计划和V001–V020证据范围，包含PC仿真、V3几何与读卡器EDA检查 |
 | [功能专项](features/) | 八条功能专项，以及主控与系统架构选型 |
 | [参考来源](references/README.md) | 外部作品、器件、技能与许可记录 |
 
@@ -50,7 +50,7 @@ ABC与内容管理的PC逻辑仿真已完成：版本`0.2.2-batch2`两批合计4
 | [power](features/power/README.md) | 电池、Type-C电源路径、充电、温升和续航 |
 | [enclosure](features/enclosure/README.md) | 音腔、尺寸、固定、维护和成品材料 |
 
-工程入口仍按实际交付划分为 [firmware](firmware/README.md)、[hardware](hardware/README.md)、[web](web/README.md) 和 [mechanical](mechanical/README.md)。本机音频基线已编译，尚未烧录和实物验证，因此暂不发布源码。SolidWorks已有两类卡座布局粗模及占位几何检查，嘉立创官方CLI/API已查询连接通过，见[工具接入记录](references/project-setup.md)与[证据索引](product/validation.md)；这些不代表播放器功能、制造结构或原理图/PCB通过。
+工程入口仍按实际交付划分为 [firmware](firmware/README.md)、[hardware](hardware/README.md)、[web](web/README.md) 和 [mechanical](mechanical/README.md)。音频板已构建、烧录并响应命令，SD读取与播放待测；SW的V3候选几何见[V019](product/validation.md#v0192026-10-10-v3候选结构几何检查)。读卡器B版已完成原生EDA、两板零错误DRC及12项PC诊断测试，ERC保留1项供应商属性警告，见[V020](product/validation.md#v0202026-10-14-读卡器b版eda与pc诊断证据收敛)。当前处于材料准备与到货前阶段；音频板、读卡器和CAD完整工程继续留本机，焊接、主机HAL、RF和可靠取放尚未通过实测。
 
 ## 文件归属与公开范围
 
