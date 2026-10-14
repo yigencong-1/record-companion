@@ -1,0 +1,35 @@
+{
+  "status": "RESEARCH ONLY, not a physical validation",
+  "part_count": 47,
+  "all_shapes_valid": true,
+  "invalid": [],
+  "disconnected_parts": [],
+  "positive_volume_intersections": [],
+  "speaker_air": [
+    {
+      "side": "L",
+      "gross_internal_l": 1.095664,
+      "driver_envelope_in_cavity_l": 0.06869406496339443,
+      "remaining_air_envelope_l": 1.0269699350366055
+    },
+    {
+      "side": "R",
+      "gross_internal_l": 1.095664,
+      "driver_envelope_in_cavity_l": 0.06869406496339443,
+      "remaining_air_envelope_l": 1.0269699350366055
+    }
+  ],
+  "nominal_disc_to_ring_gap_mm": 25.925271309260864,
+  "disc_to_fixed_light_axial_gap_mm": 7,
+  "tests_not_run": [
+    "strength",
+    "vibration",
+    "acoustics",
+    "NFC",
+    "thermal",
+    "fastener design",
+    "manufacturing",
+    "physical assembly",
+    "complete removal swept-volume"
+  ]
+}
